@@ -1,0 +1,237 @@
+================================================================================
+LCR INVERTEBRATE STUDY — PROGRESS TRACKER
+Last updated: 2026-07-01
+================================================================================
+
+PROJECT: Terminal Low-Complexity Regions Are Enriched Across All Domains of Life
+         Evidence from 724 Proteomes Spanning 42 Phyla
+AUTHOR:  Stanley Kinnok Chan
+
+--------------------------------------------------------------------------------
+MANUSCRIPT VERSIONS
+--------------------------------------------------------------------------------
+
+v1  manuscript_v1.md  — Initial draft, metazoan invertebrates only
+v2  manuscript_v2.md  — Added non-metazoan eukaryotes
+v3  manuscript_v3.md  — Added prokaryotes; 724 proteomes, 42 phyla
+v4  manuscript_v4.md  — Completed full analysis; all results written up
+v5  manuscript_v5.md  — [CURRENT] Revised per peer review:
+                         * Reframed to lead with prokaryote finding as primary novelty
+                         * Abstract rewritten (prokaryote-first; LUCA softened)
+                         * Introduction: added Coletta 2010; explicit prokaryote positional gap
+                         * Methods: SINGLE-type caveat; quartile definition clarified;
+                           Holm-Bonferroni noted; asymmetry ratio instability noted;
+                           planned analyses listed; choanoflagellates + Asgard absence flagged
+                         * Results: Holm-Bonferroni correction applied across 42 phylum tests;
+                           Chlorophyta flagged as provisional (does not survive correction);
+                           single-species phyla flagged with * throughout;
+                           Table 1 updated with corrected significance column;
+                           prokaryote section elevated as primary finding;
+                           quartile definition (global within domain) stated;
+                           Q4 asymmetry noted and flagged for investigation
+                         * Discussion: equal weight to Scenarios A and B;
+                           fMet-degron claim softened + MAP cleavage issue noted;
+                           new para: choanoflagellates + Asgard archaea as priority taxa;
+                           new para: LLPS/phase separation as testable direction;
+                           signal peptide stratification named as key next analysis;
+                           per-domain AA composition named as key next analysis
+                         * Conclusions: prokaryote-first; LUCA = "equally viable scenario";
+                           Chlorophyta provisional
+                         * References: added Coletta 2010, Saravanan 2025;
+                           corrected Persi et al. 2023 author list (was cited as "Luo 2023")
+                         * Supp Tables S6, S7, S8 added (in preparation)
+                         * Supp Figure 8 added (in preparation)
+
+--------------------------------------------------------------------------------
+COMPLETED ANALYSES (data exists, code in scripts/)
+--------------------------------------------------------------------------------
+
+[DONE]  fLPS 2.0 run on all 724 proteomes (SINGLE-type, purity ≥70%, min length 3aa)
+[DONE]  Longest-isoform filtering for all proteomes
+[DONE]  20-bin positional analysis, species-level Fisher's exact tests (one-sided)
+[DONE]  Phylum-level pooled Fisher's tests (42 phyla/groups)
+[DONE]  Domain-level pooled tests (Bacteria n=87, Archaea n=21)
+[DONE]  Protein-length quartile stratification (4 quartiles × 42 groups)
+[DONE]  Within-phylum CV calculation (29 phyla with n≥2)
+[DONE]  Driver analysis: singleton vs. multi-LCR proteins (all 42 groups)
+[DONE]  Purity gradient analysis: Mann-Whitney U terminal vs. internal (all 42 groups)
+[DONE]  N/C asymmetry ratio: pct_nterm / pct_cterm per species
+[DONE]  Between-domain pairwise comparisons (after Holm correction)
+[DONE]  Protein-level binomial tests (species with ≥10 LCR-containing proteins)
+[DONE]  GO enrichment: 5 species with BioMart annotation (same as prior study)
+[DONE]  Amino acid composition: terminal vs. internal (metazoans, pooled)
+[DONE]  Holm-Bonferroni correction applied across 42 phylum-level tests (v5)
+
+--------------------------------------------------------------------------------
+ANALYSES IN PREPARATION (scripts written; need to be run on data)
+--------------------------------------------------------------------------------
+
+[SCRIPTED]  Supp Table S6 — fLPS parameter sensitivity analysis
+       - Script: scripts/15_sensitivity_analysis.py
+       - Four combinations: A (current), B (len≥6/purity≥80%), C (purity≥60%), D (MULTI-type)
+       - Impact: justifies current parameter choice; reviewer requirement
+
+[SCRIPTED]  Supp Table S7 — Per-domain amino acid composition of terminal LCRs
+       - Script: scripts/16_domain_aa_composition.py
+       - Bacteria vs. Archaea vs. Viridiplantae vs. Metazoa vs. Other_Euk
+       - Impact: direct mechanistic evidence for/against universal mechanism
+
+[SCRIPTED]  Supp Table S8 + Figure — Signal peptide stratification of bacterial LCRs
+       - Script: scripts/17_signal_peptide_stratification.py
+       - MODE A: UniProt annotations (requires results/uniprot_signal_peptides.tsv)
+       - MODE B fallback: sequence heuristic (MAP +2 residue rule)
+       - Impact: directly tests whether signal peptides explain N-terminal bacterial enrichment
+       - Status: HIGH PRIORITY — most likely to resolve Scenario A vs. B
+
+[SCRIPTED]  Supp Figure 8 — PGLS regression: asymmetry ratio × phylogenetic distance (Viridiplantae)
+       - Script: scripts/19_pgls_viridiplantae.py
+       - Full PGLS requires: results/viridiplantae_timetree.nwk (from TimeTree)
+       - Fallback: OLS on taxonomic tier if tree file absent
+       - Impact: quantifies progressive grass amplification claim
+
+[SCRIPTED]  Bootstrap CI + GLMM for prokaryote pooled result
+       - Script: scripts/18_mixed_effects_model.py
+       - Bootstrap: species-level resampling (n=5,000); always available
+       - GLMM: statsmodels BinomialBayesMixedGLM (optional; degrades gracefully)
+       - Impact: proper CI accounting for between-species clustering in bacteria
+
+[SCRIPTED]  LLPS propensity of terminal vs. internal LCRs (model organisms)
+       - Script: scripts/20_llps_analysis.py
+       - Composition proxy (F/Y/W + G/S/N): always runs
+       - PLAAC scores: requires results/plaac/<species_key>.plaac.tsv if available
+       - Impact: connects positional finding to condensate biology framework
+
+[PENDING]   GO enrichment via UniProt flat-file annotations (prokaryote species)
+       - Data source: UniProt XML/flat-files already downloaded for prokaryote proteomes
+       - Test: GO term enrichment for LCR-containing proteins vs. background
+       - Impact: extends functional analysis beyond the 5 BioMart-compatible species
+       - Status: not yet scripted
+
+--------------------------------------------------------------------------------
+SAMPLING EXPANSIONS NEEDED (require new proteome downloads + fLPS runs)
+--------------------------------------------------------------------------------
+
+[ ]  Viridiplantae tier expansion — REQUIRED FOR PGLS VALIDITY
+       - Script: scripts/01c_download_viridiplantae_expansion.py
+       - Problem: EnsemblPlants r63 leaves n=0-1 species in tiers 1-5:
+           Tier 1 Charophytes n=1, Tier 2 Bryophytes n=2, Tier 3 Lycophytes n=1,
+           Tier 4 Ferns n=0 (ENTIRELY ABSENT), Tier 5 Gymnosperms n=0 (ABSENT)
+       - Target species: Klebsormidium, Mesotaenium (charophytes); Sphagnum,
+           Anthoceros (bryophytes); Isoetes (lycophytes); Azolla, Salvinia,
+           Ceratopteris (ferns); Ginkgo, Picea, Pinus (gymnosperms); Magnolia
+       - UniProt IDs in script need VERIFY (check uniprot.org/proteomes); NCBI
+           fallback accessions provided for species without UniProt proteomes
+       - Note: gymnosperm genomes are 10-22 Gb — fLPS will be slow
+
+[ ]  Choanoflagellates — HIGHEST PRIORITY NEW TAXA
+       - Target: Monosiga brevicollis, Salpingoeca rosetta (UniProt reference proteomes)
+       - Why: unicellular sister to Metazoa; N/C asymmetry direction tests when
+              C-terminal dominance evolved relative to animal multicellularity
+       - Estimated effort: 2 proteomes, standard pipeline run
+
+[ ]  Asgard archaea — HIGHEST PRIORITY NEW TAXA
+       - Target: Heimdallarchaeota, Lokiarchaeota, Thorarchaeota (NCBI genomes)
+       - Why: closest prokaryote relatives of eukaryotes; their asymmetry direction
+              tests whether eukaryotic terminal enrichment pattern is inherited or de novo
+       - Estimated effort: 3-5 proteomes; may need NCBI download (not UniProt)
+
+[ ]  Fungi expansion — add 10-15 species
+       - Priority: Microsporidia (Encephalitozoon cuniculi, Nosema ceranae) — test
+              whether extreme genome reduction abolishes terminal enrichment
+       - Also: additional basidiomycetes, Rhizophagus irregularis (AM fungi)
+       - Why: only 10 species currently; C-terminal dominance claim is thinly supported
+
+[ ]  Xenacoelomorpha second species
+       - Target: Symsagittifera roscoffensis (transcriptome available)
+       - Why: n=1 currently; phylogenetic position debate makes this a high-profile claim
+
+[ ]  Additional Rotifera
+       - Current: 1 species (Brachionus plicatilis)
+       - Add: Adineta vaga, Rotaria magnacalcarata (genomes available)
+
+--------------------------------------------------------------------------------
+KNOWN DATA ISSUES / FLAGS
+--------------------------------------------------------------------------------
+
+- Acanthaster planci (Echinodermata): excluded post-hoc, empty fLPS output.
+  Root cause not yet investigated. Check: FASTA header format, protein count.
+  6 of 7 Echinodermata species analysed.
+
+- Persi et al. 2023 reference: was cited as "Luo H, Gao F, Lin Y" in v1-v4.
+  Correct authors: Persi E, Wolf YI, Karamycheva S, Makarova KS, Koonin EV.
+  FIXED in v5.
+
+- "Luo et al. 2023" citation in text of v1-v4 is WRONG (wrong author list).
+  FIXED in v5 as "Persi et al. 2023".
+
+- Piatkov et al. 2015: author list needs verification before submission.
+  Flag: [PMC4745127 — verify full author list]
+
+- Chlorophyta significance: p=0.025 uncorrected, does NOT survive Holm-Bonferroni.
+  Treated as provisional from v5 onwards.
+
+--------------------------------------------------------------------------------
+REVIEW SUMMARY (from simulated peer review panel, 2026-06-30)
+--------------------------------------------------------------------------------
+
+Must-address items (before submission):
+  1. [SCRIPTED] fLPS parameter sensitivity (Supp Table S6) — run 15_sensitivity_analysis.py
+  2. [SCRIPTED] Mixed-effects model / bootstrap CI for prokaryote result — run 18_mixed_effects_model.py
+  3. [DONE v5]  Holm-Bonferroni across 42 phylum tests; Chlorophyta flagged
+  4. [PENDING]  Add choanoflagellates (≥2 spp.)
+  5. [PENDING]  Add Asgard archaea (3-5 spp.)
+  6. [SCRIPTED] Signal peptide stratification of bacterial LCRs — run 17_signal_peptide_stratification.py
+  7. [SCRIPTED] Per-domain amino acid composition of terminal LCRs — run 16_domain_aa_composition.py
+  8. [DONE v5]  LUCA inference softened; Scenarios A and B presented equally
+
+Should-address items:
+  9. [DONE]     Log-odds asymmetry score added to 05_asymmetry.py (log_odds_asymmetry column)
+ 10. [SCRIPTED] PGLS regression: asymmetry vs. phylodistance in Viridiplantae — run 19_pgls_viridiplantae.py
+               (needs results/viridiplantae_timetree.nwk from TimeTree for full PGLS)
+ 11. [PENDING]  GO enrichment via UniProt annotations for prokaryotes (not yet scripted)
+ 12. [SCRIPTED] LLPS propensity analysis — run 20_llps_analysis.py
+               (PLAAC requires external run; composition proxy always available)
+ 13. [DONE v5]  Quartile definition stated (global within domain)
+ 14. [PENDING]  Fungi expanded to ≥20 spp. including Microsporidia
+ 15. [DONE v5]  Single-species phyla flagged with * throughout
+
+Consider (lower priority):
+ 16. [SCRIPTED] MULTI-type LCR positional analysis (included in 15_sensitivity_analysis.py)
+ 17. [DONE v5]  fMet-degron claim softened; MAP cleavage issue acknowledged
+ 18. [DONE v5]  Xenacoelomorpha flagged as n=1, phylogenetic position noted
+
+Scripts also updated (existing code):
+ 19. [DONE]     03_analyse.py — single_species flag added to phylum_summary.tsv output
+ 20. [DONE]     09_phylum_stats.py — holm_bonferroni() monotonicity bug fixed;
+                Holm correction now applied to phylum-level Fisher p-values too
+ 21. [DONE]     main.py — Phase 5 added (scripts 14–20); --phase/--from-phase extended to 5
+
+--------------------------------------------------------------------------------
+NEXT STEPS (ordered by priority)
+--------------------------------------------------------------------------------
+
+1. Run Phase 5 pipeline: python3 main.py --phase 5
+   (runs scripts 14–20; scripts 15–20 need existing fLPS output from phases 1–4)
+
+2. For full signal peptide stratification (MODE A):
+   - Fetch UniProt annotations: python3 scripts/fetch_uniprot_annotations.py
+   - Then re-run: python3 scripts/17_signal_peptide_stratification.py
+
+3. For full PGLS in Viridiplantae:
+   - Download species tree from TimeTree (http://timetree.org) for the 118 Viridiplantae species
+   - Save to: results/viridiplantae_timetree.nwk
+   - Then re-run: python3 scripts/19_pgls_viridiplantae.py
+
+4. For PLAAC-based LLPS analysis:
+   - Run PLAAC binary on each model organism proteome
+   - Save outputs to: results/plaac/<species_key>.plaac.tsv
+   - Then re-run: python3 scripts/20_llps_analysis.py
+
+5. Download + run choanoflagellate proteomes through pipeline (Monosiga, Salpingoeca)
+6. Download + run Asgard archaea through pipeline (Heimdallarchaeota, Lokiarchaeota)
+7. Expand fungi sampling (+Microsporidia: Encephalitozoon cuniculi, Nosema ceranae)
+8. Write manuscript_v6 incorporating completed analyses
+
+Target: manuscript_v6.md incorporating all scripted analyses after pipeline run
+
+================================================================================

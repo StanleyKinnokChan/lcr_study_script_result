@@ -1,0 +1,101 @@
+species_key	display_name	n_lcr	n_nterm	n_cterm	pct_nterm	pct_cterm	asymmetry_ratio	tier	tier_label
+closterium_nies54	Closterium sp. NIES-54	22504	1158	1067	5.15	4.74	1.085	1	Charophytes
+avena_sterilis_gca947313515v1cm	Avena sterilis TN4	9470	2023	492	21.36	5.2	4.112	9	Grasses
+echinochloa_crusgalli	Echinochloa crus-galli	8691	1659	507	19.09	5.83	3.272	9	Grasses
+triticum_aestivum_stanley	Triticum aestivum Stanley	8515	1991	527	23.38	6.19	3.778	9	Grasses
+trifolium_pratense	Trifolium pratense	7423	691	546	9.31	7.36	1.266	7	Eudicots
+chara_braunii	Chara braunii	6278	474	387	7.55	6.16	1.225	1	Charophytes
+camelina_sativa	Camelina sativa	6224	961	463	15.44	7.44	2.076	7	Eudicots
+arachis_hypogaea	Arachis hypogaea	5376	886	312	16.48	5.8	2.84	7	Eudicots
+chlamydomonas_reinhardtii	Chlamydomonas reinhardtii	5150	174	379	3.38	7.36	0.459	0	Chlorophyta
+brassica_napus	Brassica napus	5128	762	401	14.86	7.82	1.9	7	Eudicots
+oryza_brachyantha	Oryza brachyantha	4608	593	169	12.87	3.67	3.509	9	Grasses
+eragrostis_tef	Eragrostis tef	4312	869	235	20.15	5.45	3.698	9	Grasses
+ananas_comosus	Ananas comosus	3725	704	169	18.9	4.54	4.166	8	Non-grass monocots
+saccharum_spontaneum	Saccharum spontaneum	3608	673	203	18.65	5.63	3.315	9	Grasses
+volvox_carteri	Volvox carteri f. nagariensis	3231	115	224	3.56	6.93	0.513	0	Chlorophyta
+leersia_perrieri	Leersia perrieri	3061	691	162	22.57	5.29	4.265	9	Grasses
+sorghum_bicolor	Sorghum bicolor	3041	582	154	19.14	5.06	3.779	9	Grasses
+helianthus_annuus	Helianthus annuus	3034	444	195	14.63	6.43	2.277	7	Eudicots
+sphagnum_fallax	Sphagnum fallax	2949	542	138	18.38	4.68	3.928	2	Bryophytes
+hordeum_vulgare_zdm02064	Hordeum vulgare ZDM02064	2891	649	230	22.45	7.96	2.822	9	Grasses
+glycine_max	Glycine max	2877	466	141	16.2	4.9	3.305	7	Eudicots
+zea_mays	Zea mays	2812	493	193	17.53	6.86	2.554	9	Grasses
+ficus_carica	Ficus carica	2603	330	135	12.68	5.19	2.444	7	Eudicots
+lolium_perenne	Lolium perenne	2554	534	141	20.91	5.52	3.787	9	Grasses
+setaria_viridis	Setaria viridis	2553	525	142	20.56	5.56	3.697	9	Grasses
+brachypodium_distachyon	Brachypodium distachyon	2542	552	145	21.72	5.7	3.807	9	Grasses
+secale_cereale	Secale cereale	2437	605	140	24.83	5.74	4.321	9	Grasses
+musa_acuminata	Musa acuminata	2432	446	180	18.34	7.4	2.478	8	Non-grass monocots
+aegilops_umbellulata	Aegilops umbellulata	2329	572	148	24.56	6.35	3.865	9	Grasses
+lactuca_sativa_gca002870075v4gb	Lactuca sativa Salinas	2303	326	225	14.16	9.77	1.449	7	Eudicots
+papaver_somniferum	Papaver somniferum	2300	411	147	17.87	6.39	2.796	7	Eudicots
+panicum_hallii	Panicum hallii HAL2	2298	521	130	22.67	5.66	4.008	9	Grasses
+dioscorea_rotundata	Dioscorea rotundata	2036	316	135	15.52	6.63	2.341	8	Non-grass monocots
+eucalyptus_grandis	Eucalyptus grandis	2021	400	91	19.79	4.5	4.396	7	Eudicots
+malus_domestica_golden	Malus domestica Golden	1996	371	134	18.59	6.71	2.769	7	Eudicots
+asparagus_officinalis	Asparagus officinalis	1988	269	218	13.53	10.97	1.234	8	Non-grass monocots
+selaginella_moellendorffii	Selaginella moellendorffii	1985	295	194	14.86	9.77	1.521	3	Lycophytes
+quercus_suber_gca002906115v3rs	Quercus suber HL8	1980	384	95	19.39	4.8	4.042	7	Eudicots
+corymbia_citriodora	Corymbia citriodora	1931	392	118	20.3	6.11	3.322	7	Eudicots
+arabidopsis_halleri	Arabidopsis halleri	1833	257	146	14.02	7.97	1.76	7	Eudicots
+medicago_truncatula	Medicago truncatula	1815	317	109	17.47	6.01	2.908	7	Eudicots
+ipomoea_triloba	Ipomoea triloba	1800	324	135	18.0	7.5	2.4	7	Eudicots
+cinnamomum_kanehirae	Cinnamomum micranthum f. kanehirae	1776	292	146	16.44	8.22	2.0	6	Basal angiosperms
+populus_trichocarpa	Populus trichocarpa	1771	394	92	22.25	5.19	4.283	7	Eudicots
+juglans_regia	Juglans regia	1762	326	125	18.5	7.09	2.608	7	Eudicots
+gossypium_raimondii_gca025698545v1rs	Gossypium raimondii GPD5lz	1734	265	117	15.28	6.75	2.265	7	Eudicots
+rosa_chinensis	Rosa chinensis	1721	300	111	17.43	6.45	2.703	7	Eudicots
+sesamum_indicum	Sesamum indicum	1712	233	150	13.61	8.76	1.553	7	Eudicots
+eutrema_salsugineum	Eutrema salsugineum	1692	248	136	14.66	8.04	1.824	7	Eudicots
+cynara_cardunculus_gca001531365v2gb	Cynara cardunculus Scolymus	1679	260	132	15.49	7.86	1.97	7	Eudicots
+actinidia_chinensis	Actinidia chinensis	1668	297	124	17.81	7.43	2.395	7	Eudicots
+manihot_esculenta	Manihot esculenta	1666	329	118	19.75	7.08	2.788	7	Eudicots
+cajanus_cajan_gca000340665v2gb	Cajanus cajan	1627	211	121	12.97	7.44	1.744	7	Eudicots
+vigna_angularis	Vigna angularis	1626	221	122	13.59	7.5	1.811	7	Eudicots
+pisum_sativum_gca964186695v1gb	Pisum sativum JI2822	1603	254	71	15.85	4.43	3.577	7	Eudicots
+capsicum_annuum	Capsicum annuum	1583	239	112	15.1	7.08	2.134	7	Eudicots
+arabis_alpina	Arabis alpina	1569	232	129	14.79	8.22	1.798	7	Eudicots
+vicia_faba	Vicia faba	1541	270	74	17.52	4.8	3.649	7	Eudicots
+cucumis_melo	Cucumis melo	1520	227	92	14.93	6.05	2.467	7	Eudicots
+kalanchoe_fedtschenkoi	Kalanchoe fedtschenkoi	1513	247	115	16.33	7.6	2.148	7	Eudicots
+prunus_persica	Prunus persica	1486	236	102	15.88	6.86	2.314	7	Eudicots
+pistacia_vera	Pistacia vera	1473	289	80	19.62	5.43	3.612	7	Eudicots
+beta_vulgaris	Beta vulgaris	1469	229	59	15.59	4.02	3.881	7	Eudicots
+fraxinus_excelsior	Fraxinus excelsior	1462	217	112	14.84	7.66	1.938	7	Eudicots
+solanum_tuberosum	Solanum tuberosum	1448	175	80	12.09	5.52	2.188	7	Eudicots
+cryptomeria_japonica	Cryptomeria japonica	1440	169	131	11.74	9.1	1.29	5	Gymnosperms
+vitis_vinifera	Vitis vinifera	1417	250	131	17.64	9.24	1.908	7	Eudicots
+citrus_clementina	Citrus clementina	1398	225	94	16.09	6.72	2.394	7	Eudicots
+nicotiana_attenuata	Nicotiana attenuata	1390	190	93	13.67	6.69	2.043	7	Eudicots
+theobroma_cacao	Theobroma cacao Matina 1-6	1383	238	81	17.21	5.86	2.938	7	Eudicots
+citrullus_lanatus	Citrullus lanatus	1373	196	94	14.28	6.85	2.085	7	Eudicots
+corylus_avellana	Corylus avellana	1358	246	94	18.11	6.92	2.617	7	Eudicots
+lathyrus_sativus	Lathyrus sativus	1346	216	55	16.05	4.09	3.927	7	Eudicots
+aristolochia_fimbriata	Aristolochia fimbriata	1345	159	83	11.82	6.17	1.916	6	Basal angiosperms
+phaseolus_vulgaris	Phaseolus vulgaris	1324	219	74	16.54	5.59	2.959	7	Eudicots
+corchorus_capsularis	Corchorus capsularis	1304	192	86	14.72	6.6	2.233	7	Eudicots
+sphenostylis_stenocarpa	Sphenostylis stenocarpa	1303	184	78	14.12	5.99	2.359	7	Eudicots
+lablab_purpureus_gca030347555v1cm	Lablab purpureus Natoba	1253	217	73	17.32	5.83	2.973	7	Eudicots
+ceratopteris_richardii	Ceratopteris richardii	1234	156	119	12.64	9.64	1.311	4	Ferns
+coffea_canephora	Coffea canephora	1191	198	79	16.62	6.63	2.506	7	Eudicots
+chlorella_variabilis	Chlorella variabilis	1186	94	124	7.93	10.46	0.758	0	Chlorophyta
+cannabis_sativa_female	Cannabis sativa female	1163	176	63	15.13	5.42	2.794	7	Eudicots
+nymphaea_colorata_gca008831285v2rs	Nymphaea colorata Beijing-Zhang1983	1149	208	57	18.1	4.96	3.649	6	Basal angiosperms
+diphasiastrum_complanatum	Diphasiastrum complanatum	1134	275	73	24.25	6.44	3.767	3	Lycophytes
+adiantum_capillus_veneris	Adiantum capillus-veneris	1079	177	71	16.4	6.58	2.493	4	Ferns
+physcomitrium_patens	Physcomitrium patens	1067	100	99	9.37	9.28	1.01	2	Bryophytes
+daucus_carota	Daucus carota	1056	157	85	14.87	8.05	1.847	7	Eudicots
+micromonas_commoda	Micromonas commoda	968	54	95	5.58	9.81	0.568	0	Chlorophyta
+chenopodium_quinoa	Chenopodium quinoa	915	167	52	18.25	5.68	3.212	7	Eudicots
+ceratodon_purpureus	Ceratodon purpureus	913	150	70	16.43	7.67	2.143	2	Bryophytes
+marchantia_polymorpha	Marchantia polymorpha	906	131	57	14.46	6.29	2.298	2	Bryophytes
+lupinus_angustifolius	Lupinus angustifolius	889	152	41	17.1	4.61	3.707	7	Eudicots
+taxus_chinensis	Taxus chinensis	831	133	52	16.0	6.26	2.558	5	Gymnosperms
+amborella_trichopoda	Amborella trichopoda	828	117	67	14.13	8.09	1.746	6	Basal angiosperms
+digitaria_exilis	Digitaria exilis	796	158	34	19.85	4.27	4.647	9	Grasses
+pinus_longaeva	Pinus longaeva	743	97	49	13.06	6.59	1.98	5	Gymnosperms
+klebsormidium_nitens	Klebsormidium nitens	444	42	45	9.46	10.14	0.933	1	Charophytes
+coccomyxa_subellipsoidea	Coccomyxa subellipsoidea C-169	348	21	42	6.03	12.07	0.5	0	Chlorophyta
+olea_europaea	Olea europaea	269	27	12	10.04	4.46	2.25	7	Eudicots
+ostreococcus_lucimarinus	Ostreococcus lucimarinus	146	23	16	15.75	10.96	1.438	0	Chlorophyta

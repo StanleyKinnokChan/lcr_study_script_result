@@ -1,0 +1,11 @@
+tier	tier_label	n_species	mean_ratio	sd_ratio	median_ratio
+0	Chlorophyta	6	0.706	0.3737	0.5405
+1	Charophytes	3	1.081	0.146	1.085
+2	Bryophytes	4	2.3447	1.2015	2.2205
+3	Lycophytes	2	2.644	1.5882	2.644
+4	Ferns	2	1.902	0.8358	1.902
+5	Gymnosperms	3	1.9427	0.6348	1.98
+6	Basal angiosperms	4	2.3277	0.8871	1.958
+7	Eudicots	55	2.5882	0.7456	2.4
+8	Non-grass monocots	4	2.5547	1.21	2.4095
+9	Grasses	17	3.7198	0.5226	3.779

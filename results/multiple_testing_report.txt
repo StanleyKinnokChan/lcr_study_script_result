@@ -1,0 +1,58 @@
+Holm-Bonferroni Multiple-Testing Correction Report
+Tests performed: 43 (one pooled Fisher's exact test per phylum/group)
+Correction method: Holm-Bonferroni (step-down)
+
+Phylum                    N_spp   %Term       p_raw      p_holm   Sig  Status
+─────────────────────────────────────────────────────────────────────────────────────
+  Bacteria                   92   27.6%  0.0000e+00  0.0000e+00   ***  significant
+  Archaea                    27   25.7%  0.0000e+00  0.0000e+00   ***  significant
+  Oomycota                   26   21.2%  0.0000e+00  0.0000e+00   ***  significant
+  Bacillariophyta             5   17.5%  0.0000e+00  0.0000e+00   ***  significant
+  Apicomplexa                43   12.4%  0.0000e+00  0.0000e+00   ***  significant
+  Ciliophora                  7   24.1%  0.0000e+00  0.0000e+00   ***  significant
+  Perkinsozoa                 1   22.0%  0.0000e+00  0.0000e+00   ***  significant
+  Rhizaria                    3   18.6%  0.0000e+00  0.0000e+00   ***  significant
+  Euglenozoa                 16   18.3%  0.0000e+00  0.0000e+00   ***  significant
+  Metamonada                  6   18.6%  0.0000e+00  0.0000e+00   ***  significant
+  Amoebozoa                  10   16.9%  0.0000e+00  0.0000e+00   ***  significant
+  Viridiplantae             132   23.6%  0.0000e+00  0.0000e+00   ***  significant
+  Chlorophyta                 6   12.3%  0.0000e+00  0.0000e+00   ***  significant
+  Rhodophyta                  3   13.2%  1.4756e-02  4.4268e-02     *  significant
+  Haptophyta                  1   13.1%  1.4600e-04  7.3000e-04   ***  significant
+  Cryptophyta                 3   19.7%  0.0000e+00  0.0000e+00   ***  significant
+  Protist                    12   17.1%  0.0000e+00  0.0000e+00   ***  significant
+  Fungi                      11   17.4%  0.0000e+00  0.0000e+00   ***  significant
+  Porifera                    4   17.7%  0.0000e+00  0.0000e+00   ***  significant
+  Ctenophora                  2   21.1%  0.0000e+00  0.0000e+00   ***  significant
+  Placozoa                    2   20.2%  1.0000e-06  7.0000e-06   ***  significant
+  Xenacoelomorpha             3   20.2%  0.0000e+00  0.0000e+00   ***  significant
+  Cnidaria                   13   19.5%  0.0000e+00  0.0000e+00   ***  significant
+  Platyhelminthes             7   14.6%  0.0000e+00  0.0000e+00   ***  significant
+  Rotifera                    3   16.4%  0.0000e+00  0.0000e+00   ***  significant
+  Nemertea                    2   20.4%  0.0000e+00  0.0000e+00   ***  significant
+  Annelida                    5   16.6%  0.0000e+00  0.0000e+00   ***  significant
+  Brachiopoda                 1   21.2%  0.0000e+00  0.0000e+00   ***  significant
+  Mollusca                   23   18.7%  0.0000e+00  0.0000e+00   ***  significant
+  Acanthocephala              1   16.4%  7.0535e-02  9.1264e-02    ns  PROVISIONAL
+  Nematomorpha                1   16.6%  4.5632e-02  9.1264e-02    ns  PROVISIONAL
+  Nematoda                   15   19.1%  0.0000e+00  0.0000e+00   ***  significant
+  Priapulida                  1   14.0%  1.1450e-03  4.5800e-03    **  significant
+  Tardigrada                  2   19.0%  0.0000e+00  0.0000e+00   ***  significant
+  Collembola                  2   20.3%  0.0000e+00  0.0000e+00   ***  significant
+  Crustacea                  21   18.1%  0.0000e+00  0.0000e+00   ***  significant
+  Myriapoda                   3   17.2%  0.0000e+00  0.0000e+00   ***  significant
+  Chelicerata                28   18.1%  0.0000e+00  0.0000e+00   ***  significant
+  Insecta                   218   16.8%  0.0000e+00  0.0000e+00   ***  significant
+  Echinodermata               7   19.6%  0.0000e+00  0.0000e+00   ***  significant
+  Hemichordata                2   17.9%  0.0000e+00  0.0000e+00   ***  significant
+  Chordata                    1   15.8%  2.7000e-05  1.6200e-04   ***  significant
+  Heterolobosea               1   31.0%  0.0000e+00  0.0000e+00   ***  significant
+─────────────────────────────────────────────────────────────────────────────────────
+
+Significant after correction (p_holm < 0.05): 41 / 43
+Provisional (does not survive correction): Acanthocephala, Nematomorpha
+
+Interpretation for manuscript:
+  - All text referring to significance should cite corrected p-values.
+  - Chlorophyta is not significant after Holm-Bonferroni and must be
+    described as 'provisional' pending additional species.

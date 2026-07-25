@@ -1,0 +1,772 @@
+species_key	display_name	phylum	n_lcr	n_nterm	n_cterm	pct_nterm	pct_cterm	nterm_or	nterm_p	nterm_sig	cterm_or	cterm_p	cterm_sig	asymmetry_ratio	log_odds_asymmetry	low_conf_asymmetry
+acanthamoeba_castellanii	Acanthamoeba castellanii	Amoebozoa	2121	164	190	7.73	8.96	1.592	0.000164	True	1.869	0.0	True	0.863	-0.1467	False
+achlya_hypogyna_gca_002081595	Achlya hypogyna str. ATCC 48635	Oomycota	472	55	45	11.65	9.53	2.569	0.000108	True	2.053	0.004001	True	1.222	0.1987	False
+acinetobacter_baumannii_aye_gca_000069245	Acinetobacter baumannii AYE	Bacteria	32	4	6	12.5	18.75	4.286	0.187248	False	6.923	0.056858	False	0.667	-0.3677	True
+acromyrmex_echinatior_gca000204515v1rs	Acromyrmex echinatior	Insecta	934	90	62	9.64	6.64	2.056	5.9e-05	True	1.371	0.069101	False	1.452	0.3702	False
+acropora_millepora_gca013753865v1	Acropora millepora	Cnidaria	853	79	95	9.26	11.14	1.968	0.000324	True	2.417	1e-06	True	0.832	-0.1834	False
+actinia_equina_gca011057435	Actinia equina	Cnidaria	2406	173	238	7.19	9.89	1.475	0.00085	True	2.09	0.0	True	0.727	-0.3182	False
+actinia_tenebrosa_gca009602425v1	Actinia tenebrosa	Cnidaria	816	79	92	9.68	11.27	2.077	0.000137	True	2.462	1e-06	True	0.859	-0.1515	False
+actinidia_chinensis	Actinidia chinensis	Viridiplantae	1668	297	124	17.81	7.43	4.134	0.0	True	1.533	0.002028	True	2.395	0.8711	False
+actinobacillus_pleuropneumoniae_serovar_5b_str_l20_gca_000015885	Actinobacillus pleuropneumoniae serovar 5b str. L20	Bacteria	9	3	3	33.33	33.33	inf	0.123529	False	inf	0.123529	False	1.0	0.0	True
+acyrthosiphon_pisum_gca005508785v2rs	Acyrthosiphon pisum	Insecta	1191	107	108	8.98	9.07	1.892	7.3e-05	True	1.912	5.4e-05	True	0.991	-0.0093	False
+adelges_cooleyi_gca023614345v1rs	Adelges cooleyi	Insecta	834	80	88	9.59	10.55	2.05	0.000155	True	2.279	1.1e-05	True	0.909	-0.0947	False
+adiantum_capillus_veneris	Adiantum capillus-veneris	Viridiplantae	1079	177	71	16.4	6.58	3.795	0.0	True	1.362	0.058373	False	2.493	0.9093	False
+adineta_vaga	Adineta vaga	Rotifera	3887	274	343	7.05	8.82	1.443	8.1e-05	True	1.842	0.0	True	0.799	-0.2242	False
+aedes_aegypti_lvpagwg	Aedes aegypti	Insecta	1255	111	125	8.84	9.96	1.865	7.3e-05	True	2.127	1e-06	True	0.888	-0.1183	False
+aedes_albopictus_gca035046485v1rs	Aedes albopictus	Insecta	1860	191	160	10.27	8.6	2.174	0.0	True	1.788	8e-06	True	1.194	0.1766	False
+aegilops_tauschii	Aegilops tauschii	Viridiplantae	2266	416	151	18.36	6.66	4.282	0.0	True	1.36	0.009491	True	2.755	1.0113	False
+aegilops_umbellulata	Aegilops umbellulata	Viridiplantae	2329	572	148	24.56	6.35	6.208	0.0	True	1.294	0.024858	True	3.865	1.3494	False
+aeromonas_hydrophila_subsp_hydrophila_atcc_7966_gca_000014805	Aeromonas hydrophila subsp. hydrophila ATCC 7966	Bacteria	53	12	5	22.64	9.43	7.317	0.004359	True	2.604	0.226405	False	2.4	0.821	True
+aeropyrum_pernix_k1_gca_000011125	Aeropyrum pernix K1	Archaea	22	2	5	9.09	22.73	2.0	0.517867	False	5.882	0.10295	False	0.4	-0.7885	True
+aethina_tumida_gca024364675v1rs	Aethina tumida	Insecta	605	50	61	8.26	10.08	1.724	0.013961	True	2.145	0.000504	True	0.82	-0.1971	False
+agrilus_planipennis_gca000699045v2	Agrilus planipennis	Insecta	609	50	78	8.21	12.81	1.723	0.013977	True	2.83	1e-06	True	0.641	-0.4411	False
+agrobacterium_fabrum_str_c58_gca_000092025	Agrobacterium fabrum str. C58	Bacteria	40	4	7	10.0	17.5	2.111	0.33758	False	4.03	0.077152	False	0.571	-0.5108	True
+aliivibrio_fischeri_es114_gca_000011805	Aliivibrio fischeri ES114	Bacteria	39	4	4	10.26	10.26	4.229	0.187333	False	4.229	0.187333	False	1.0	0.0	True
+amblyomma_americanum_gca030143305v2gb	Amblyomma americanum	Chelicerata	1919	110	107	5.73	5.58	1.167	0.15837	False	1.133	0.214399	False	1.028	0.0275	False
+amblyteles_armatorius_gca933228735v1	Amblyteles armatorius	Insecta	845	75	62	8.88	7.34	1.86	0.001048	True	1.512	0.027384	True	1.21	0.189	False
+amborella_trichopoda	Amborella trichopoda	Viridiplantae	828	117	67	14.13	8.09	3.155	0.0	True	1.688	0.006377	True	1.746	0.5543	False
+amphibalanus_amphitrite_gca019059575v1	Amphibalanus amphitrite	Crustacea	2449	249	217	10.17	8.86	2.158	0.0	True	1.854	0.0	True	1.147	0.1373	False
+amphimedon_queenslandica_gca000090795v2rs	Amphimedon queenslandica	Porifera	1216	139	136	11.43	11.18	2.484	0.0	True	2.424	0.0	True	1.022	0.0217	False
+amyelois_transitella_gca032362555v1rs	Amyelois transitella	Insecta	541	56	63	10.35	11.65	2.194	0.000649	True	2.504	5.1e-05	True	0.889	-0.1168	False
+ananas_comosus	Ananas comosus	Viridiplantae	3725	704	169	18.9	4.54	4.433	0.0	True	0.904	0.836836	False	4.166	1.4246	False
+anaplasma_phagocytophilum_str_hz_gca_000013125	Anaplasma phagocytophilum str. HZ	Bacteria	5	0	1	0.0	20.0		1.0	False	inf	0.555556	False	0.0	-1.0986	True
+anastrepha_ludens_gca028408465v1rs	Anastrepha ludens	Insecta	1416	130	116	9.18	8.19	1.942	7e-06	True	1.715	0.000309	True	1.121	0.1135	False
+anastrepha_obliqua_gca027943255v1rs	Anastrepha obliqua	Insecta	1423	120	101	8.43	7.1	1.752	0.000155	True	1.454	0.011285	True	1.188	0.1716	False
+ancistrocerus_nigricornis_gca916049575v1	Ancistrocerus nigricornis	Insecta	681	61	37	8.96	5.43	1.869	0.002779	True	1.092	0.406261	False	1.649	0.4947	False
+angomonas_deanei_gca_000442575	Angomonas deanei	Euglenozoa	1806	82	446	4.54	24.7	0.906	0.760143	False	6.249	0.0	True	0.184	-1.6886	False
+anneissia_japonica_gca011630105v1	Anneissia japonica	Echinodermata	669	79	58	11.81	8.67	2.577	4e-06	True	1.827	0.004513	True	1.362	0.3067	False
+anopheles_albimanus_gca013758885v1rs	Anopheles albimanus	Insecta	2529	211	167	8.34	6.6	1.735	1e-06	True	1.348	0.008041	True	1.263	0.2332	False
+anopheles_arabiensis	Anopheles arabiensis	Insecta	2260	169	172	7.48	7.61	1.536	0.000347	True	1.565	0.000185	True	0.983	-0.0175	False
+anopheles_atroparvus_gca914969975	Anopheles atroparvus	Insecta	2039	165	132	8.09	6.47	1.689	3.1e-05	True	1.327	0.021578	True	1.25	0.2224	False
+anopheles_christyi	Anopheles christyi	Insecta	1496	113	114	7.55	7.62	1.569	0.002029	True	1.584	0.001629	True	0.991	-0.0088	False
+anopheles_coluzzii_gca943734685v1rs	Anopheles coluzzii	Insecta	2281	185	172	8.11	7.54	1.677	1.3e-05	True	1.55	0.000244	True	1.076	0.0727	False
+anopheles_culicifacies	Anopheles culicifacies	Insecta	1590	90	108	5.66	6.79	1.147	0.215878	False	1.393	0.01747	True	0.833	-0.1814	False
+anopheles_darlingi_gca943734745v1rs	Anopheles darlingi	Insecta	2659	241	173	9.06	6.51	1.907	0.0	True	1.332	0.009179	True	1.393	0.3307	False
+anopheles_dirus	Anopheles dirus	Insecta	2314	171	159	7.39	6.87	1.525	0.000386	True	1.41	0.003692	True	1.075	0.0725	False
+anopheles_epiroticus	Anopheles epiroticus	Insecta	1818	144	125	7.92	6.88	1.651	0.000165	True	1.417	0.008417	True	1.152	0.141	False
+anopheles_farauti	Anopheles farauti	Insecta	2593	179	169	6.9	6.52	1.416	0.001986	True	1.331	0.010004	True	1.059	0.0573	False
+anopheles_funestus_gca943734845v1rs	Anopheles funestus	Insecta	1598	139	108	8.7	6.76	1.831	1.6e-05	True	1.393	0.017484	True	1.287	0.2513	False
+anopheles_gambiae	Anopheles gambiae	Insecta	2251	178	170	7.91	7.55	1.639	3.8e-05	True	1.559	0.000222	True	1.047	0.0459	False
+anopheles_maculatus	Anopheles maculatus	Insecta	1596	76	106	4.76	6.64	0.959	0.630527	False	1.365	0.024569	True	0.717	-0.3309	False
+anopheles_melas	Anopheles melas	Insecta	2611	189	198	7.24	7.58	1.489	0.000396	True	1.565	6.4e-05	True	0.955	-0.0464	False
+anopheles_merus	Anopheles merus	Insecta	2413	203	179	8.41	7.42	1.754	1e-06	True	1.53	0.000261	True	1.134	0.1255	False
+anopheles_minimus	Anopheles minimus	Insecta	1578	110	103	6.97	6.53	1.44	0.009875	True	1.342	0.033268	True	1.068	0.0654	False
+anopheles_quadriannulatus_gca000349065v1vb	Anopheles quadriannulatus	Insecta	2272	174	159	7.66	7.0	1.584	0.000123	True	1.437	0.002434	True	1.094	0.0899	False
+anopheles_sinensis	Anopheles sinensis	Insecta	1762	122	120	6.92	6.81	1.414	0.009443	True	1.389	0.013389	True	1.017	0.0165	False
+anopheles_stephensi_indian	Anopheles stephensi	Insecta	2023	141	158	6.97	7.81	1.425	0.004853	True	1.611	0.000156	True	0.892	-0.1135	False
+anoplophora_glabripennis	Anoplophora glabripennis	Insecta	476	37	52	7.77	10.92	1.656	0.041839	True	2.41	0.000344	True	0.712	-0.3365	False
+anthonomus_grandis_gca022605725v3rs	Anthonomus grandis grandis	Insecta	556	60	52	10.79	9.35	2.366	0.000159	True	2.018	0.002466	True	1.154	0.1418	False
+aphanomyces_astaci_gca000520075	Aphanomyces astaci	Oomycota	926	114	104	12.31	11.23	2.683	0.0	True	2.418	0.0	True	1.096	0.0914	False
+aphanomyces_invadans_gca000520115	Aphanomyces invadans	Oomycota	475	72	56	15.16	11.79	3.503	0.0	True	2.621	7.3e-05	True	1.286	0.2493	False
+aphidius_gifuensis_gca014905175v1	Aphidius gifuensis	Insecta	1862	116	121	6.23	6.5	1.263	0.059005	False	1.321	0.028795	True	0.959	-0.042	False
+apis_dorsata_gca000469605v1rs	Apis dorsata	Insecta	1038	58	62	5.59	5.97	1.144	0.279286	False	1.228	0.167998	False	0.935	-0.0661	False
+apis_florea_gca000184785v2rs	Apis florea	Insecta	905	66	66	7.29	7.29	1.502	0.025169	True	1.502	0.025169	True	1.0	0.0	False
+apis_mellifera	Apis mellifera	Insecta	930	78	58	8.39	6.24	1.757	0.001938	True	1.277	0.134654	False	1.345	0.2941	False
+aplysia_californica_gca000002075v2	Aplysia californica	Mollusca	1978	131	177	6.62	8.95	1.36	0.014727	True	1.884	0.0	True	0.74	-0.3	False
+aquifex_aeolicus	Aquifex aeolicus	Bacteria	15	5	2	33.33	13.33	inf	0.025287	True	inf	0.258621	False	2.5	0.7885	True
+arabidopsis_halleri	Arabidopsis halleri	Viridiplantae	1833	257	146	14.02	7.97	3.12	0.0	True	1.656	0.000138	True	1.76	0.564	False
+arabidopsis_lyrata	Arabidopsis lyrata	Viridiplantae	1704	246	134	14.44	7.86	3.212	0.0	True	1.625	0.000389	True	1.836	0.6058	False
+arabidopsis_thaliana	Arabidopsis thaliana	Viridiplantae	1696	264	137	15.57	8.08	3.536	0.0	True	1.685	0.000143	True	1.927	0.6542	False
+arabis_alpina	Arabis alpina	Viridiplantae	1569	232	129	14.79	8.22	3.315	0.0	True	1.711	0.000155	True	1.798	0.5852	False
+arachis_hypogaea	Arachis hypogaea	Viridiplantae	5376	886	312	16.48	5.8	3.76	0.0	True	1.174	0.033332	True	2.84	1.0427	False
+archaeoglobus_fulgidus	Archaeoglobus fulgidus	Archaea	27	9	0	33.33	0.0	12.5	0.006682	True	0.0	1.0	False		2.9444	True
+argiope_bruennichi_gca947563725v1rs	Argiope bruennichi	Chelicerata	633	49	82	7.74	12.95	1.627	0.024901	True	2.885	0.0	True	0.598	-0.5108	False
+aristolochia_fimbriata	Aristolochia fimbriata	Viridiplantae	1345	159	83	11.82	6.17	2.555	0.0	True	1.254	0.104544	False	1.916	0.6472	False
+ascaris_suum	Ascaris suum	Nematoda	418	38	47	9.09	11.24	1.985	0.010239	True	2.515	0.000421	True	0.809	-0.2101	False
+asparagus_officinalis	Asparagus officinalis	Viridiplantae	1988	269	218	13.53	10.97	2.984	0.0	True	2.349	0.0	True	1.234	0.2098	False
+aspergillus_fumigatus	Aspergillus fumigatus	Fungi	360	41	41	11.39	11.39	2.442	0.001268	True	2.442	0.001268	True	1.0	0.0	False
+aspergillus_nidulans	Aspergillus nidulans	Fungi	344	21	43	6.1	12.5	1.247	0.311836	False	2.739	0.000325	True	0.488	-0.7047	False
+asterias_rubens_gca902459465v3	Asterias rubens	Echinodermata	738	71	70	9.62	9.49	2.073	0.000301	True	2.041	0.000414	True	1.014	0.0141	False
+athalia_rosae_gca917208135v1	Athalia rosae	Insecta	807	76	64	9.42	7.93	1.991	0.000351	True	1.65	0.009834	True	1.188	0.1706	False
+atta_cephalotes	Atta cephalotes	Insecta	836	82	51	9.81	6.1	2.106	8.2e-05	True	1.258	0.168708	False	1.608	0.4712	False
+aureococcus_anophagefferens_gca_000186865	Aureococcus anophagefferens	Protist	617	61	74	9.89	11.99	2.143	0.000509	True	2.662	4e-06	True	0.824	-0.1918	False
+avena_atlantica_gca910589765v1cm	Avena atlantica CC7277	Viridiplantae	3158	689	167	21.82	5.29	5.332	0.0	True	1.067	0.304912	False	4.126	1.415	False
+avena_byzantina_gca910574625v1cm	Avena byzantina PI258586	Viridiplantae	8447	1927	428	22.81	5.07	5.62	0.0	True	1.015	0.430855	False	4.502	1.5037	False
+avena_eriantha_gca910589775v1cm	Avena eriantha BYU132	Viridiplantae	2426	575	139	23.7	5.73	5.915	0.0	True	1.157	0.139988	False	4.137	1.4172	False
+avena_insularis_gca910574615v1cm	Avena insularis BYU209	Viridiplantae	5963	1329	313	22.29	5.25	5.451	0.0	True	1.053	0.281195	False	4.246	1.4448	False
+avena_longiglumis_gca910589755v1cm	Avena longiglumis CN58138	Viridiplantae	3714	708	175	19.06	4.71	4.492	0.0	True	0.943	0.724704	False	4.046	1.3955	False
+avena_occidentalis_gca947310975v1cm	Avena occidentalis CN25955	Viridiplantae	9018	1880	482	20.85	5.34	5.014	0.0	True	1.075	0.148936	False	3.9	1.3603	False
+avena_sativa_gca947310255v1cm	Avena magna x Avena longiglumis	Viridiplantae	9458	1948	480	20.6	5.08	4.938	0.0	True	1.018	0.408613	False	4.058	1.4	False
+avena_sativa_sang	Avena sativa Sang	Viridiplantae	7223	1433	702	19.84	9.72	4.704	0.0	True	2.046	0.0	True	2.041	0.7132	False
+avena_sterilis_gca947313515v1cm	Avena sterilis TN4	Viridiplantae	9470	2023	492	21.36	5.2	5.167	0.0	True	1.042	0.276565	False	4.112	1.4131	False
+azotobacter_vinelandii_dj_gca_000021045	Azotobacter vinelandii DJ	Bacteria	39	6	3	15.38	7.69	6.727	0.057951	False	3.083	0.317403	False	2.0	0.619	True
+babesia_bigemina_gca_000981445	Babesia bigemina str. Bond	Apicomplexa	92	7	5	7.61	5.43	1.791	0.274307	False	1.25	0.506876	False	1.4	0.3102	True
+babesia_bovis	Babesia bovis T2Bo	Apicomplexa	54	8	6	14.81	11.11	4.435	0.049507	True	3.188	0.141177	False	1.333	0.2683	True
+babesia_ovata_gca_002897235	Babesia ovata str. Miyake	Apicomplexa	79	9	5	11.39	6.33	3.214	0.068162	False	1.689	0.366799	False	1.8	0.5465	True
+babesia_sp_xinjiang_gca_002095265	Babesia sp. Xinjiang	Apicomplexa	57	5	6	8.77	10.53	2.596	0.226427	False	3.176	0.14137	False	0.833	-0.1671	True
+bacillus_subtilis	Bacillus subtilis	Bacteria	29	2	3	6.9	10.34	2.0	0.513397	False	3.115	0.319139	False	0.667	-0.3365	True
+bacteroides_thetaiotaomicron_vpi_5482_gca_000011065	Bacteroides thetaiotaomicron VPI-5482	Bacteria	49	14	3	28.57	6.12	9.2	0.00106	True	1.5	0.509872	False	4.667	1.4214	True
+bactrocera_dorsalis_gca023373825v1rs	Bactrocera dorsalis	Insecta	1354	143	101	10.56	7.46	2.267	0.0	True	1.547	0.004259	True	1.416	0.3463	False
+bactrocera_latifrons_gca001853355v1	Bactrocera latifrons	Insecta	1290	115	96	8.91	7.44	1.873	5e-05	True	1.539	0.005674	True	1.198	0.1797	False
+bactrocera_neohumeralis_gca024586455v2rs	Bactrocera neohumeralis	Insecta	1333	125	97	9.38	7.28	1.985	6e-06	True	1.505	0.007642	True	1.289	0.2525	False
+bactrocera_oleae_gca042242935v1rs	Bactrocera oleae	Insecta	745	63	49	8.46	6.58	1.765	0.004765	True	1.345	0.111982	False	1.286	0.2491	False
+bactrocera_tryoni_gca016617805v2	Bactrocera tryoni	Insecta	1295	110	100	8.49	7.72	1.784	0.000197	True	1.608	0.002344	True	1.1	0.0949	False
+bartonella_henselae_str_houston_1_gca_000046705	Bartonella henselae str. Houston-1	Bacteria	15	1	3	6.67	20.0	inf	0.517241	False	inf	0.124521	False	0.333	-0.8473	True
+belgica_antarctica	Belgica antarctica	Insecta	664	35	72	5.27	10.84	1.062	0.453049	False	2.322	4.9e-05	True	0.486	-0.7141	False
+bemisia_tabaci_uganda1	Bemisia tabaci	Insecta	335	32	43	9.55	12.84	2.099	0.012208	True	2.927	0.000169	True	0.744	-0.2915	False
+besnoitia_besnoiti_gca_002563875	Besnoitia besnoiti str. Bb-Ger1	Apicomplexa	252	25	23	9.92	9.13	2.193	0.020175	True	2.0	0.040253	True	1.087	0.0817	False
+beta_vulgaris	Beta vulgaris	Viridiplantae	1469	229	59	15.59	4.02	3.529	0.0	True	0.8	0.909967	False	3.881	1.3499	False
+bicyclus_anynana_gca947172395v1	Bicyclus anynana	Insecta	620	60	62	9.68	10.0	2.036	0.001071	True	2.111	0.000559	True	0.968	-0.0325	False
+bifidobacterium_longum_ncc2705_gca_000007525	Bifidobacterium longum NCC2705	Bacteria	24	2	3	8.33	12.5	2.0	0.516312	False	3.143	0.320567	False	0.667	-0.3365	True
+bigelowiella_natans	Bigelowiella natans	Rhizaria	5038	286	298	5.68	5.92	1.148	0.066053	False	1.199	0.021823	True	0.96	-0.041	False
+biomphalaria_glabrata_gca947242115v1rs	Biomphalaria glabrata	Mollusca	768	65	86	8.46	11.2	1.774	0.003941	True	2.419	4e-06	True	0.756	-0.2781	False
+blastocystis_hominis_gca_000151665	Blastocystis hominis str. Singapore isolate B	Protist	205	8	22	3.9	10.73	0.788	0.767977	False	2.332	0.021414	True	0.364	-0.9734	False
+bolinopsis_microptera	Bolinopsis microptera	Ctenophora	567	69	54	12.17	9.52	2.662	9e-06	True	2.023	0.002008	True	1.278	0.2431	False
+bombus_affinis_gca024516045v2rs	Bombus affinis	Insecta	783	64	63	8.17	8.05	1.696	0.007168	True	1.667	0.009224	True	1.016	0.0156	False
+bombus_huntii_gca024542735v1rs	Bombus huntii	Insecta	872	55	62	6.31	7.11	1.296	0.127521	False	1.474	0.035233	True	0.887	-0.1188	False
+bombus_impatiens	Bombus impatiens	Insecta	864	69	62	7.99	7.18	1.655	0.007252	True	1.474	0.035196	True	1.113	0.1062	False
+bombus_terrestris_gca910591885v2	Bombus terrestris	Insecta	898	70	49	7.8	5.46	1.639	0.007737	True	1.119	0.33719	False	1.429	0.3536	False
+bombus_vancouverensis_gca011952275v1rs	Bombus vancouverensis nearcticus	Insecta	795	65	57	8.18	7.17	1.724	0.005558	True	1.495	0.036997	True	1.14	0.1303	False
+bombyx_mandarina_gca003987935v1rs	Bombyx mandarina	Insecta	454	35	48	7.71	10.57	1.636	0.050831	False	2.316	0.000875	True	0.729	-0.312	False
+bombyx_mori_gca030269925v1rs	Bombyx mori	Insecta	490	43	57	8.78	11.63	1.864	0.011295	True	2.551	9e-05	True	0.754	-0.279	False
+borrelia_burgdorferi	Borrelia burgdorferi	Bacteria	6	1	1	16.67	16.67	inf	0.545455	False	inf	0.545455	False	1.0	0.0	True
+borreliella_burgdorferi_b31_gca_000008685	Borreliella burgdorferi B31	Bacteria	6	1	1	16.67	16.67	inf	0.545455	False	inf	0.545455	False	1.0	0.0	True
+brachionus_plicatilis	Brachionus plicatilis	Rotifera	1264	53	111	4.19	8.78	0.834	0.853148	False	1.834	0.000105	True	0.477	-0.7343	False
+brachypodium_distachyon	Brachypodium distachyon	Viridiplantae	2542	552	145	21.72	5.7	5.273	0.0	True	1.15	0.145436	False	3.807	1.3343	False
+bradyrhizobium_diazoefficiens_usda_110_gca_000011365	Bradyrhizobium diazoefficiens USDA 110	Bacteria	79	9	6	11.39	7.59	3.214	0.068162	False	2.055	0.253801	False	1.5	0.3795	True
+bradysia_coprophila_gca014529535v1rs	Bradysia coprophila	Insecta	698	62	71	8.88	10.17	1.901	0.00209	True	2.208	0.000118	True	0.873	-0.1345	False
+branchiostoma_lanceolatum	Branchiostoma lanceolatum	Chordata	1121	83	94	7.4	8.39	1.519	0.011402	True	1.739	0.000858	True	0.883	-0.1238	False
+brassica_juncea	Brassica juncea	Viridiplantae	4258	566	309	13.29	7.26	2.925	0.0	True	1.493	7e-06	True	1.832	0.6045	False
+brassica_napus	Brassica napus	Viridiplantae	5128	762	401	14.86	7.82	3.321	0.0	True	1.614	0.0	True	1.9	0.6414	False
+brassica_oleracea	Brassica oleracea	Viridiplantae	3140	418	222	13.31	7.07	2.918	0.0	True	1.446	0.000339	True	1.883	0.6317	False
+brassica_rapa_ro18	Brassica rapa R-o-18	Viridiplantae	2359	341	164	14.46	6.95	3.237	0.0	True	1.431	0.002318	True	2.079	0.7304	False
+brucella_abortus_bv_1_str_9_941_gca_000008145	Brucella abortus bv. 1 str. 9-941	Bacteria	23	2	4	8.7	17.39	2.0	0.517054	False	4.421	0.186992	False	0.5	-0.5878	True
+brugia_malayi	Brugia malayi	Nematoda	608	54	48	8.88	7.89	1.875	0.004574	True	1.649	0.023413	True	1.125	0.1166	False
+buchnera_aphidicola_str_aps_acyrthosiphon_pisum__gca_000009605	Buchnera aphidicola str. APS	Bacteria	3	0	2	0.0	66.67		1.0	False	inf	0.3	False	0.0	-1.6094	True
+burkholderia_pseudomallei_1710b_gca_000012785	Burkholderia pseudomallei 1710b	Bacteria	70	13	10	18.57	14.29	5.018	0.007909	True	3.667	0.040928	True	1.3	0.2513	False
+caenorhabditis_brenneri	Caenorhabditis brenneri	Nematoda	1263	141	146	11.16	11.56	2.392	0.0	True	2.488	0.0	True	0.966	-0.0347	False
+caenorhabditis_briggsae	Caenorhabditis briggsae	Nematoda	816	76	91	9.31	11.15	1.99	0.000353	True	2.432	2e-06	True	0.835	-0.179	False
+caenorhabditis_elegans	Caenorhabditis elegans	Nematoda	806	99	95	12.28	11.79	2.678	0.0	True	2.555	0.0	True	1.042	0.041	False
+caenorhabditis_japonica	Caenorhabditis japonica	Nematoda	1365	120	172	8.79	12.6	1.837	5.4e-05	True	2.748	0.0	True	0.698	-0.3587	False
+caenorhabditis_remanei_gca010183535v1rs	Caenorhabditis remanei	Nematoda	838	94	81	11.22	9.67	2.453	1e-06	True	2.077	0.000113	True	1.16	0.148	False
+cajanus_cajan_gca000340665v2gb	Cajanus cajan	Viridiplantae	1627	211	121	12.97	7.44	2.842	0.0	True	1.533	0.002282	True	1.744	0.5543	False
+camelina_sativa	Camelina sativa	Viridiplantae	6224	961	463	15.44	7.44	3.471	0.0	True	1.528	0.0	True	2.076	0.7297	False
+camponotus_floridanus_gca003227725v1rs	Camponotus floridanus	Insecta	890	100	68	11.24	7.64	2.431	1e-06	True	1.589	0.012385	True	1.471	0.3833	False
+campylobacter_jejuni_subsp_jejuni_nctc_11168_atcc_700819_gca_000009085	Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819	Bacteria	10	4	1	40.0	10.0	inf	0.05418	False	inf	0.526316	False	4.0	1.0986	True
+candida_albicans	Candida albicans	Fungi	842	53	62	6.29	7.36	1.278	0.146782	False	1.512	0.027371	True	0.855	-0.1555	False
+candidatus_korarchaeum_cryptofilum_opf8_gca_000019605	Candidatus Korarchaeum cryptofilum OPF8	Archaea	8	2	0	25.0	0.0	inf	0.266667	False		1.0	False		1.6094	True
+candidatus_koribacter_versatilis_ellin345_gca_000014005	Candidatus Koribacter versatilis Ellin345	Bacteria	67	9	7	13.43	10.45	3.259	0.067241	False	2.45	0.168496	False	1.286	0.2364	True
+cannabis_sativa_female	Cannabis sativa female	Viridiplantae	1163	176	63	15.13	5.42	3.394	0.0	True	1.09	0.356282	False	2.794	1.0223	False
+capitella_teleta	Capitella teleta	Annelida	1244	105	133	8.44	10.69	1.756	0.000369	True	2.28	0.0	True	0.789	-0.2354	False
+capsaspora_owczarzaki	Capsaspora owczarzaki	Protist	1926	269	81	13.97	4.21	3.093	0.0	True	0.836	0.891598	False	3.321	1.196	False
+capsicum_annuum	Capsicum annuum	Viridiplantae	1583	239	112	15.1	7.08	3.383	0.0	True	1.449	0.008459	True	2.134	0.7556	False
+cataglyphis_hispanica_gca021464435v1rs	Cataglyphis hispanica	Insecta	839	95	64	11.32	7.63	2.482	1e-06	True	1.605	0.013299	True	1.484	0.3925	False
+caulobacter_crescentus	Caulobacter crescentus	Bacteria	30	2	5	6.67	16.67	2.0	0.512935	False	5.6	0.104898	False	0.4	-0.7885	True
+caulobacter_vibrioides_cb15_gca_000006905	Caulobacter vibrioides CB15	Bacteria	30	2	5	6.67	16.67	2.0	0.512935	False	5.6	0.104898	False	0.4	-0.7885	True
+cavenderia_fasciculata_gca_000203815	Cavenderia fasciculata str. SH3	Amoebozoa	4530	604	325	13.33	7.17	2.929	0.0	True	1.472	8e-06	True	1.858	0.619	False
+cenarchaeum_symbiosum_a_gca_000200715	Cenarchaeum symbiosum A	Archaea	38	4	5	10.53	13.16	4.235	0.187324	False	5.455	0.105943	False	0.8	-0.2007	True
+centruroides_sculpturatus_gca000671375v2	Centruroides sculpturatus	Chelicerata	789	69	76	8.75	9.63	1.84	0.001871	True	2.047	0.000229	True	0.908	-0.096	False
+ceratitis_capitata_gca000347755v4	Ceratitis capitata	Insecta	993	81	81	8.16	8.16	1.709	0.002418	True	1.709	0.002418	True	1.0	0.0	False
+ceratodon_purpureus	Ceratodon purpureus	Viridiplantae	913	150	70	16.43	7.67	3.788	0.0	True	1.6	0.010376	True	2.143	0.7584	False
+ceratopteris_richardii	Ceratopteris richardii	Viridiplantae	1234	156	119	12.64	9.64	2.78	0.0	True	2.051	4e-06	True	1.311	0.2697	False
+chamberlinius_hualienensis	Chamberlinius hualienensis	Myriapoda	781	81	52	10.37	6.66	2.199	4.4e-05	True	1.355	0.098405	False	1.558	0.4398	False
+chara_braunii	Chara braunii	Viridiplantae	6278	474	387	7.55	6.16	1.556	0.0	True	1.252	0.00226	True	1.225	0.2025	False
+chelonus_insularis_gca013357705v1rs	Chelonus insularis	Insecta	650	55	60	8.46	9.23	1.782	0.007248	True	1.961	0.001693	True	0.917	-0.0863	False
+chenopodium_quinoa	Chenopodium quinoa	Viridiplantae	915	167	52	18.25	5.68	4.311	0.0	True	1.164	0.267567	False	3.212	1.1602	False
+cherax_quadricarinatus_gca038502225v1rs	Cherax quadricarinatus	Crustacea	1965	242	141	12.32	7.18	2.674	0.0	True	1.472	0.002514	True	1.716	0.5387	False
+chlamydia_trachomatis_d_uw_3_cx_gca_000008725	Chlamydia trachomatis D/UW-3/CX	Bacteria	15	0	4	0.0	26.67		1.0	False	inf	0.057471	False	0.0	-2.1972	True
+chlamydomonas_reinhardtii	Chlamydomonas reinhardtii	Chlorophyta	5150	174	379	3.38	7.36	0.666	0.999983	False	1.512	0.0	True	0.459	-0.7769	False
+chlorella_variabilis	Chlorella variabilis	Chlorophyta	1186	94	124	7.93	10.46	1.643	0.002211	True	2.228	0.0	True	0.758	-0.2757	False
+chlorobaculum_tepidum_tls_gca_000006985	Chlorobaculum tepidum TLS	Bacteria	13	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+chloroflexus_aurantiacus_j_10_fl_gca_000018865	Chloroflexus aurantiacus J-10-fl	Bacteria	52	14	5	26.92	9.62	9.026	0.001111	True	2.606	0.226398	False	2.8	0.9694	True
+chondrus_crispus	Chondrus crispus	Rhodophyta	392	23	24	5.87	6.12	1.22	0.320389	False	1.277	0.26825	False	0.958	-0.0417	False
+chroomonas_mesostigmatica_ccmp1168_gca_000286095	Chroomonas mesostigmatica CCMP1168	Cryptophyta	8	0	1	0.0	12.5		1.0	False	inf	0.533333	False	0.0	-1.0986	True
+chrysoperla_carnea_gca905475395v1rs	Chrysoperla carnea	Insecta	661	55	65	8.32	9.83	1.724	0.010217	True	2.072	0.000537	True	0.846	-0.1657	False
+cimex_lectularius	Cimex lectularius	Insecta	511	57	62	11.15	12.13	2.436	0.00016	True	2.679	2.3e-05	True	0.919	-0.0834	False
+cinnamomum_kanehirae	Cinnamomum micranthum f. kanehirae	Viridiplantae	1776	292	146	16.44	8.22	3.772	0.0	True	1.717	5.5e-05	True	2.0	0.6914	False
+citrullus_lanatus	Citrullus lanatus	Viridiplantae	1373	196	94	14.28	6.85	3.193	0.0	True	1.409	0.021539	True	2.085	0.7321	False
+citrus_clementina	Citrus clementina	Viridiplantae	1398	225	94	16.09	6.72	3.692	0.0	True	1.387	0.026502	True	2.394	0.8697	False
+closterium_nies54	Closterium sp. NIES-54	Viridiplantae	22504	1158	1067	5.15	4.74	1.031	0.246267	False	0.946	0.902017	False	1.085	0.0818	False
+clostridioides_difficile	Clostridioides difficile	Bacteria	26	2	0	7.69	0.0	2.0	0.515006	False	0.0	1.0	False		1.6094	True
+clytia_hemisphaerica_gca902728285	Clytia hemisphaerica	Cnidaria	950	80	81	8.42	8.53	1.765	0.001607	True	1.789	0.001229	True	0.988	-0.0123	False
+coccomyxa_subellipsoidea	Coccomyxa subellipsoidea C-169	Chlorophyta	348	21	42	6.03	12.07	1.247	0.311857	False	2.664	0.000493	True	0.5	-0.6815	False
+coffea_canephora	Coffea canephora	Viridiplantae	1191	198	79	16.62	6.63	3.822	0.0	True	1.362	0.048166	True	2.506	0.915	False
+contarinia_nasturtii_gca009176525v2rs	Contarinia nasturtii	Insecta	961	69	87	7.18	9.05	1.47	0.028364	True	1.891	0.000331	True	0.793	-0.2303	False
+convolutriloba_macropyga	Convolutriloba macropyga	Xenacoelomorpha	941	102	95	10.84	10.1	2.31	2e-06	True	2.134	1.8e-05	True	1.074	0.0707	False
+copidosoma_floridanum_gca000648655v2	Copidosoma floridanum	Insecta	1334	134	108	10.04	8.1	2.144	0.0	True	1.691	0.000635	True	1.241	0.2148	False
+corchorus_capsularis	Corchorus capsularis	Viridiplantae	1304	192	86	14.72	6.6	3.289	0.0	True	1.345	0.047115	True	2.233	0.8	False
+coremacera_marginata_gca914767935v1	Coremacera marginata	Insecta	1470	140	96	9.52	6.53	2.013	1e-06	True	1.336	0.040914	True	1.458	0.3757	False
+corylus_avellana	Corylus avellana	Viridiplantae	1358	246	94	18.11	6.92	4.259	0.0	True	1.432	0.017376	True	2.617	0.9588	False
+corymbia_citriodora	Corymbia citriodora	Viridiplantae	1931	392	118	20.3	6.11	4.866	0.0	True	1.243	0.070274	False	3.322	1.1976	False
+cotesia_glomerata_gca020080835v1	Cotesia glomerata	Insecta	1098	64	96	5.83	8.74	1.196	0.198643	False	1.851	0.000249	True	0.667	-0.4029	False
+coxiella_burnetii_rsa_493_gca_000007765	Coxiella burnetii RSA 493	Bacteria	9	2	0	22.22	0.0	inf	0.264706	False		1.0	False		1.6094	True
+crassostrea_angulata_gca025612915v2rs	Crassostrea angulata	Mollusca	1014	74	112	7.3	11.05	1.516	0.016563	True	2.391	0.0	True	0.661	-0.4122	False
+crassostrea_virginica_gca002022765v4	Crassostrea virginica	Mollusca	1331	102	166	7.66	12.47	1.589	0.00261	True	2.729	0.0	True	0.614	-0.4851	False
+cryptococcus_neoformans	Cryptococcus neoformans	Fungi	304	19	26	6.25	8.55	1.28	0.301982	False	1.796	0.053589	False	0.731	-0.3067	False
+cryptomeria_japonica	Cryptomeria japonica	Viridiplantae	1440	169	131	11.74	9.1	2.526	0.0	True	1.901	1.1e-05	True	1.29	0.2538	False
+cryptomonas_paramecium_gca_000194455	Cryptomonas paramecium str. CCAP977/2A	Cryptophyta	2	0	1	0.0	50.0		1.0	False	inf	0.666667	False	0.0	-1.0986	True
+cryptosporidium_andersoni_gca_001865355	Cryptosporidium andersoni	Apicomplexa	127	13	11	10.24	8.66	2.281	0.077988	False	1.897	0.161792	False	1.182	0.1603	False
+cryptosporidium_meleagridis_gca_001593445	Cryptosporidium meleagridis str. UKMEL1	Apicomplexa	180	6	11	3.33	6.11	0.655	0.854313	False	1.237	0.409351	False	0.545	-0.5705	False
+cryptosporidium_muris_rn66_gca_000006515	Cryptosporidium muris RN66	Apicomplexa	126	13	8	10.32	6.35	2.282	0.077942	False	1.345	0.398221	False	1.625	0.4626	True
+cryptosporidium_parvum_iowa_ii_gca_000165345	Cryptosporidium parvum Iowa II	Apicomplexa	229	11	23	4.8	10.04	0.995	0.590327	False	2.203	0.02502	True	0.478	-0.7147	False
+cryptosporidium_ubiquitum_gca_001865345	Cryptosporidium ubiquitum	Apicomplexa	204	8	16	3.92	7.84	0.788	0.768018	False	1.643	0.158563	False	0.5	-0.6633	False
+cryptotermes_secundus_gca002891405v2rs	Cryptotermes secundus	Insecta	866	77	75	8.89	8.66	1.866	0.000865	True	1.813	0.001517	True	1.027	0.0261	False
+ctenocephalides_felis_gca003426905v1rs	Ctenocephalides felis	Insecta	640	50	69	7.81	10.78	1.61	0.025866	True	2.296	8.2e-05	True	0.725	-0.3194	False
+cucumis_melo	Cucumis melo	Viridiplantae	1520	227	92	14.93	6.05	3.336	0.0	True	1.224	0.116855	False	2.467	0.8999	False
+cucumis_sativus	Cucumis sativus	Viridiplantae	1482	213	92	14.37	6.21	3.191	0.0	True	1.258	0.087856	False	2.315	0.8364	False
+culex_pipiens_gca016801865v2rs	Culex pipiens pallens	Insecta	1827	177	207	9.69	11.33	2.045	0.0	True	2.436	0.0	True	0.855	-0.1562	False
+culex_quinquefasciatus_gca015732765v1vb	Culex quinquefasciatus	Insecta	1746	166	193	9.51	11.05	2.002	0.0	True	2.368	0.0	True	0.86	-0.1503	False
+culicoides_brevitarsis_gca036172545v1rs	Culicoides brevitarsis	Insecta	626	73	67	11.66	10.7	2.529	1.1e-05	True	2.297	0.000104	True	1.09	0.0852	False
+culicoides_sonorensis	Culicoides sonorensis	Insecta	901	79	81	8.77	8.99	1.826	0.001034	True	1.877	0.000588	True	0.975	-0.0248	False
+cutibacterium_acnes_kpa171202_gca_000008345	Cutibacterium acnes KPA171202	Bacteria	20	3	2	15.0	10.0	3.353	0.302495	False	2.111	0.5	False	1.5	0.3365	True
+cyanidioschyzon_merolae	Cyanidioschyzon merolae	Rhodophyta	383	20	28	5.22	7.31	1.053	0.503362	False	1.507	0.115841	False	0.714	-0.3295	False
+cyclospora_cayetanensis_gca_000769155	Cyclospora cayetanensis str. CHN_HEN01	Apicomplexa	475	28	24	5.89	5.05	1.228	0.285207	False	1.043	0.50297	False	1.167	0.1512	False
+cydia_pomonella_gca033807575v1rs	Cydia pomonella	Insecta	673	74	83	11.0	12.33	2.392	2.4e-05	True	2.724	1e-06	True	0.892	-0.114	False
+cylas_formicarius_gca029955315v1rs	Cylas formicarius	Insecta	454	53	40	11.67	8.81	2.589	0.000131	True	1.893	0.012593	True	1.325	0.2784	False
+cynara_cardunculus_gca001531365v2gb	Cynara cardunculus Scolymus	Viridiplantae	1679	260	132	15.49	7.86	3.521	0.0	True	1.64	0.000348	True	1.97	0.676	False
+cystoisospora_suis_gca_002600585	Cystoisospora suis str. Wien I	Apicomplexa	1663	130	148	7.82	8.9	1.613	0.000549	True	1.858	6e-06	True	0.878	-0.1292	False
+daktulosphaira_vitifoliae_gca025091365v1rs	Daktulosphaira vitifoliae	Insecta	599	58	62	9.68	10.35	2.104	0.000866	True	2.265	0.000221	True	0.935	-0.0661	False
+danaus_plexippus	Danaus plexippus	Insecta	488	47	48	9.63	9.84	2.056	0.003259	True	2.105	0.002344	True	0.979	-0.0208	False
+danaus_plexippus_gca018135715v1	Danaus plexippus	Insecta	508	48	50	9.45	9.84	2.012	0.003672	True	2.105	0.001916	True	0.96	-0.0404	False
+daphnia_carinata_gca022539665v4rs	Daphnia carinata	Crustacea	1156	80	80	6.92	6.92	1.432	0.02646	True	1.432	0.02646	True	1.0	0.0	False
+daphnia_magna_gca020631705v2	Daphnia magna	Crustacea	1355	105	94	7.75	6.94	1.614	0.001752	True	1.432	0.01737	True	1.117	0.1101	False
+daphnia_pulex_gca021134715v1rs	Daphnia pulex	Crustacea	1673	155	119	9.26	7.11	1.955	1e-06	True	1.466	0.005523	True	1.303	0.2633	False
+daphnia_pulicaria_gca021234035v2rs	Daphnia pulicaria	Crustacea	1750	171	126	9.77	7.2	2.069	0.0	True	1.482	0.003591	True	1.357	0.3043	False
+daucus_carota	Daucus carota	Viridiplantae	1056	157	85	14.87	8.05	3.369	0.0	True	1.688	0.002311	True	1.847	0.6109	False
+deinococcus_radiodurans	Deinococcus radiodurans	Bacteria	38	10	3	26.32	7.89	12.857	0.003817	True	3.086	0.317534	False	3.333	1.0986	True
+dendroctonus_ponderosae_gca020466585v2rs	Dendroctonus ponderosae	Insecta	438	55	55	12.56	12.56	2.845	3.1e-05	True	2.845	3.1e-05	True	1.0	0.0	False
+dendronephthya_gigantea_gca004324835v1	Dendronephthya gigantea	Cnidaria	625	66	80	10.56	12.8	2.259	0.000148	True	2.808	1e-06	True	0.825	-0.1911	False
+dermacentor_andersoni_gca023375885v2rs	Dermacentor andersoni	Chelicerata	1216	127	108	10.44	8.88	2.245	0.0	True	1.876	8e-05	True	1.176	0.1614	False
+dermacentor_silvarum_gca013339745v2rs	Dermacentor silvarum	Chelicerata	1396	133	109	9.53	7.81	2.024	2e-06	True	1.628	0.001237	True	1.22	0.1982	False
+dermatophagoides_pteronyssinus_gca001901225v2	Dermatophagoides pteronyssinus	Chelicerata	2957	338	253	11.43	8.56	2.466	0.0	True	1.788	0.0	True	1.336	0.2892	False
+desulfovibrio_vulgaris_str_hildenborough_gca_000195755	Desulfovibrio vulgaris str. Hildenborough	Bacteria	33	5	3	15.15	9.09	5.536	0.105356	False	3.1	0.318315	False	1.667	0.452	True
+diabrotica_virgifera_gca917563875v2rs	Diabrotica virgifera virgifera	Insecta	532	60	52	11.28	9.77	2.469	9.1e-05	True	2.104	0.001571	True	1.154	0.1418	False
+diaphorina_citri_gca000475195v1rs	Diaphorina citri	Insecta	628	41	56	6.53	8.92	1.343	0.13881	False	1.882	0.003754	True	0.732	-0.3085	False
+dictyoglomus_turgidum_dsm_6724_gca_000021645	Dictyoglomus turgidum DSM 6724	Bacteria	12	2	2	16.67	16.67	inf	0.26087	False	inf	0.26087	False	1.0	0.0	True
+dictyostelium_discoideum	Dictyostelium discoideum	Amoebozoa	5797	374	291	6.45	5.02	1.314	0.000388	True	1.007	0.483861	False	1.285	0.2506	False
+dictyostelium_purpureum_gca_000190715	Dictyostelium purpureum str. QSDP1	Amoebozoa	1855	220	140	11.86	7.55	2.577	0.0	True	1.563	0.000706	True	1.571	0.4507	False
+digitaria_exilis	Digitaria exilis	Viridiplantae	796	158	34	19.85	4.27	4.801	0.0	True	0.865	0.765488	False	4.647	1.5248	False
+dimorphilus_gyrociliatus_gca904063045v1	Dimorphilus gyrociliatus	Annelida	526	27	51	5.13	9.7	1.038	0.502848	False	2.061	0.002173	True	0.529	-0.6274	False
+dinothrombium_tinctorium	Dinothrombium tinctorium	Chelicerata	604	47	60	7.78	9.93	1.612	0.029948	True	2.107	0.000703	True	0.783	-0.2419	False
+diorhabda_carinulata_gca026250575v1rs	Diorhabda carinulata	Insecta	391	34	40	8.7	10.23	1.86	0.023273	True	2.225	0.003269	True	0.85	-0.1603	False
+diorhabda_sublineata_gca026230105v1rs	Diorhabda sublineata	Insecta	379	38	42	10.03	11.08	2.229	0.004035	True	2.493	0.000914	True	0.905	-0.0988	False
+dioscorea_rotundata	Dioscorea rotundata	Viridiplantae	2036	316	135	15.52	6.63	3.518	0.0	True	1.36	0.013481	True	2.341	0.8484	False
+diphasiastrum_complanatum	Diphasiastrum complanatum	Viridiplantae	1134	275	73	24.25	6.44	6.157	0.0	True	1.323	0.074039	False	3.767	1.3213	False
+diuraphis_noxia_gca001186385v1	Diuraphis noxia	Insecta	938	74	70	7.89	7.46	1.659	0.005382	True	1.562	0.013751	True	1.057	0.0552	False
+dreissena_polymorpha_gca020536995v1rs	Dreissena polymorpha	Mollusca	1258	106	151	8.43	12.0	1.773	0.000285	True	2.629	0.0	True	0.702	-0.3524	False
+drosophila_albomicans_gca009650485v2rs	Drosophila albomicans	Insecta	2667	311	164	11.66	6.15	2.514	0.0	True	1.248	0.036804	True	1.896	0.6385	False
+drosophila_ananassae_gca017639315v2rs	Drosophila ananassae	Insecta	1870	220	117	11.76	6.26	2.546	0.0	True	1.275	0.05148	False	1.88	0.6295	False
+drosophila_arizonae_gca001654025v1rs	Drosophila arizonae	Insecta	2517	253	167	10.05	6.63	2.138	0.0	True	1.359	0.006721	True	1.515	0.4144	False
+drosophila_biarmipes_gca025231255v1rs	Drosophila biarmipes	Insecta	1705	165	127	9.68	7.45	2.041	0.0	True	1.533	0.001802	True	1.299	0.2609	False
+drosophila_bipectinata_gca030179905v2rs	Drosophila bipectinata	Insecta	1665	177	111	10.63	6.67	2.266	0.0	True	1.361	0.022992	True	1.595	0.4649	False
+drosophila_busckii_gca011750605v1rs	Drosophila busckii	Insecta	2277	294	149	12.91	6.54	2.838	0.0	True	1.34	0.013001	True	1.973	0.678	False
+drosophila_elegans_gca018152505v1rs	Drosophila elegans	Insecta	2098	209	132	9.96	6.29	2.12	0.0	True	1.287	0.035404	True	1.583	0.4581	False
+drosophila_erecta_gca003286155v2rs	Drosophila erecta	Insecta	1642	159	106	9.68	6.46	2.038	0.0	True	1.312	0.042291	True	1.5	0.4039	False
+drosophila_eugracilis_gca018153835v1rs	Drosophila eugracilis	Insecta	1721	179	113	10.4	6.57	2.206	0.0	True	1.335	0.028951	True	1.584	0.4584	False
+drosophila_ficusphila_gca018152265v1rs	Drosophila ficusphila	Insecta	1908	208	113	10.9	5.92	2.334	0.0	True	1.201	0.113416	False	1.841	0.6081	False
+drosophila_grimshawi_gca018153295v1rs	Drosophila grimshawi	Insecta	2899	279	190	9.62	6.55	2.037	0.0	True	1.341	0.005602	True	1.468	0.3834	False
+drosophila_guanche_gca900245975v1rs	Drosophila guanche	Insecta	1130	128	72	11.33	6.37	2.448	0.0	True	1.304	0.086823	False	1.778	0.5723	False
+drosophila_gunungcola_gca025200985v1rs	Drosophila gunungcola	Insecta	2044	198	135	9.69	6.6	2.041	0.0	True	1.346	0.01617	True	1.467	0.3818	False
+drosophila_hydei_gca003285905v2rs	Drosophila hydei	Insecta	2407	250	167	10.39	6.94	2.208	0.0	True	1.42	0.002544	True	1.497	0.4025	False
+drosophila_innubila_gca004354385v1rs	Drosophila innubila	Insecta	2528	275	158	10.88	6.25	2.326	0.0	True	1.27	0.029291	True	1.741	0.5528	False
+drosophila_kikkawai_gca030179895v2rs	Drosophila kikkawai	Insecta	2135	224	138	10.49	6.46	2.243	0.0	True	1.322	0.020573	True	1.623	0.483	False
+drosophila_mauritiana_gca004382145v1rs	Drosophila mauritiana	Insecta	1583	172	104	10.87	6.57	2.319	0.0	True	1.338	0.033994	True	1.654	0.5012	False
+drosophila_melanogaster	Drosophila melanogaster	Insecta	1686	185	120	10.97	7.12	2.349	0.0	True	1.46	0.005723	True	1.542	0.4314	False
+drosophila_miranda_gca003369915v2rs	Drosophila miranda	Insecta	2552	268	167	10.5	6.54	2.24	0.0	True	1.336	0.009585	True	1.605	0.4719	False
+drosophila_mojavensis_gca018153725v1rs	Drosophila mojavensis	Insecta	2687	266	166	9.9	6.18	2.092	0.0	True	1.254	0.032904	True	1.602	0.4704	False
+drosophila_montana_gca035044405v1rs	Drosophila montana	Insecta	2710	260	169	9.59	6.24	2.023	0.0	True	1.268	0.025819	True	1.538	0.4297	False
+drosophila_nasuta_gca023558535v2rs	Drosophila nasuta	Insecta	243	26	17	10.7	7.0	2.296	0.013913	True	1.442	0.225543	False	1.529	0.4149	False
+drosophila_navojoa_gca001654015v2rs	Drosophila navojoa	Insecta	2681	252	174	9.4	6.49	1.971	0.0	True	1.319	0.011071	True	1.448	0.3695	False
+drosophila_novamexicana_gca003285875v3rs	Drosophila novamexicana	Insecta	2448	272	160	11.11	6.54	2.382	0.0	True	1.333	0.011646	True	1.7	0.5293	False
+drosophila_obscura_gca018151105v1rs	Drosophila obscura	Insecta	2371	232	134	9.78	5.65	2.07	0.0	True	1.143	0.16662	False	1.731	0.5473	False
+drosophila_persimilis_gca003286085v2rs	Drosophila persimilis	Insecta	2134	241	135	11.29	6.33	2.435	0.0	True	1.291	0.031834	True	1.785	0.5779	False
+drosophila_pseudoobscura_gca009870125v2rs	Drosophila pseudoobscura	Insecta	2125	242	130	11.39	6.12	2.447	0.0	True	1.241	0.062084	False	1.862	0.6196	False
+drosophila_rhopaloa_gca018152115v1rs	Drosophila rhopaloa	Insecta	1817	190	142	10.46	7.82	2.24	0.0	True	1.626	0.000262	True	1.338	0.2903	False
+drosophila_santomea_gca016746245v2rs	Drosophila santomea	Insecta	1786	195	124	10.92	6.94	2.336	0.0	True	1.422	0.008149	True	1.573	0.4513	False
+drosophila_sechellia_gca004382195v2rs	Drosophila sechellia	Insecta	1623	175	105	10.78	6.47	2.299	0.0	True	1.316	0.041457	True	1.667	0.5089	False
+drosophila_serrata_gca002093755v2rs	Drosophila serrata	Insecta	2193	258	143	11.76	6.52	2.548	0.0	True	1.333	0.016186	True	1.804	0.5886	False
+drosophila_simulans_gca016746395v2rs	Drosophila simulans	Insecta	1634	185	114	11.32	6.98	2.446	0.0	True	1.437	0.009066	True	1.623	0.4825	False
+drosophila_subobscura_gca008121235v1rs	Drosophila subobscura	Insecta	2186	248	128	11.34	5.86	2.437	0.0	True	1.185	0.115299	False	1.938	0.6595	False
+drosophila_subpulchrella_gca014743375v2rs	Drosophila subpulchrella	Insecta	1507	155	94	10.29	6.24	2.187	0.0	True	1.269	0.077606	False	1.649	0.498	False
+drosophila_sulfurigaster_gca023558435v2rs	Drosophila sulfurigaster albostrigata	Insecta	2746	321	163	11.69	5.94	2.52	0.0	True	1.201	0.069211	False	1.969	0.6762	False
+drosophila_suzukii_gca037355615v1rs	Drosophila suzukii	Insecta	1789	179	118	10.01	6.6	2.122	0.0	True	1.348	0.022586	True	1.517	0.4153	False
+drosophila_takahashii_gca030179915v2rs	Drosophila takahashii	Insecta	2011	203	151	10.09	7.51	2.145	0.0	True	1.551	0.000548	True	1.344	0.2951	False
+drosophila_teissieri_gca016746235v2rs	Drosophila teissieri	Insecta	1753	175	123	9.98	7.02	2.122	0.0	True	1.444	0.006363	True	1.423	0.3514	False
+drosophila_tropicalis_gca018151085v1rs	Drosophila tropicalis	Insecta	2751	269	189	9.78	6.87	2.067	0.0	True	1.407	0.001785	True	1.423	0.3522	False
+drosophila_virilis_gca030788295v1rs	Drosophila virilis	Insecta	2811	300	166	10.67	5.91	2.279	0.0	True	1.197	0.071197	False	1.807	0.5905	False
+drosophila_willistoni_gca018902025v2rs	Drosophila willistoni	Insecta	2970	296	224	9.97	7.54	2.11	0.0	True	1.555	2.8e-05	True	1.321	0.2782	False
+drosophila_yakuba_gca016746365v2rs	Drosophila yakuba	Insecta	1713	197	115	11.5	6.71	2.487	0.0	True	1.377	0.017356	True	1.713	0.5365	False
+dufourea_novaeangliae_gca001272555v1rs	Dufourea novaeangliae	Insecta	771	69	66	8.95	8.56	1.893	0.001279	True	1.803	0.003001	True	1.045	0.0441	False
+echinochloa_crusgalli	Echinochloa crus-galli	Viridiplantae	8691	1659	507	19.09	5.83	4.488	0.0	True	1.178	0.007922	True	3.272	1.1848	False
+echinococcus_granulosus_gca000524195v1rs	Echinococcus granulosus	Platyhelminthes	896	40	74	4.46	8.26	0.904	0.713523	False	1.741	0.002825	True	0.541	-0.6095	False
+ectocarpus_siliculosus_gca_000310025	Ectocarpus siliculosus str. Ec 32	Protist	2961	191	229	6.45	7.73	1.31	0.009424	True	1.593	1e-05	True	0.834	-0.181	False
+eimeria_acervulina_gca_000499425	Eimeria acervulina	Apicomplexa	5585	497	256	8.9	4.58	1.857	0.0	True	0.913	0.856683	False	1.941	0.6625	False
+eimeria_brunetti_gca_000499725	Eimeria brunetti	Apicomplexa	9775	629	462	6.43	4.73	1.309	8e-06	True	0.944	0.815858	False	1.361	0.3083	False
+eimeria_maxima_gca_000499605	Eimeria maxima str. Weybridge	Apicomplexa	4752	429	247	9.03	5.2	1.89	0.0	True	1.044	0.338159	False	1.737	0.5512	False
+eimeria_mitis	Eimeria mitis	Apicomplexa	10963	711	560	6.49	5.11	1.318	1e-06	True	1.023	0.367846	False	1.27	0.2385	False
+eimeria_praecox_gca_000499445	Eimeria praecox	Apicomplexa	8281	523	331	6.32	4.0	1.281	0.000139	True	0.791	0.999194	False	1.58	0.4569	False
+eimeria_tenella_gca_000499545	Eimeria tenella str. Houghton	Apicomplexa	5215	365	225	7.0	4.31	1.434	9e-06	True	0.859	0.953199	False	1.622	0.4829	False
+emiliania_huxleyi	Emiliania huxleyi	Haptophyta	2821	178	192	6.31	6.81	1.28	0.019064	True	1.388	0.002359	True	0.927	-0.0755	False
+entamoeba_dispar_saw760_gca_000209125	Entamoeba dispar SAW760	Amoebozoa	504	24	78	4.76	15.48	0.956	0.617783	False	3.501	0.0	True	0.308	-1.1644	False
+entamoeba_histolytica	Entamoeba histolytica	Amoebozoa	206	9	38	4.37	18.45	0.891	0.684098	False	4.411	1.2e-05	True	0.237	-1.3994	False
+entamoeba_invadens_ip1_gca_000330505	Entamoeba invadens IP1	Amoebozoa	145	20	18	13.79	12.41	3.131	0.007366	True	2.774	0.01808	True	1.111	0.1027	False
+entamoeba_nuttalli_p19_gca_000257125	Entamoeba nuttalli P19	Amoebozoa	174	9	47	5.17	27.01	1.125	0.504926	False	7.633	0.0	True	0.191	-1.6094	False
+enterobacter_cloacae_subsp_cloacae_atcc_13047_gca_000025565	Enterobacter cloacae subsp. cloacae ATCC 13047	Bacteria	34	1	6	2.94	17.65	0.97	0.761194	False	6.857	0.05722	False	0.167	-1.4663	True
+enterococcus_faecalis_v583_gca_000007785	Enterococcus faecalis V583	Bacteria	24	2	2	8.33	8.33	2.0	0.516312	False	2.0	0.516312	False	1.0	0.0	True
+ephydatia_muelleri	Ephydatia muelleri	Porifera	1466	85	116	5.8	7.91	1.174	0.18534	False	1.638	0.000776	True	0.733	-0.3094	False
+eragrostis_curvula	Eragrostis curvula	Viridiplantae	3153	675	155	21.41	4.92	5.196	0.0	True	0.986	0.570262	False	4.355	1.4688	False
+eragrostis_tef	Eragrostis tef	Viridiplantae	4312	869	235	20.15	5.45	4.808	0.0	True	1.098	0.179455	False	3.698	1.3062	False
+eriocheir_sinensis_gca024679095v1rs	Eriocheir sinensis	Crustacea	4006	505	303	12.61	7.56	2.744	0.0	True	1.557	1e-06	True	1.667	0.5102	False
+escherichia_coli_k12	Escherichia coli K12	Bacteria	26	3	3	11.54	11.54	3.13	0.319928	False	3.13	0.319928	False	1.0	0.0	True
+eucalyptus_grandis	Eucalyptus grandis	Viridiplantae	2021	400	91	19.79	4.5	4.688	0.0	True	0.896	0.792985	False	4.396	1.4764	False
+eufriesea_mexicana_gca001483705v2rs	Eufriesea mexicana	Insecta	852	78	52	9.15	6.1	1.941	0.000438	True	1.252	0.171294	False	1.5	0.4023	False
+eurytemora_carolleeae_gca000591075v1rs	Eurytemora carolleeae	Crustacea	984	78	112	7.93	11.38	1.641	0.005064	True	2.448	0.0	True	0.696	-0.3599	False
+eutrema_salsugineum	Eutrema salsugineum	Viridiplantae	1692	248	136	14.66	8.04	3.286	0.0	True	1.672	0.000182	True	1.824	0.5991	False
+exaiptasia_diaphana_gca001417965v1	Exaiptasia diaphana	Cnidaria	865	80	94	9.25	10.87	1.946	0.000359	True	2.328	4e-06	True	0.851	-0.1603	False
+ficus_carica	Ficus carica	Viridiplantae	2603	330	135	12.68	5.19	2.761	0.0	True	1.04	0.401703	False	2.444	0.8916	False
+flavobacterium_psychrophilum_jip02_86_gca_000064305	Flavobacterium psychrophilum JIP02/86	Bacteria	10	0	4	0.0	40.0		1.0	False	inf	0.05418	False	0.0	-2.1972	True
+folsomia_candida	Folsomia candida	Collembola	1879	212	186	11.28	9.9	2.441	0.0	True	2.109	0.0	True	1.14	0.1305	False
+fonticula_alba_gca_000388065	Fonticula alba str. ATCC 38817	Protist	1056	84	82	7.95	7.77	1.667	0.002958	True	1.624	0.004781	True	1.024	0.024	False
+fragilariopsis_cylindrus_ccmp1102_gca_001750085	Fragilariopsis cylindrus CCMP1102	Bacillariophyta	4471	471	229	10.53	5.12	2.243	0.0	True	1.028	0.405599	False	2.057	0.72	False
+francisella_tularensis_subsp_tularensis_schu_s4_gca_000008985	Francisella tularensis subsp. tularensis SCHU S4 str. Schu S4	Bacteria	12	2	1	16.67	8.33	inf	0.26087	False	inf	0.521739	False	2.0	0.5108	True
+fraxinus_excelsior	Fraxinus excelsior	Viridiplantae	1462	217	112	14.84	7.66	3.314	0.0	True	1.577	0.001924	True	1.938	0.6592	False
+fusobacterium_nucleatum_subsp_nucleatum_atcc_25586_gca_000007325	Fusobacterium nucleatum subsp. nucleatum ATCC 25586	Bacteria	12	2	0	16.67	0.0	inf	0.26087	False		1.0	False		1.6094	True
+galdieria_sulphuraria	Galdieria sulphuraria	Rhodophyta	215	14	22	6.51	10.23	1.421	0.268583	False	2.325	0.021584	True	0.636	-0.4394	False
+galendromus_occidentalis_gca000255335v2rs	Galendromus occidentalis	Chelicerata	583	46	59	7.89	10.12	1.633	0.02824	True	2.147	0.000614	True	0.78	-0.2465	False
+gardnerella_vaginalis_0288e_gca_000263555	Gardnerella vaginalis 0288E	Bacteria	9	2	1	22.22	11.11	inf	0.264706	False	inf	0.529412	False	2.0	0.5108	True
+geobacter_sulfurreducens_pca_gca_000007985	Geobacter sulfurreducens PCA	Bacteria	32	7	2	21.88	6.25	8.4	0.029657	True	2.0	0.5121	False	3.5	1.0986	True
+giardia_intestinalis	Giardia intestinalis	Metamonada	86	4	12	4.65	13.95	0.988	0.646516	False	3.284	0.033404	True	0.333	-1.0217	False
+giardia_intestinalis_atcc_50581_gca_000182405	Giardia duodenalis ATCC 50581	Metamonada	89	7	13	7.87	14.61	1.793	0.2743	False	3.592	0.020483	True	0.538	-0.5878	False
+giardia_lamblia_p15_gca_000182665	Giardia lamblia P15	Metamonada	90	8	11	8.89	12.22	2.073	0.190916	False	2.959	0.053911	False	0.727	-0.3023	False
+gigantopelta_aegis_gca016097555v1	Gigantopelta aegis	Mollusca	1031	86	95	8.34	9.21	1.747	0.00129	True	1.948	0.000104	True	0.905	-0.099	False
+globisporangium_ultimum	Globisporangium ultimum DAOM BR144	Oomycota	752	122	80	16.22	10.64	3.737	0.0	True	2.297	2.3e-05	True	1.525	0.4199	False
+gloeobacter_violaceus_pcc_7421_gca_000011385	Gloeobacter violaceus PCC 7421	Bacteria	54	4	4	7.41	7.41	2.04	0.348173	False	2.04	0.348173	False	1.0	0.0	True
+glossina_austeni	Glossina austeni	Insecta	2716	159	175	5.85	6.44	1.188	0.084363	False	1.316	0.011302	True	0.909	-0.0956	False
+glossina_brevipalpis	Glossina brevipalpis	Insecta	1936	122	125	6.3	6.46	1.288	0.040904	True	1.322	0.026341	True	0.976	-0.0242	False
+glossina_fuscipes	Glossina fuscipes	Insecta	1680	140	122	8.33	7.26	1.727	6.7e-05	True	1.488	0.003831	True	1.148	0.1371	False
+glossina_morsitans	Glossina morsitans morsitans	Insecta	1759	142	132	8.07	7.5	1.687	0.000107	True	1.558	0.001053	True	1.076	0.0728	False
+glossina_pallidipes	Glossina pallidipes	Insecta	2349	145	137	6.17	5.83	1.254	0.043261	True	1.181	0.110767	False	1.058	0.0566	False
+glossina_palpalis	Glossina palpalis gambiensis	Insecta	2285	141	134	6.17	5.86	1.252	0.047174	True	1.186	0.107989	False	1.052	0.0507	False
+glycine_max	Glycine max	Viridiplantae	2877	466	141	16.2	4.9	3.694	0.0	True	0.985	0.573597	False	3.305	1.193	False
+glycine_soja	Glycine soja	Viridiplantae	2759	456	137	16.53	4.97	3.788	0.0	True	1.0	0.525926	False	3.328	1.2	False
+glyphotaelius_pellucidus_gca936435175v1	Glyphotaelius pellucidus	Insecta	509	60	53	11.79	10.41	2.582	5e-05	True	2.246	0.000687	True	1.132	0.123	False
+gordionus_sp_gca954871325v1rs	Gordionus sp. m RMFG-2023	Nematomorpha	181	14	16	7.73	8.84	1.593	0.198428	False	1.842	0.10912	False	0.875	-0.1292	False
+gossypium_raimondii_gca025698545v1rs	Gossypium raimondii GPD5lz	Viridiplantae	1734	265	117	15.28	6.75	3.455	0.0	True	1.386	0.015049	True	2.265	0.8152	False
+gregarina_niphandrodes_gca_000223845	Gregarina niphandrodes	Apicomplexa	188	18	26	9.57	13.83	2.094	0.055871	False	3.174	0.002076	True	0.692	-0.3594	False
+guillardia_theta	Guillardia theta CCMP2712	Cryptophyta	1796	202	151	11.25	8.41	2.429	0.0	True	1.76	2.1e-05	True	1.338	0.2902	False
+habropoda_laboriosa_gca001263275v1rs	Habropoda laboriosa	Insecta	1050	85	68	8.1	6.48	1.689	0.002307	True	1.328	0.079908	False	1.25	0.2217	False
+haemaphysalis_longicornis_gca013339765v2vb	Haemaphysalis longicornis	Chelicerata	787	57	79	7.24	10.04	1.496	0.036955	True	2.137	8.6e-05	True	0.722	-0.324	False
+haemophilus_influenzae_rd_kw20_gca_000027305	Haemophilus influenzae Rd KW20	Bacteria	6	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+halichondria_panicea_gca963675165v1rs	Halichondria panicea	Porifera	333	40	42	12.01	12.61	2.696	0.000598	True	2.851	0.000258	True	0.952	-0.0482	False
+haliotis_rubra_gca003918875v1rs	Haliotis rubra	Mollusca	1186	123	128	10.37	10.79	2.208	0.0	True	2.309	0.0	True	0.961	-0.0397	False
+haliotis_rufescens_gca023055435v1rs	Haliotis rufescens	Mollusca	1394	141	145	10.11	10.4	2.159	0.0	True	2.228	0.0	True	0.972	-0.0279	False
+haloarcula_marismortui	Haloarcula marismortui	Archaea	40	4	5	10.0	12.5	2.111	0.33758	False	2.714	0.215765	False	0.8	-0.2007	True
+halobacterium_salinarum	Halobacterium salinarum	Archaea	17	2	1	11.76	5.88	inf	0.257576	False	inf	0.515152	False	2.0	0.5108	True
+haloferax_volcanii_ds2_gca_000025685	Haloferax volcanii DS2	Archaea	44	3	4	6.82	9.09	1.5	0.511034	False	2.05	0.349202	False	0.75	-0.2513	True
+halyomorpha_halys_gca000696795v3rs	Halyomorpha halys	Insecta	510	44	71	8.63	13.92	1.828	0.012366	True	3.131	0.0	True	0.62	-0.4742	False
+hammondia_hammondi_gca_000258005	Hammondia hammondi str. H.H.34	Apicomplexa	792	56	49	7.07	6.19	1.467	0.045584	True	1.272	0.163273	False	1.143	0.1323	False
+harpegnathos_saltator_gca003227715v2rs	Harpegnathos saltator	Insecta	230	21	18	9.13	7.83	1.991	0.050174	False	1.683	0.127191	False	1.167	0.1503	False
+helianthus_annuus	Helianthus annuus	Viridiplantae	3034	444	195	14.63	6.43	3.272	0.0	True	1.311	0.008661	True	2.277	0.8214	False
+helicobacter_pylori_26695_gca_000008525	Helicobacter pylori 26695	Bacteria	8	0	3	0.0	37.5		1.0	False	inf	0.123077	False	0.0	-1.9459	True
+heliconius_melpomene	Heliconius melpomene	Insecta	491	41	48	8.35	9.78	1.769	0.020047	True	2.104	0.002349	True	0.854	-0.1559	False
+helicoverpa_armigera_gca030705265v1rs	Helicoverpa armigera	Insecta	591	62	75	10.49	12.69	2.267	0.00022	True	2.812	1e-06	True	0.827	-0.189	False
+helicoverpa_zea_gca022581195v1rs	Helicoverpa zea	Insecta	594	65	67	10.94	11.28	2.39	7.4e-05	True	2.473	3.5e-05	True	0.97	-0.0301	False
+helobdella_robusta	Helobdella robusta	Annelida	3235	193	246	5.97	7.6	1.211	0.045292	True	1.571	8e-06	True	0.785	-0.2421	False
+hermetia_illucens_gca905115235v1	Hermetia illucens	Insecta	695	68	67	9.78	9.64	2.105	0.000321	True	2.071	0.000445	True	1.015	0.0147	False
+hofstenia_miamia	Hofstenia miamia	Xenacoelomorpha	412	33	57	8.01	13.83	1.702	0.044616	True	3.139	6e-06	True	0.579	-0.5402	False
+homalodisca_vitripennis_gca021130785v2rs	Homalodisca vitripennis	Insecta	718	69	65	9.61	9.05	2.072	0.000366	True	1.94	0.001275	True	1.062	0.0593	False
+homarus_americanus_gca018991925v1	Homarus americanus	Crustacea	1810	227	136	12.54	7.51	2.739	0.0	True	1.552	0.000981	True	1.669	0.5108	False
+homarus_gammarus_gca958450375v1	Homarus gammarus	Crustacea	1973	241	148	12.21	7.5	2.661	0.0	True	1.551	0.000616	True	1.628	0.4863	False
+hondaea_fermentalgiana_gca_002897355	Hondaea fermentalgiana	Protist	1582	207	155	13.08	9.8	2.862	0.0	True	2.065	0.0	True	1.335	0.2885	False
+hordeum_vulgare_zdm02064	Hordeum vulgare ZDM02064	Viridiplantae	2891	649	230	22.45	7.96	5.52	0.0	True	1.648	3e-06	True	2.822	1.036	False
+hyalella_azteca_gca000764305v4rs	Hyalella azteca	Crustacea	160	10	17	6.25	10.62	1.267	0.404546	False	2.259	0.04698	True	0.588	-0.5108	False
+hyalomma_asiaticum_gca013339685v2vb	Hyalomma asiaticum	Chelicerata	1061	84	84	7.92	7.92	1.634	0.003989	True	1.634	0.003989	True	1.0	0.0	False
+hyaloperonospora_arabidopsidis	Hyaloperonospora arabidopsidis	Oomycota	607	85	58	14.0	9.56	3.126	0.0	True	2.028	0.001347	True	1.466	0.3795	False
+hydra_vulgaris_gca038396675v1rs	Hydra vulgaris	Cnidaria	540	47	62	8.7	11.48	1.811	0.010776	True	2.464	7.1e-05	True	0.758	-0.2744	False
+hydractinia_symbiolongicarpus_gca029227915v2rs	Hydractinia symbiolongicarpus	Cnidaria	852	91	104	10.68	12.21	2.303	6e-06	True	2.678	0.0	True	0.875	-0.1328	False
+hylaeus_anthracinus_gca026225885v1rs	Hylaeus anthracinus	Insecta	771	60	49	7.78	6.36	1.626	0.014195	True	1.307	0.136174	False	1.224	0.2007	False
+hylaeus_volcanicus_gca026283585v1rs	Hylaeus volcanicus	Insecta	779	66	50	8.47	6.42	1.803	0.00301	True	1.336	0.114787	False	1.32	0.2752	False
+hymenolepis_microstoma	Hymenolepis microstoma	Platyhelminthes	568	46	49	8.1	8.63	1.696	0.020545	True	1.817	0.009062	True	0.939	-0.0625	False
+hyperthermus_butylicus_dsm_5456_gca_000015145	Hyperthermus butylicus DSM 5456	Archaea	21	2	4	9.52	19.05	2.0	0.518762	False	4.471	0.186882	False	0.5	-0.5878	True
+hypsibius_exemplaris_gca002082055v1	Hypsibius exemplaris	Tardigrada	1140	106	102	9.3	8.95	1.948	4.3e-05	True	1.867	0.000137	True	1.039	0.0383	False
+ichneumon_xanthorius_gca917499995v1	Ichneumon xanthorius	Insecta	710	64	57	9.01	8.03	1.908	0.001712	True	1.681	0.01177	True	1.123	0.1149	False
+ichthyophthirius_multifiliis_gca_000220395	Ichthyophthirius multifiliis str. G5	Ciliophora	298	19	44	6.38	14.77	1.377	0.240215	False	3.502	2.3e-05	True	0.432	-0.8251	False
+ipomoea_triloba	Ipomoea triloba	Viridiplantae	1800	324	135	18.0	7.5	4.171	0.0	True	1.541	0.001192	True	2.4	0.8733	False
+ischnura_elegans_gca921293095v1rs	Ischnura elegans	Insecta	1516	115	111	7.59	7.32	1.576	0.001715	True	1.517	0.004017	True	1.036	0.0352	False
+ixodes_persulcatus_gca013358835v2vb	Ixodes persulcatus	Chelicerata	976	73	91	7.48	9.32	1.561	0.012142	True	1.986	0.000101	True	0.802	-0.2191	False
+ixodes_scapularis_gca016920785v2	Ixodes scapularis	Chelicerata	1058	123	115	11.63	10.87	2.542	0.0	True	2.357	0.0	True	1.07	0.067	False
+ixodes_scapularis_ise6	Ixodes scapularis	Chelicerata	536	43	42	8.02	7.84	1.708	0.023311	True	1.664	0.030267	True	1.024	0.0233	False
+juglans_regia	Juglans regia	Viridiplantae	1762	326	125	18.5	7.09	4.316	0.0	True	1.452	0.005458	True	2.608	0.9561	False
+kalanchoe_fedtschenkoi	Kalanchoe fedtschenkoi	Viridiplantae	1513	247	115	16.33	7.6	3.738	0.0	True	1.576	0.001714	True	2.148	0.7621	False
+kipferlia_bialata_gca_003568945	Kipferlia bialata	Metamonada	38	2	2	5.26	5.26	2.0	0.510137	False	2.0	0.510137	False	1.0	0.0	True
+klebsiella_pneumoniae_subsp_pneumoniae_mgh_78578_gca_000016305	Klebsiella pneumoniae subsp. pneumoniae MGH 78578	Bacteria	49	7	5	14.29	10.2	3.833	0.084384	False	2.614	0.226377	False	1.4	0.3102	True
+klebsormidium_nitens	Klebsormidium nitens	Viridiplantae	444	42	45	9.46	10.14	1.999	0.006741	True	2.158	0.002501	True	0.933	-0.0682	False
+lablab_purpureus_gca030347555v1cm	Lablab purpureus Natoba	Viridiplantae	1253	217	73	17.32	5.83	4.02	0.0	True	1.187	0.189443	False	2.973	1.0849	False
+lactobacillus_plantarum_wcfs1_gca_000203855	Lactobacillus plantarum WCFS1	Bacteria	26	1	3	3.85	11.54	0.96	0.764706	False	3.13	0.319928	False	0.333	-0.8473	True
+lactococcus_lactis_subsp_lactis_il1403_gca_000006865	Lactococcus lactis subsp. lactis Il1403	Bacteria	13	1	1	7.69	7.69	inf	0.52	False	inf	0.52	False	1.0	0.0	True
+lactuca_sativa_gca002870075v4gb	Lactuca sativa Salinas	Viridiplantae	2303	326	225	14.16	9.77	3.136	0.0	True	2.059	0.0	True	1.449	0.3701	False
+lathyrus_sativus	Lathyrus sativus	Viridiplantae	1346	216	55	16.05	4.09	3.646	0.0	True	0.813	0.886692	False	3.927	1.3612	False
+leersia_perrieri	Leersia perrieri	Viridiplantae	3061	691	162	22.57	5.29	5.54	0.0	True	1.062	0.322848	False	4.265	1.4482	False
+leguminivora_glycinivorella_gca023078275v1rs	Leguminivora glycinivorella	Insecta	629	61	79	9.7	12.56	2.068	0.000802	True	2.766	1e-06	True	0.772	-0.2567	False
+leishmania_donovani_gca_000227135	Leishmania donovani str. BPK282A1	Euglenozoa	580	47	40	8.1	6.9	1.675	0.021524	True	1.407	0.107111	False	1.175	0.1594	False
+leishmania_infantum_gca_900500625	Leishmania infantum	Euglenozoa	600	53	50	8.83	8.33	1.841	0.005957	True	1.727	0.013671	True	1.06	0.0577	False
+leishmania_major	Leishmania major	Euglenozoa	655	56	62	8.55	9.47	1.817	0.005497	True	2.032	0.00091	True	0.903	-0.1009	False
+leishmania_panamensis_gca_000755165	Leishmania panamensis str. MHOM/PA/94/PSC-1	Euglenozoa	559	54	49	9.66	8.77	2.103	0.001292	True	1.89	0.006211	True	1.102	0.0962	False
+lepeophtheirus_salmonis_gca016086655v5rs	Lepeophtheirus salmonis	Crustacea	970	88	72	9.07	7.42	1.914	0.000248	True	1.538	0.015122	True	1.222	0.1994	False
+leptinotarsa_decemlineata_gca000500325v2	Leptinotarsa decemlineata	Insecta	393	26	36	6.62	9.16	1.391	0.180856	False	1.98	0.012561	True	0.722	-0.3202	False
+leptomonas_pyrrhocoris_gca_001293395	Leptomonas pyrrhocoris str. H10	Euglenozoa	1229	79	78	6.43	6.35	1.314	0.070039	False	1.296	0.081816	False	1.013	0.0127	False
+leptomonas_seymouri_gca_001299535	Leptomonas seymouri str. ATCC 30220	Euglenozoa	756	47	58	6.22	7.67	1.286	0.157636	False	1.612	0.017054	True	0.81	-0.2083	False
+leptospira_interrogans_serovar_lai_str_56601_gca_000092565	Leptospira interrogans serovar Lai str. 56601	Bacteria	30	2	5	6.67	16.67	2.0	0.512935	False	5.6	0.104898	False	0.4	-0.7885	True
+leptotrombidium_deliense_gca003675905v2gb	Leptotrombidium deliense	Chelicerata	289	30	26	10.38	9.0	2.267	0.009166	True	1.935	0.036015	True	1.154	0.1406	False
+leuconostoc_mesenteroides_subsp_mesenteroides_atcc_8293_gca_000014445	Leuconostoc mesenteroides subsp. mesenteroides ATCC 8293	Bacteria	13	1	1	7.69	7.69	inf	0.52	False	inf	0.52	False	1.0	0.0	True
+limnephilus_lunatus_gca917563855v2	Limnephilus lunatus	Insecta	482	61	49	12.66	10.17	2.759	1.8e-05	True	2.155	0.001667	True	1.245	0.2171	False
+limnephilus_marmoratus_gca917880885v1	Limnephilus marmoratus	Insecta	446	53	49	11.88	10.99	2.593	0.00013	True	2.373	0.000602	True	1.082	0.0777	False
+limnephilus_rhombicus_gca929108145v2	Limnephilus rhombicus	Insecta	476	48	45	10.08	9.45	2.204	0.001461	True	2.052	0.00401	True	1.067	0.0639	False
+limnoperna_fortunei_gca944474755v1	Limnoperna fortunei	Mollusca	787	68	75	8.64	9.53	1.811	0.002474	True	2.018	0.000313	True	0.907	-0.0973	False
+limulus_polyphemus_gca000517525v1	Limulus polyphemus	Chelicerata	644	56	68	8.7	10.56	1.818	0.005475	True	2.254	0.000121	True	0.824	-0.1926	False
+linepithema_humile_gca040581485v1rs	Linepithema humile	Insecta	1040	102	82	9.81	7.88	2.066	1.8e-05	True	1.626	0.004685	True	1.244	0.2171	False
+lineus_longissimus_gca910592395v2	Lineus longissimus	Nemertea	741	74	76	9.99	10.26	2.108	0.000176	True	2.171	9.1e-05	True	0.974	-0.0265	False
+lingula_anatina_gca001039355v2	Lingula anatina	Brachiopoda	1250	110	155	8.8	12.4	1.847	9.6e-05	True	2.71	0.0	True	0.71	-0.3416	False
+liolophura_japonica_gca032854445v1rs	Liolophura japonica	Mollusca	620	66	69	10.65	11.13	2.264	0.000143	True	2.379	4.8e-05	True	0.957	-0.0441	False
+listeria_monocytogenes_egd_e_gca_000196035	Listeria monocytogenes EGD-e	Bacteria	25	3	4	12.0	16.0	3.136	0.320234	False	4.381	0.187075	False	0.75	-0.2513	True
+loa_loa	Loa loa	Nematoda	894	49	49	5.48	5.48	1.119	0.33718	False	1.119	0.33718	False	1.0	0.0	False
+lolium_perenne	Lolium perenne	Viridiplantae	2554	534	141	20.91	5.52	5.05	0.0	True	1.116	0.208275	False	3.787	1.329	False
+lottia_gigantea	Lottia gigantea	Mollusca	583	52	70	8.92	12.01	1.867	0.005563	True	2.602	1.1e-05	True	0.743	-0.2948	False
+lucilia_cuprina_gca022045245v1rs	Lucilia cuprina	Insecta	1470	136	121	9.25	8.23	1.95	4e-06	True	1.715	0.000231	True	1.124	0.1164	False
+lucilia_sericata_gca015586225v1rs	Lucilia sericata	Insecta	1583	158	133	9.98	8.4	2.109	0.0	True	1.745	7.8e-05	True	1.188	0.1717	False
+lupinus_angustifolius	Lupinus angustifolius	Viridiplantae	889	152	41	17.1	4.61	3.956	0.0	True	0.927	0.673512	False	3.707	1.3015	False
+lutzomyia_longipalpis_gca024334085v1rs	Lutzomyia longipalpis	Insecta	622	56	64	9.0	10.29	1.883	0.003745	True	2.183	0.000294	True	0.875	-0.1324	False
+lysinibacillus_sphaericus_c3_41_gca_000017965	Lysinibacillus sphaericus C3-41	Bacteria	35	4	3	11.43	8.57	4.258	0.187291	False	3.094	0.317975	False	1.333	0.2513	True
+lytechinus_pictus_gca037042905v1rs	Lytechinus pictus	Echinodermata	1095	91	131	8.31	11.96	1.746	0.000962	True	2.617	0.0	True	0.695	-0.3627	False
+lytechinus_variegatus_gca018143015v1	Lytechinus variegatus	Echinodermata	1202	96	127	7.99	10.57	1.651	0.00185	True	2.247	0.0	True	0.756	-0.2786	False
+machimus_atricapillus_gca933228815v1	Machimus atricapillus	Insecta	624	54	48	8.65	7.69	1.809	0.006656	True	1.591	0.03166	True	1.125	0.1166	False
+macrobrachium_nipponense_gca015104395v2rs	Macrobrachium nipponense	Crustacea	2710	241	199	8.89	7.34	1.861	0.0	True	1.511	0.000182	True	1.211	0.1911	False
+macrosteles_quadrilineatus_gca028750875v1rs	Macrosteles quadrilineatus	Insecta	847	67	103	7.91	12.16	1.644	0.00871	True	2.65	0.0	True	0.65	-0.4274	False
+magallana_gigas_gca963853765v1rs	Magallana gigas	Mollusca	936	77	106	8.23	11.32	1.732	0.002524	True	2.468	0.0	True	0.726	-0.3179	False
+malaya_genurostris_gca030247185v2rs	Malaya genurostris	Insecta	1375	90	133	6.55	9.67	1.345	0.042923	True	2.057	1e-06	True	0.677	-0.3888	False
+malus_domestica_golden	Malus domestica Golden	Viridiplantae	1996	371	134	18.59	6.71	4.372	0.0	True	1.378	0.010878	True	2.769	1.016	False
+manduca_sexta_gca014839805v1rs	Manduca sexta	Insecta	640	68	71	10.62	11.09	2.259	0.000117	True	2.371	4e-05	True	0.958	-0.0429	False
+manihot_esculenta	Manihot esculenta	Viridiplantae	1666	329	118	19.75	7.08	4.69	0.0	True	1.453	0.006675	True	2.788	1.0227	False
+marchantia_polymorpha	Marchantia polymorpha	Viridiplantae	906	131	57	14.46	6.29	3.23	0.0	True	1.283	0.132287	False	2.298	0.8272	False
+mayetiola_destructor	Mayetiola destructor	Insecta	1005	68	81	6.77	8.06	1.385	0.053796	False	1.673	0.003315	True	0.84	-0.1738	False
+medicago_truncatula	Medicago truncatula	Viridiplantae	1815	317	109	17.47	6.01	4.054	0.0	True	1.224	0.095296	False	2.908	1.0646	False
+megachile_rotundata_gca000220905v1rs	Megachile rotundata	Insecta	738	60	64	8.13	8.67	1.723	0.007547	True	1.849	0.002526	True	0.938	-0.064	False
+megaselia_scalaris	Megaselia scalaris	Insecta	911	37	35	4.06	3.84	0.814	0.846648	False	0.768	0.896793	False	1.057	0.0548	False
+melanaphis_sacchari_gca002803265v2rs	Melanaphis sacchari	Insecta	1037	86	92	8.29	8.87	1.747	0.001293	True	1.88	0.00025	True	0.935	-0.0671	False
+melitaea_cinxia_gca905220565v1	Melitaea cinxia	Insecta	512	39	63	7.62	12.3	1.603	0.047088	True	2.728	1.5e-05	True	0.619	-0.4747	False
+mercenaria_mercenaria_gca021730395v1rs	Mercenaria mercenaria	Mollusca	1147	95	131	8.28	11.42	1.725	0.000925	True	2.463	0.0	True	0.725	-0.3199	False
+mesoplasma_florum_l1_gca_000008305	Mesoplasma florum L1	Bacteria	3	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+methanobacterium_thermoautotrophicum	Methanobacterium thermoautotrophicum	Archaea	8	0	2	0.0	25.0		1.0	False	inf	0.266667	False	0.0	-1.6094	True
+methanobrevibacter_smithii_atcc_35061_gca_000016525	Methanobrevibacter smithii ATCC 35061	Archaea	11	1	3	9.09	27.27	inf	0.52381	False	inf	0.12406	False	0.333	-0.8473	True
+methanocaldococcus_jannaschii	Methanocaldococcus jannaschii	Archaea	13	3	2	23.08	15.38	inf	0.124348	False	inf	0.26	False	1.5	0.3365	True
+methanococcus_maripaludis_s2_gca_000011585	Methanococcus maripaludis S2	Archaea	7	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+methanopyrus_kandleri_av19_gca_000007185	Methanopyrus kandleri AV19	Archaea	19	2	2	10.53	10.53	inf	0.256757	False	inf	0.256757	False	1.0	0.0	True
+methanosarcina_acetivorans	Methanosarcina acetivorans	Archaea	49	2	10	4.08	20.41	0.979	0.69924	False	5.897	0.015095	True	0.2	-1.4351	False
+methanospirillum_hungatei_jf_1_gca_000013445	Methanospirillum hungatei JF-1	Archaea	17	0	4	0.0	23.53		1.0	False	inf	0.058162	False	0.0	-2.1972	True
+methanothermobacter_thermautotrophicus_str_delta_h_gca_000008645	Methanothermobacter thermautotrophicus str. Delta H	Archaea	10	0	3	0.0	30.0		1.0	False	inf	0.123839	False	0.0	-1.9459	True
+micrococcus_luteus_nctc_2665_gca_000023205	Micrococcus luteus NCTC 2665	Bacteria	20	4	2	20.0	10.0	4.75	0.170825	False	2.111	0.5	False	2.0	0.5878	True
+microctonus_aethiopoides_gca030347275v1cm	Microctonus aethiopoides	Insecta	1234	87	83	7.05	6.73	1.457	0.01708	True	1.385	0.03589	True	1.048	0.0468	False
+microctonus_hyperodae_gca030347285v1cm	Microctonus hyperodae	Insecta	956	60	70	6.28	7.32	1.294	0.117267	False	1.526	0.017958	True	0.857	-0.153	False
+microcystis_aeruginosa_nies_843_gca_000010625	Microcystis aeruginosa NIES-843	Bacteria	66	3	9	4.55	13.64	0.984	0.667181	False	3.263	0.067149	False	0.333	-0.9985	True
+micromonas_commoda	Micromonas commoda	Chlorophyta	968	54	95	5.58	9.81	1.131	0.30748	False	2.083	2.9e-05	True	0.568	-0.5609	False
+microplitis_demolitor_gca026212275v2rs	Microplitis demolitor	Insecta	1250	100	84	8.0	6.72	1.665	0.001298	True	1.379	0.036879	True	1.19	0.1734	False
+microplitis_mediator_gca029852145v1rs	Microplitis mediator	Insecta	1235	87	111	7.04	8.99	1.457	0.017082	True	1.899	5e-05	True	0.784	-0.2424	False
+mizuhopecten_yessoensis_gca002113885v2	Mizuhopecten yessoensis	Mollusca	1004	70	105	6.97	10.46	1.428	0.037086	True	2.226	3e-06	True	0.667	-0.4031	False
+mnemiopsis_leidyi	Mnemiopsis leidyi	Ctenophora	542	52	59	9.59	10.89	2.02	0.002447	True	2.325	0.000225	True	0.881	-0.1252	False
+monomorium_pharaonis_gca013373865v2	Monomorium pharaonis	Insecta	1230	131	74	10.65	6.02	2.282	0.0	True	1.226	0.145125	False	1.77	0.5682	False
+monosiga_brevicollis	Monosiga brevicollis	Protist	647	92	56	14.22	8.66	3.181	0.0	True	1.818	0.005481	True	1.643	0.493	False
+moorella_thermoacetica_atcc_39073_gca_000013105	Moorella thermoacetica ATCC 39073	Bacteria	25	5	2	20.0	8.0	5.75	0.10385	False	2.0	0.515632	False	2.5	0.7885	True
+musa_acuminata	Musa acuminata	Viridiplantae	2432	446	180	18.34	7.4	4.287	0.0	True	1.526	0.000273	True	2.478	0.9057	False
+musca_domestica_gca030504385v2rs	Musca domestica	Insecta	2186	200	181	9.15	8.28	1.918	0.0	True	1.719	7e-06	True	1.105	0.0996	False
+mya_arenaria_gca026914265v1rs	Mya arenaria	Mollusca	1297	112	159	8.64	12.26	1.819	0.000115	True	2.69	0.0	True	0.704	-0.3491	False
+mycobacterium_tuberculosis	Mycobacterium tuberculosis	Bacteria	42	5	10	11.9	23.81	2.635	0.226306	False	6.094	0.014384	True	0.5	-0.6466	False
+mycoplasma_pneumoniae_m129_gca_000027345	Mycoplasma pneumoniae M129	Bacteria	6	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+myopa_tessellatipennis_gca943737955v2	Myopa tessellatipennis	Insecta	1236	128	96	10.36	7.77	2.223	0.0	True	1.621	0.002493	True	1.333	0.2864	False
+mytilus_californianus_gca021869535v1rs	Mytilus californianus	Mollusca	799	66	99	8.26	12.39	1.752	0.004276	True	2.752	0.0	True	0.667	-0.403	False
+myxococcus_xanthus_dk_1622_gca_000012685	Myxococcus xanthus DK 1622	Bacteria	103	21	16	20.39	15.53	4.968	0.000686	True	3.568	0.010331	True	1.312	0.2647	False
+naegleria_gruberi	Naegleria gruberi	Heterolobosea	967	199	101	20.58	10.44	4.956	0.0	True	2.231	4e-06	True	1.97	0.6758	False
+nannochloropsis_gaditana_ccmp526_gca_000240725	Nannochloropsis gaditana CCMP526	Protist	278	25	35	8.99	12.59	2.007	0.032445	True	2.925	0.00068	True	0.714	-0.3309	False
+nanoarchaeum_equitans_kin4_m_gca_000008085	Nanoarchaeum equitans Kin4-M	Archaea	6	2	1	33.33	16.67	inf	0.272727	False	inf	0.545455	False	2.0	0.5108	True
+nasonia_vitripennis	Nasonia vitripennis	Insecta	1315	133	104	10.11	7.91	2.162	0.0	True	1.65	0.001233	True	1.279	0.2449	False
+natronomonas_pharaonis_dsm_2160_gca_000026045	Natronomonas pharaonis DSM 2160	Archaea	33	4	6	12.12	18.18	4.276	0.187264	False	6.889	0.057045	False	0.667	-0.3677	True
+necator_americanus_gca031761385v1rs	Necator americanus	Nematoda	1078	69	71	6.4	6.59	1.321	0.081702	False	1.362	0.058369	False	0.972	-0.0284	False
+neisseria_meningitidis_z2491_gca_000009105	Neisseria meningitidis Z2491	Bacteria	12	2	4	16.67	33.33	inf	0.26087	False	inf	0.055901	False	0.5	-0.5878	True
+nematostella_vectensis_gca932526225v1rs	Nematostella vectensis	Cnidaria	690	61	85	8.84	12.32	1.868	0.00279	True	2.707	1e-06	True	0.718	-0.3295	False
+neodiprion_lecontei_gca021901455v1rs	Neodiprion lecontei	Insecta	753	66	57	8.76	7.57	1.856	0.002077	True	1.583	0.021577	True	1.158	0.1454	False
+neodiprion_pinetum_gca021155775v1rs	Neodiprion pinetum	Insecta	752	59	56	7.85	7.45	1.643	0.013374	True	1.553	0.027138	True	1.054	0.0517	False
+neurospora_crassa	Neurospora crassa	Fungi	1225	79	90	6.45	7.35	1.314	0.070022	False	1.512	0.009328	True	0.878	-0.1296	False
+nicotiana_attenuata	Nicotiana attenuata	Viridiplantae	1390	190	93	13.67	6.69	3.029	0.0	True	1.372	0.031476	True	2.043	0.7117	False
+nilaparvata_lugens_gca014356525v1rs	Nilaparvata lugens	Insecta	1510	111	121	7.35	8.01	1.517	0.004013	True	1.666	0.000431	True	0.917	-0.0859	False
+nitrosopumilus_maritimus	Nitrosopumilus maritimus SCM1	Archaea	11	0	1	0.0	9.09		1.0	False	inf	0.52381	False	0.0	-1.0986	True
+nostoc_punctiforme_pcc_73102_gca_000020025	Nostoc punctiforme PCC 73102	Bacteria	49	7	6	14.29	12.24	3.833	0.084384	False	3.209	0.140797	False	1.167	0.1431	True
+nothophytophthora_sp_chile5_gca_001712635	Nothophytophthora sp. Chile5	Oomycota	1582	189	138	11.95	8.72	2.58	0.0	True	1.817	2.1e-05	True	1.37	0.3135	False
+nymphaea_colorata_gca008831285v2rs	Nymphaea colorata Beijing-Zhang1983	Viridiplantae	1149	208	57	18.1	4.96	4.231	0.0	True	0.999	0.54014	False	3.649	1.2882	False
+octopus_bimaculoides_gca001194135v2rs	Octopus bimaculoides	Mollusca	1547	112	109	7.24	7.05	1.489	0.005335	True	1.446	0.009532	True	1.028	0.027	False
+octopus_sinensis_gca006345805v1	Octopus sinensis	Mollusca	1640	115	122	7.01	7.44	1.433	0.009246	True	1.527	0.002351	True	0.943	-0.0588	False
+olea_europaea	Olea europaea	Viridiplantae	269	27	12	10.04	4.46	2.188	0.016241	True	0.916	0.662084	False	2.25	0.7885	False
+onchocerca_volvulus	Onchocerca volvulus	Nematoda	551	66	43	11.98	7.8	2.636	1.6e-05	True	1.64	0.032185	True	1.535	0.4244	False
+onthophagus_taurus_gca000648695v2	Onthophagus taurus	Insecta	564	43	69	7.62	12.23	1.577	0.043432	True	2.663	9e-06	True	0.623	-0.4686	False
+ooceraea_biroi_gca003672135v1	Ooceraea biroi	Insecta	995	97	69	9.75	6.93	2.083	2.4e-05	True	1.437	0.035905	True	1.406	0.3385	False
+oppia_nitens_gca028296485v1rs	Oppia nitens	Chelicerata	2017	266	180	13.19	8.92	2.911	0.0	True	1.877	0.0	True	1.478	0.3896	False
+orbicella_faveolata_gca002042975v1	Orbicella faveolata	Cnidaria	918	81	98	8.82	10.68	1.875	0.000592	True	2.316	2e-06	True	0.827	-0.1895	False
+orchesella_cincta	Orchesella cincta	Collembola	1039	101	94	9.72	9.05	2.084	1.6e-05	True	1.925	0.00014	True	1.074	0.0715	False
+ornithodoros_turicata_gca037126465v1rs	Ornithodoros turicata	Chelicerata	921	93	84	10.1	9.12	2.134	2.2e-05	True	1.907	0.000363	True	1.107	0.1012	False
+orussus_abietinus_gca000612105v2	Orussus abietinus	Insecta	611	46	59	7.53	9.66	1.574	0.038102	True	2.066	0.00098	True	0.78	-0.2465	False
+oryza_barthii	Oryza barthii	Viridiplantae	3533	753	184	21.31	5.21	5.165	0.0	True	1.048	0.353503	False	4.092	1.4071	False
+oryza_brachyantha	Oryza brachyantha	Viridiplantae	4608	593	169	12.87	3.67	2.811	0.0	True	0.725	0.999266	False	3.509	1.2532	False
+oryza_glaberrima	Oryza glaberrima	Viridiplantae	4461	883	238	19.79	5.34	4.689	0.0	True	1.071	0.252373	False	3.71	1.3095	False
+oryza_glumipatula	Oryza glumipatula	Viridiplantae	4404	896	218	20.35	4.95	4.856	0.0	True	0.99	0.559406	False	4.11	1.4117	False
+oryza_longistaminata	Oryza longistaminata	Viridiplantae	1856	366	117	19.72	6.3	4.707	0.0	True	1.289	0.043995	True	3.128	1.1376	False
+oryza_meridionalis	Oryza meridionalis	Viridiplantae	3702	734	167	19.83	4.51	4.7	0.0	True	0.898	0.850897	False	4.395	1.4782	False
+oryza_nivara	Oryza nivara	Viridiplantae	4383	909	216	20.74	4.93	4.974	0.0	True	0.985	0.578923	False	4.208	1.4353	False
+oryza_punctata	Oryza punctata	Viridiplantae	3427	714	184	20.83	5.37	5.01	0.0	True	1.08	0.257473	False	3.88	1.3539	False
+oryza_rufipogon	Oryza rufipogon	Viridiplantae	4409	921	238	20.89	5.4	5.027	0.0	True	1.086	0.208026	False	3.87	1.3516	False
+oryza_sativa	Oryza sativa	Viridiplantae	3919	924	186	23.58	4.75	5.89	0.0	True	0.951	0.701154	False	4.968	1.6008	False
+ostrea_edulis_gca947568905v1rs	Ostrea edulis	Mollusca	951	75	104	7.89	10.94	1.645	0.005716	True	2.359	1e-06	True	0.721	-0.3251	False
+ostreococcus_lucimarinus	Ostreococcus lucimarinus	Chlorophyta	146	23	16	15.75	10.96	3.686	0.001725	True	2.426	0.041635	True	1.438	0.3536	False
+owenia_fusiformis_gca903813345v2gb	Owenia fusiformis	Annelida	729	68	80	9.33	10.97	1.977	0.000769	True	2.369	1.3e-05	True	0.85	-0.1614	False
+oxytricha_trifallax_gca_000711775	Oxytricha trifallax str. JRB310	Ciliophora	9	3	0	33.33	0.0	inf	0.123529	False		1.0	False		1.9459	True
+panicum_hallii	Panicum hallii HAL2	Viridiplantae	2298	521	130	22.67	5.66	5.614	0.0	True	1.148	0.162723	False	4.008	1.3853	False
+panonychus_citri_gca014898815v1rs	Panonychus citri	Chelicerata	1434	108	105	7.53	7.32	1.562	0.002702	True	1.516	0.005102	True	1.029	0.028	False
+papaver_somniferum	Papaver somniferum	Viridiplantae	2300	411	147	17.87	6.39	4.134	0.0	True	1.297	0.024203	True	2.796	1.026	False
+paracoccus_denitrificans_pd1222_gca_000203895	Paracoccus denitrificans PD1222	Bacteria	40	6	1	15.0	2.5	3.353	0.131663	False	0.487	0.879747	False	6.0	1.4663	True
+paramacrobiotus_metropolitanus_gca019649055v1rs	Paramacrobiotus metropolitanus	Tardigrada	703	67	75	9.53	10.67	2.008	0.000684	True	2.276	4.8e-05	True	0.893	-0.112	False
+paramecium_tetraurelia	Paramecium tetraurelia	Ciliophora	1011	83	143	8.21	14.14	1.717	0.00201	True	3.163	0.0	True	0.58	-0.5415	False
+parasteatoda_tepidariorum_gca043381705v1rs	Parasteatoda tepidariorum	Chelicerata	535	53	71	9.91	13.27	2.148	0.001126	True	2.99	1e-06	True	0.746	-0.29	False
+pasteurella_multocida_subsp_multocida_str_pm70_gca_000006825	Pasteurella multocida subsp. multocida str. Pm70	Bacteria	16	2	1	12.5	6.25	inf	0.258065	False	inf	0.516129	False	2.0	0.5108	True
+patella_pellucida_gca917208275v1	Patella pellucida	Mollusca	606	53	56	8.75	9.24	1.837	0.006104	True	1.952	0.002512	True	0.946	-0.0546	False
+patella_vulgata_gca932274485v2rs	Patella vulgata	Mollusca	640	57	91	8.91	14.22	1.858	0.00402	True	3.149	0.0	True	0.626	-0.4646	False
+patiria_miniata_gca015706575v1	Patiria miniata	Echinodermata	1058	126	93	11.91	8.79	2.613	0.0	True	1.863	0.000275	True	1.355	0.3023	False
+pecten_maximus_gca902652985v1rs	Pecten maximus	Mollusca	1026	78	115	7.6	11.21	1.571	0.009008	True	2.411	0.0	True	0.678	-0.3862	False
+pectinophora_gossypiella_gca024362695v1rs	Pectinophora gossypiella	Insecta	626	62	69	9.9	11.02	2.106	0.000577	True	2.374	5e-05	True	0.899	-0.1062	False
+pediculus_humanus	Pediculus humanus corporis	Insecta	1405	123	166	8.75	11.81	1.828	4.9e-05	True	2.553	0.0	True	0.741	-0.2988	False
+penaeus_chinensis_gca019202785v2rs	Penaeus chinensis	Crustacea	1853	156	129	8.42	6.96	1.759	1.6e-05	True	1.431	0.006253	True	1.209	0.1894	False
+penaeus_japonicus_gca017312705v1	Penaeus japonicus	Crustacea	2169	197	163	9.08	7.51	1.905	0.0	True	1.55	0.000345	True	1.209	0.1889	False
+penaeus_monodon_gca015228065v1	Penaeus monodon	Crustacea	2008	160	139	7.97	6.92	1.651	7.4e-05	True	1.418	0.005624	True	1.151	0.1402	False
+penaeus_vannamei_gca042767895v1rs	Penaeus vannamei	Crustacea	2009	203	164	10.1	8.16	2.145	0.0	True	1.696	2.9e-05	True	1.238	0.2128	False
+perkinsela_sp_ccap_1560_4_gca_001235845	Perkinsela sp. CCAP 1560/4	Euglenozoa	35	3	5	8.57	14.29	3.094	0.317975	False	5.5	0.105613	False	0.6	-0.452	True
+perkinsus_marinus_atcc_50983_gca_000006405	Perkinsus marinus ATCC 50983 str. PmCV4CB5 2B3 D4	Perkinsozoa	1042	120	109	11.52	10.46	2.475	0.0	True	2.222	2e-06	True	1.101	0.0957	False
+peronospora_effusa_gca_003704535	Peronospora effusa	Oomycota	387	42	38	10.85	9.82	2.351	0.00158	True	2.103	0.006502	True	1.105	0.0988	False
+phaeodactylum_tricornutum	Phaeodactylum tricornutum	Bacillariophyta	507	68	42	13.41	8.28	2.98	2e-06	True	1.738	0.021625	True	1.619	0.4773	False
+phaseolus_vulgaris	Phaseolus vulgaris	Viridiplantae	1324	219	74	16.54	5.59	3.775	0.0	True	1.127	0.273223	False	2.959	1.0806	False
+phlebotomus_argentipes_gca947086385v1rs	Phlebotomus argentipes	Insecta	519	46	51	8.86	9.83	1.918	0.006873	True	2.149	0.00138	True	0.902	-0.1021	False
+phlebotomus_papatasi_gca024763615v2rs	Phlebotomus papatasi	Insecta	598	44	55	7.36	9.2	1.556	0.045817	True	1.984	0.002266	True	0.8	-0.2209	False
+phlebotomus_perniciosus_gca918844115v2	Phlebotomus perniciosus	Insecta	158	11	9	6.96	5.7	1.603	0.238066	False	1.294	0.404332	False	1.222	0.1911	True
+photinus_pyralis_gca008802855v1rs	Photinus pyralis	Insecta	221	21	23	9.5	10.41	1.995	0.049968	True	2.207	0.024882	True	0.913	-0.0889	False
+physcomitrium_patens	Physcomitrium patens	Viridiplantae	1067	100	99	9.37	9.28	1.977	5.2e-05	True	1.955	7.1e-05	True	1.01	0.01	False
+phytomonas_sp_isolate_hart1_gca_000982615	Phytomonas sp. isolate Hart1	Euglenozoa	383	17	31	4.44	8.09	0.887	0.698272	False	1.683	0.054438	False	0.548	-0.5878	False
+phytophthora_cactorum_gca_003287315	Phytophthora cactorum str. 10300	Oomycota	795	98	80	12.33	10.06	2.722	0.0	True	2.166	6.2e-05	True	1.225	0.2018	False
+phytophthora_infestans	Phytophthora infestans	Oomycota	567	60	54	10.58	9.52	2.274	0.000266	True	2.023	0.002008	True	1.111	0.1044	False
+phytophthora_kernoviae	Phytophthora kernoviae	Oomycota	457	45	43	9.85	9.41	2.155	0.002524	True	2.049	0.004919	True	1.047	0.045	False
+phytophthora_lateralis	Phytophthora lateralis	Oomycota	454	58	40	12.78	8.81	2.869	1.7e-05	True	1.893	0.012593	True	1.45	0.3677	False
+phytophthora_megakarya_gca_002215365	Phytophthora megakarya str. zdho120	Oomycota	898	76	72	8.46	8.02	1.792	0.001657	True	1.69	0.004725	True	1.056	0.0537	False
+phytophthora_palmivora_var_palmivora_gca_002911725	Phytophthora palmivora var. palmivora str. sbr112.9	Oomycota	648	71	53	10.96	8.18	2.365	4.2e-05	True	1.712	0.012392	True	1.34	0.29	False
+phytophthora_parasitica	Phytophthora nicotianae P1569	Oomycota	764	88	76	11.52	9.95	2.484	2e-06	True	2.108	0.000145	True	1.158	0.1457	False
+phytophthora_parasitica_gca_000509525	Phytophthora parasitica str. IAC_01/95	Oomycota	721	84	73	11.65	10.12	2.505	3e-06	True	2.14	0.000154	True	1.151	0.1395	False
+phytophthora_ramorum	Phytophthora ramorum	Oomycota	711	104	67	14.63	9.42	3.304	0.0	True	2.006	0.000688	True	1.552	0.4371	False
+phytophthora_sojae	Phytophthora sojae	Oomycota	1068	142	88	13.3	8.24	2.934	0.0	True	1.718	0.001493	True	1.614	0.4763	False
+pinus_longaeva	Pinus longaeva	Viridiplantae	743	97	49	13.06	6.59	2.861	0.0	True	1.345	0.111966	False	1.98	0.6779	False
+pistacia_vera	Pistacia vera	Viridiplantae	1473	289	80	19.62	5.43	4.678	0.0	True	1.101	0.310766	False	3.612	1.2799	False
+pisum_sativum_gca964186695v1gb	Pisum sativum JI2822	Viridiplantae	1603	254	71	15.85	4.43	3.582	0.0	True	0.882	0.798834	False	3.577	1.2696	False
+planoprotostelium_fungivorum_gca_003024175	Planoprotostelium fungivorum str. Jena	Amoebozoa	499	45	59	9.02	11.82	1.958	0.006191	True	2.648	4.1e-05	True	0.763	-0.2683	False
+plasmodiophora_brassicae_gca_001049375	Plasmodiophora brassicae	Rhizaria	460	78	63	16.96	13.7	3.88	0.0	True	3.015	4e-06	True	1.238	0.2121	False
+plasmodium_berghei	Plasmodium berghei	Apicomplexa	127	21	8	16.54	6.3	3.962	0.001959	True	1.345	0.398197	False	2.625	0.928	True
+plasmodium_chabaudi	Plasmodium chabaudi	Apicomplexa	157	21	11	13.38	7.01	3.287	0.00472	True	1.604	0.238051	False	1.909	0.6257	False
+plasmodium_coatneyi_gca_001680005	Plasmodium coatneyi	Apicomplexa	317	21	31	6.62	9.78	1.424	0.19829	False	2.175	0.010685	True	0.677	-0.3819	False
+plasmodium_cynomolgi_strain_b_gca_000321355	Plasmodium cynomolgi strain B	Apicomplexa	281	12	20	4.27	7.12	0.848	0.729278	False	1.456	0.191211	False	0.6	-0.4947	False
+plasmodium_falciparum	Plasmodium falciparum	Apicomplexa	397	27	14	6.8	3.53	1.448	0.145774	False	0.725	0.858717	False	1.929	0.64	False
+plasmodium_fragile_gca_000956335	Plasmodium fragile str. multiple	Apicomplexa	354	27	20	7.63	5.65	1.632	0.081719	False	1.184	0.371368	False	1.35	0.2938	False
+plasmodium_gaboni_gca_001602025	Plasmodium gaboni	Apicomplexa	457	30	20	6.56	4.38	1.386	0.160742	False	0.903	0.684581	False	1.5	0.3973	False
+plasmodium_gallinaceum_gca_900005855	Plasmodium gallinaceum	Apicomplexa	211	17	17	8.06	8.06	1.753	0.118599	False	1.753	0.118599	False	1.0	0.0	False
+plasmodium_gonderi_gca_002157705	Plasmodium gonderi	Apicomplexa	400	36	22	9.0	5.5	1.879	0.018417	True	1.106	0.437136	False	1.636	0.4838	False
+plasmodium_inui_san_antonio_1_gca_000524495	Plasmodium inui San Antonio 1	Apicomplexa	247	14	21	5.67	8.5	1.172	0.424578	False	1.812	0.075932	False	0.667	-0.3939	False
+plasmodium_knowlesi	Plasmodium knowlesi	Apicomplexa	318	31	19	9.75	5.97	2.175	0.010692	True	1.279	0.302067	False	1.632	0.4796	False
+plasmodium_malariae_gca_900088575	Plasmodium malariae	Apicomplexa	444	30	34	6.76	7.66	1.387	0.160586	False	1.587	0.065202	False	0.882	-0.1232	False
+plasmodium_ovale_curtisi_gca_900088565	Plasmodium ovale curtisi	Apicomplexa	464	37	48	7.97	10.34	1.658	0.041724	True	2.207	0.001447	True	0.771	-0.2572	False
+plasmodium_reichenowi_gca_001601855	Plasmodium reichenowi	Apicomplexa	419	21	12	5.01	2.86	1.05	0.503147	False	0.587	0.949039	False	1.75	0.5423	False
+plasmodium_relictum_gca_900005765	Plasmodium relictum	Apicomplexa	20	3	2	15.0	10.0	3.353	0.302495	False	2.111	0.5	False	1.5	0.3365	True
+plasmodium_sp_gorilla_clade_g2_gca_900097015	Plasmodium sp. gorilla clade G2	Apicomplexa	22	5	1	22.73	4.55	5.882	0.10295	False	0.952	0.767442	False	5.0	1.2993	True
+plasmodium_vinckei_petteri_gca_000524515	Plasmodium vinckei petteri str. CR	Apicomplexa	138	18	15	13.04	10.87	3.275	0.00902	True	2.663	0.034863	True	1.2	0.1769	False
+plasmodium_vivax_north_korean_gca_000320685	Plasmodium vivax North Korean	Apicomplexa	408	36	29	8.82	7.11	1.873	0.018916	True	1.481	0.120878	False	1.241	0.2129	False
+plasmodium_yoelii_yoelii_gca_000003085	Plasmodium yoelii yoelii str. 17XNL	Apicomplexa	2	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+plasmopara_halstedii_gca_900000015	Plasmopara halstedii	Oomycota	462	43	108	9.31	23.38	1.954	0.007522	True	5.81	0.0	True	0.398	-0.914	False
+platynereis_dumerilii_gca026936325v1cm	Platynereis dumerilii	Annelida	1138	102	136	8.96	11.95	1.901	9.7e-05	True	2.62	0.0	True	0.75	-0.2865	False
+plodia_interpunctella_gca027563975v2rs	Plodia interpunctella	Insecta	566	58	60	10.25	10.6	2.19	0.000534	True	2.274	0.000266	True	0.967	-0.0336	False
+pocillopora_damicornis_gca003704095v1	Pocillopora damicornis	Cnidaria	772	57	75	7.38	9.72	1.538	0.02847	True	2.076	0.000202	True	0.76	-0.2723	False
+pogonomyrmex_barbatus_gca000187915v1rs	Pogonomyrmex barbatus	Insecta	1138	95	92	8.35	8.08	1.758	0.000665	True	1.698	0.001434	True	1.033	0.0319	False
+polistes_canadensis_gca001313835v1rs	Polistes canadensis	Insecta	1332	115	78	8.63	5.86	1.811	0.000104	True	1.192	0.174172	False	1.474	0.3862	False
+polistes_dominula_gca001465965v1rs	Polistes dominula	Insecta	1450	133	88	9.17	6.07	1.931	6e-06	True	1.236	0.112034	False	1.511	0.4111	False
+polistes_fuscatus_gca010416935v1rs	Polistes fuscatus	Insecta	1366	126	75	9.22	5.49	1.938	1e-05	True	1.108	0.304775	False	1.68	0.5161	False
+pollicipes_pollicipes_gca011947565v3rs	Pollicipes pollicipes	Crustacea	1376	137	132	9.96	9.59	2.125	0.0	True	2.039	2e-06	True	1.038	0.037	False
+pomacea_canaliculata_gca003073045v1	Pomacea canaliculata	Mollusca	1167	113	119	9.68	10.2	2.048	8e-06	True	2.169	1e-06	True	0.95	-0.0515	False
+pomphorhynchus_laevis_gca012934845v2gb	Pomphorhynchus laevis	Acanthocephala	128	11	10	8.59	7.81	1.896	0.161828	False	1.709	0.22466	False	1.1	0.091	False
+populus_trichocarpa	Populus trichocarpa	Viridiplantae	1771	394	92	22.25	5.19	5.469	0.0	True	1.047	0.410783	False	4.283	1.4504	False
+porphyromonas_gingivalis_w83_gca_000007585	Porphyromonas gingivalis W83	Bacteria	23	3	2	13.04	8.7	3.15	0.32093	False	2.0	0.517054	False	1.5	0.3365	True
+portunus_trituberculatus_gca017591435v1	Portunus trituberculatus	Crustacea	3443	419	261	12.17	7.58	2.634	0.0	True	1.559	6e-06	True	1.605	0.4726	False
+priapulus_caudatus_gca000485595v2	Priapulus caudatus	Priapulida	1273	90	88	7.07	6.91	1.46	0.015116	True	1.425	0.022121	True	1.023	0.0223	False
+pristionchus_pacificus	Pristionchus pacificus	Nematoda	1510	209	105	13.84	6.95	3.072	0.0	True	1.429	0.012938	True	1.99	0.686	False
+procambarus_clarkii_gca040958095v1rs	Procambarus clarkii	Crustacea	2298	292	178	12.71	7.75	2.787	0.0	True	1.608	6.7e-05	True	1.64	0.4939	False
+prochlorococcus_marinus_subsp_marinus_str_ccmp1375_gca_000007925	Prochlorococcus marinus subsp. marinus str. CCMP1375	Bacteria	16	0	3	0.0	18.75		1.0	False	inf	0.124583	False	0.0	-1.9459	True
+proteus_mirabilis_hi4320_gca_000069965	Proteus mirabilis HI4320	Bacteria	32	3	4	9.38	12.5	3.103	0.318501	False	4.286	0.187248	False	0.75	-0.2513	True
+prunus_avium	Prunus avium	Viridiplantae	1384	193	95	13.95	6.86	3.086	0.0	True	1.404	0.022176	True	2.032	0.7062	False
+prunus_dulcis	Prunus dulcis	Viridiplantae	1474	240	107	16.28	7.26	3.73	0.0	True	1.501	0.005552	True	2.243	0.8052	False
+prunus_persica	Prunus persica	Viridiplantae	1486	236	102	15.88	6.86	3.6	0.0	True	1.405	0.018009	True	2.314	0.8361	False
+pseudocohnilembus_persalinus_gca_001447515	Pseudocohnilembus persalinus	Ciliophora	317	35	51	11.04	16.09	2.491	0.002425	True	3.847	2e-06	True	0.686	-0.372	False
+pseudomonas_aeruginosa	Pseudomonas aeruginosa	Bacteria	48	6	5	12.5	10.42	3.214	0.14071	False	2.616	0.226368	False	1.2	0.1671	True
+pseudonitzschia_multistriata	Pseudo-nitzschia multistriata	Bacillariophyta	1434	154	93	10.74	6.49	2.308	0.0	True	1.33	0.045931	True	1.656	0.5022	False
+ptychodera_flava	Ptychodera flava	Hemichordata	1305	105	122	8.05	9.35	1.668	0.000967	True	1.966	1e-05	True	0.861	-0.1494	False
+puccinia_graminis	Puccinia graminis	Fungi	966	114	96	11.8	9.94	2.556	0.0	True	2.108	2.1e-05	True	1.188	0.171	False
+pyrobaculum_aerophilum_str_im2_gca_000007225	Pyrobaculum aerophilum str. IM2	Archaea	14	1	1	7.14	7.14	inf	0.518519	False	inf	0.518519	False	1.0	0.0	True
+pyrococcus_abyssi	Pyrococcus abyssi	Archaea	20	2	2	10.0	10.0	2.111	0.5	False	2.111	0.5	False	1.0	0.0	True
+pyrococcus_horikoshii_ot3_gca_000011105	Pyrococcus horikoshii OT3	Archaea	17	2	2	11.76	11.76	inf	0.257576	False	inf	0.257576	False	1.0	0.0	True
+pythium_aphanidermatum	Pythium aphanidermatum	Oomycota	597	81	56	13.57	9.38	3.069	0.0	True	2.024	0.001654	True	1.446	0.3664	False
+pythium_arrhenomanes	Pythium arrhenomanes	Oomycota	1829	129	131	7.05	7.16	1.448	0.005029	True	1.473	0.003443	True	0.985	-0.0153	False
+pythium_irregulare	Pythium irregulare	Oomycota	1692	219	130	12.94	7.68	2.844	0.0	True	1.592	0.000727	True	1.685	0.52	False
+pythium_iwayamai	Globisporangium iwayamae DAOM BR242034	Oomycota	825	107	76	12.97	9.21	2.846	0.0	True	1.938	0.00053	True	1.408	0.3402	False
+pythium_vexans	Pythium vexans	Oomycota	1117	95	98	8.5	8.77	1.793	0.000471	True	1.855	0.000206	True	0.969	-0.0309	False
+quercus_lobata	Quercus lobata	Viridiplantae	115	24	5	20.87	4.35	5.749	0.000126	True	0.991	0.631276	False	4.8	1.4939	True
+quercus_suber_gca002906115v3rs	Quercus suber HL8	Viridiplantae	1980	384	95	19.39	4.8	4.571	0.0	True	0.958	0.643558	False	4.042	1.3928	False
+ralstonia_solanacearum_gmi1000_gca_000009125	Ralstonia solanacearum GMI1000	Bacteria	42	6	7	14.29	16.67	3.25	0.140092	False	3.9	0.083383	False	0.857	-0.1431	True
+reticulomyxa_filosa_gca_000512085	Reticulomyxa filosa	Rhizaria	7348	1095	576	14.9	7.84	3.331	0.0	True	1.618	0.0	True	1.901	0.642	False
+rhagoletis_pomonella_gca013731165v1	Rhagoletis pomonella	Insecta	2028	160	168	7.89	8.28	1.633	9.9e-05	True	1.722	1.5e-05	True	0.952	-0.0486	False
+rhipicephalus_microplus_gca013339725v1	Rhipicephalus microplus	Chelicerata	967	127	71	13.13	7.34	2.892	0.0	True	1.515	0.018747	True	1.789	0.5784	False
+rhipicephalus_sanguineus_gca013339695v2rs	Rhipicephalus sanguineus	Chelicerata	1194	111	99	9.3	8.29	1.97	2.2e-05	True	1.738	0.000642	True	1.121	0.1139	False
+rhizobium_leguminosarum_bv_viciae_3841_gca_000009265	Rhizobium leguminosarum bv. viciae 3841	Bacteria	65	8	6	12.31	9.23	2.854	0.107917	False	2.068	0.253749	False	1.333	0.2683	True
+rhizopus_delemar	Rhizopus delemar	Fungi	720	54	53	7.5	7.36	1.541	0.031841	True	1.51	0.039718	True	1.019	0.0185	False
+rhodnius_prolixus	Rhodnius prolixus	Insecta	540	29	49	5.37	9.07	1.078	0.445495	False	1.896	0.006018	True	0.592	-0.5176	False
+rhodobacter_sphaeroides_2_4_1_gca_000012905	Rhodobacter sphaeroides 2.4.1	Bacteria	35	2	6	5.71	17.14	2.0	0.511032	False	6.828	0.057384	False	0.333	-0.9555	True
+rhodopirellula_baltica_sh_1_gca_000196115	Rhodopirellula baltica SH 1	Bacteria	100	7	19	7.0	19.0	1.43	0.383672	False	4.457	0.001936	True	0.368	-0.9555	False
+rhodospirillum_rubrum_atcc_11170_gca_000013085	Rhodospirillum rubrum ATCC 11170	Bacteria	44	7	9	15.91	20.45	3.878	0.083704	False	5.271	0.026942	True	0.778	-0.2364	True
+rhopalosiphum_maidis_gca003676215v3	Rhopalosiphum maidis	Insecta	1086	94	102	8.66	9.39	1.809	0.000431	True	1.979	4.3e-05	True	0.922	-0.0813	False
+rickettsia_prowazekii_str_madrid_e_gca_000195735	Rickettsia prowazekii str. Madrid E	Bacteria	5	2	1	40.0	20.0	inf	0.277778	False	inf	0.555556	False	2.0	0.5108	True
+rosa_chinensis	Rosa chinensis	Viridiplantae	1721	300	111	17.43	6.45	4.011	0.0	True	1.31	0.03935	True	2.703	0.9914	False
+rotaria_sordida	Rotaria sordida	Rotifera	5703	441	554	7.73	9.71	1.593	0.0	True	2.045	0.0	True	0.796	-0.2279	False
+saccharolobus_solfataricus_p2_gca_000007005	Saccharolobus solfataricus P2	Archaea	14	3	3	21.43	21.43	inf	0.124444	False	inf	0.124444	False	1.0	0.0	True
+saccharomyces_cerevisiae	Saccharomyces cerevisiae	Fungi	289	30	25	10.38	8.65	2.267	0.009166	True	1.853	0.049215	True	1.2	0.179	False
+saccharum_spontaneum	Saccharum spontaneum	Viridiplantae	3608	673	203	18.65	5.63	4.366	0.0	True	1.135	0.124555	False	3.315	1.1968	False
+saccoglossus_kowalevskii_gca000003605v1	Saccoglossus kowalevskii	Hemichordata	797	63	87	7.9	10.92	1.666	0.009257	True	2.378	5e-06	True	0.724	-0.3206	False
+salinibacter_ruber_dsm_13855_gca_000013045	Salinibacter ruber DSM 13855	Bacteria	41	13	9	31.71	21.95	8.821	0.001868	True	5.344	0.026498	True	1.444	0.3514	True
+salmonella_typhimurium	Salmonella typhimurium	Bacteria	30	3	3	10.0	10.0	3.111	0.318912	False	3.111	0.318912	False	1.0	0.0	True
+salpingoeca_rosetta	Salpingoeca rosetta	Protist	4670	412	351	8.82	7.52	1.842	0.0	True	1.547	0.0	True	1.174	0.16	False
+saprolegnia_diclina_vs20_gca_000281045	Saprolegnia diclina VS20	Oomycota	743	98	82	13.19	11.04	2.895	0.0	True	2.364	1.1e-05	True	1.195	0.1773	False
+saprolegnia_parasitica_cbs_223_65_gca_000151545	Saprolegnia parasitica CBS 223.65	Oomycota	928	116	95	12.5	10.24	2.736	0.0	True	2.184	1.1e-05	True	1.221	0.1988	False
+sarcoptes_scabiei_gca020844145v1gb	Sarcoptes scabiei	Chelicerata	1133	99	92	8.74	8.12	1.84	0.000225	True	1.698	0.001432	True	1.076	0.0729	False
+schistocerca_americana_gca021461395v2rs	Schistocerca americana	Insecta	1657	174	159	10.5	9.6	2.252	0.0	True	2.037	0.0	True	1.094	0.0899	False
+schistocerca_cancellata_gca023864275v2rs	Schistocerca cancellata	Insecta	1660	193	140	11.63	8.43	2.5	0.0	True	1.75	4.8e-05	True	1.379	0.3201	False
+schistocerca_gregaria_gca023897955v2rs	Schistocerca gregaria	Insecta	298	49	26	16.44	8.72	3.978	2e-06	True	1.932	0.036147	True	1.885	0.6248	False
+schistocerca_nitens_gca023898315v2rs	Schistocerca nitens	Insecta	1809	225	151	12.44	8.35	2.711	0.0	True	1.738	3e-05	True	1.49	0.3977	False
+schistocerca_piceifrons_gca021461385v2rs	Schistocerca piceifrons	Insecta	1644	193	144	11.74	8.76	2.532	0.0	True	1.828	1.2e-05	True	1.34	0.292	False
+schistocerca_serialis_gca023864345v3rs	Schistocerca serialis cubense	Insecta	1671	195	135	11.67	8.08	2.526	0.0	True	1.681	0.00017	True	1.444	0.3666	False
+schistosoma_haematobium_gca000699445v3rs	Schistosoma haematobium	Platyhelminthes	1248	57	93	4.57	7.45	0.915	0.714936	False	1.539	0.006401	True	0.613	-0.4862	False
+schistosoma_mansoni	Schistosoma mansoni	Platyhelminthes	1104	40	84	3.62	7.61	0.716	0.954011	False	1.569	0.007054	True	0.476	-0.7354	False
+schizosaccharomyces_pombe	Schizosaccharomyces pombe	Fungi	106	11	19	10.38	17.92	2.316	0.099566	False	4.368	0.002157	True	0.579	-0.5281	False
+schmidtea_mediterranea_gca045838265v1cm	Schmidtea mediterranea	Platyhelminthes	572	35	54	6.12	9.44	1.264	0.220616	False	2.022	0.002014	True	0.648	-0.4287	False
+schmidtea_nova_gca044892505v1cm	Schmidtea nova	Platyhelminthes	578	34	87	5.88	15.05	1.225	0.259379	False	3.474	0.0	True	0.391	-0.9307	False
+schmidtea_polychroa_gca044892525v1cm	Schmidtea polychroa	Platyhelminthes	459	34	67	7.41	14.6	1.585	0.065377	False	3.387	0.0	True	0.507	-0.6712	False
+scutigera_coleoptrata	Scutigera coleoptrata	Myriapoda	721	78	70	10.82	9.71	2.305	2.8e-05	True	2.043	0.00041	True	1.114	0.1075	False
+secale_cereale	Secale cereale	Viridiplantae	2437	605	140	24.83	5.74	6.318	0.0	True	1.166	0.126736	False	4.321	1.4608	False
+selaginella_moellendorffii	Selaginella moellendorffii	Viridiplantae	1985	295	194	14.86	9.77	3.324	0.0	True	2.062	0.0	True	1.521	0.4182	False
+sesamum_indicum	Sesamum indicum	Viridiplantae	1712	233	150	13.61	8.76	3.014	0.0	True	1.837	7e-06	True	1.553	0.4392	False
+setaria_italica	Setaria italica	Viridiplantae	2248	496	139	22.06	6.18	5.397	0.0	True	1.256	0.045875	True	3.568	1.2695	False
+setaria_viridis	Setaria viridis	Viridiplantae	2553	525	142	20.56	5.56	4.943	0.0	True	1.125	0.191153	False	3.697	1.305	False
+shigella_dysenteriae_sd197_gca_000012005	Shigella dysenteriae Sd197	Bacteria	20	1	1	5.0	5.0	1.0	0.75641	False	1.0	0.75641	False	1.0	0.0	True
+sinorhizobium_meliloti_1021_gca_000006965	Sinorhizobium meliloti 1021	Bacteria	65	8	7	12.31	10.77	2.854	0.107917	False	2.454	0.168381	False	1.143	0.1252	True
+sipha_flava_gca003268045v1	Sipha flava	Insecta	1050	90	78	8.57	7.43	1.797	0.000629	True	1.539	0.011799	True	1.154	0.1423	False
+sitophilus_oryzae_gca002938485v2rs	Sitophilus oryzae	Insecta	474	46	54	9.7	11.39	2.103	0.002881	True	2.516	0.00016	True	0.852	-0.1587	False
+solanum_lycopersicum	Solanum lycopersicum	Viridiplantae	1177	163	69	13.85	5.86	3.099	0.0	True	1.2	0.182126	False	2.362	0.8555	False
+solanum_tuberosum	Solanum tuberosum	Viridiplantae	1448	175	80	12.09	5.52	2.625	0.0	True	1.117	0.281389	False	2.188	0.7794	False
+solenopsis_invicta	Solenopsis invicta	Insecta	1222	131	78	10.72	6.38	2.283	0.0	True	1.297	0.081784	False	1.679	0.5159	False
+sorghum_bicolor	Sorghum bicolor	Viridiplantae	3041	582	154	19.14	5.06	4.497	0.0	True	1.014	0.477793	False	3.779	1.3271	False
+sphaeroforma_arctica	Sphaeroforma arctica	Protist	394	28	24	7.11	6.09	1.506	0.116005	False	1.277	0.268266	False	1.167	0.1512	False
+sphagnum_fallax	Sphagnum fallax	Viridiplantae	2949	542	138	18.38	4.68	4.291	0.0	True	0.935	0.729082	False	3.928	1.3653	False
+sphenostylis_stenocarpa	Sphenostylis stenocarpa	Viridiplantae	1303	184	78	14.12	5.99	3.129	0.0	True	1.212	0.152087	False	2.359	0.8546	False
+spironucleus_salmonicida	Spironucleus salmonicida	Metamonada	84	6	17	7.14	20.24	1.519	0.380683	False	5.011	0.002272	True	0.353	-0.9904	False
+spodoptera_frugiperda_gca023101765v3rs	Spodoptera frugiperda	Insecta	650	62	84	9.54	12.92	2.033	0.000907	True	2.862	0.0	True	0.738	-0.3016	False
+staphylococcus_aureus	Staphylococcus aureus	Bacteria	21	2	4	9.52	19.05	2.0	0.518762	False	4.471	0.186882	False	0.5	-0.5878	True
+stegodyphus_dumicola_gca010614865v2rs	Stegodyphus dumicola	Chelicerata	528	27	59	5.11	11.17	1.038	0.502837	False	2.424	0.000132	True	0.458	-0.7718	False
+stegodyphus_mimosarum	Stegodyphus mimosarum	Chelicerata	598	34	80	5.69	13.38	1.181	0.30486	False	3.025	0.0	True	0.425	-0.8473	False
+steinernema_hermaphroditum_gca030435675v2gb	Steinernema hermaphroditum	Nematoda	679	106	57	15.61	8.39	3.616	0.0	True	1.791	0.005989	True	1.86	0.6164	False
+stenotrophomonas_maltophilia_k279a_gca_000072485	Stenotrophomonas maltophilia K279a	Bacteria	61	9	5	14.75	8.2	3.288	0.066636	False	1.696	0.367859	False	1.8	0.5465	True
+stentor_coeruleus_gca_001970955	Stentor coeruleus	Ciliophora	422	63	99	14.93	23.46	3.343	1e-06	True	5.838	0.0	True	0.636	-0.4491	False
+stomoxys_calcitrans_gca963082655v1rs	Stomoxys calcitrans	Insecta	1665	129	161	7.75	9.67	1.6	0.000688	True	2.039	0.0	True	0.801	-0.2208	False
+streptococcus_pneumoniae	Streptococcus pneumoniae	Bacteria	9	1	3	11.11	33.33	inf	0.529412	False	inf	0.123529	False	0.333	-0.8473	True
+streptomyces_avermitilis	Streptomyces avermitilis	Bacteria	109	21	17	19.27	15.6	4.916	0.000712	True	3.807	0.00632	True	1.235	0.2059	False
+streptomyces_coelicolor	Streptomyces coelicolor	Bacteria	125	32	13	25.6	10.4	6.767	3e-06	True	2.283	0.077896	False	2.462	0.8786	False
+streptomyces_griseus	Streptomyces griseus	Bacteria	89	22	6	24.72	6.74	6.896	0.000107	True	1.518	0.380469	False	3.667	1.2417	True
+strigamia_maritima	Strigamia maritima	Myriapoda	699	41	57	5.87	8.15	1.217	0.240265	False	1.734	0.008486	True	0.719	-0.3261	False
+strigomonas_culicis_gca_000442495	Strigomonas culicis	Euglenozoa	1143	75	175	6.56	15.31	1.337	0.064219	False	3.441	0.0	True	0.429	-0.8435	False
+strongylocentrotus_purpuratus	Strongylocentrotus purpuratus	Echinodermata	1594	147	156	9.22	9.79	1.947	2e-06	True	2.079	0.0	True	0.942	-0.0592	False
+strongyloides_ratti	Strongyloides ratti	Nematoda	336	33	32	9.82	9.52	2.171	0.008658	True	2.099	0.012215	True	1.031	0.0303	False
+stylonychia_lemnae_gca_000751175	Stylonychia lemnae str. 130c	Ciliophora	479	44	58	9.19	12.11	2.001	0.005541	True	2.725	3.3e-05	True	0.759	-0.2735	False
+stylophora_pistillata_gca002571385v2	Stylophora pistillata	Cnidaria	781	67	97	8.58	12.42	1.783	0.003248	True	2.694	0.0	True	0.691	-0.3677	False
+sulfolobus_acidocaldarius	Sulfolobus acidocaldarius	Archaea	9	1	2	11.11	22.22	inf	0.529412	False	inf	0.264706	False	0.5	-0.5108	True
+sycon_ciliatum	Sycon ciliatum	Porifera	2074	133	210	6.41	10.13	1.311	0.026084	True	2.155	0.0	True	0.633	-0.4554	False
+symbiodinium_microadriaticum_gca_001939145	Symbiodinium microadriaticum str. CCMP2467	Protist	5078	418	362	8.23	7.13	1.71	0.0	True	1.464	3e-06	True	1.155	0.1437	False
+symsagittifera_roscoffensis	Symsagittifera roscoffensis	Xenacoelomorpha	772	64	79	8.29	10.23	1.744	0.005157	True	2.199	5.4e-05	True	0.81	-0.2091	False
+synechocystis_pcc6803	Synechocystis sp. PCC 6803	Bacteria	26	3	2	11.54	7.69	3.13	0.319928	False	2.0	0.515006	False	1.5	0.3365	True
+taxus_chinensis	Taxus chinensis	Viridiplantae	831	133	52	16.0	6.26	3.667	0.0	True	1.285	0.144258	False	2.558	0.9333	False
+teleopsis_dalmanni	Teleopsis dalmanni	Insecta	1595	174	116	10.91	7.27	2.348	0.0	True	1.504	0.00388	True	1.5	0.404	False
+tenebrio_molitor_gca907166875v3gb	Tenebrio molitor	Insecta	545	54	48	9.91	8.81	2.106	0.00128	True	1.849	0.008282	True	1.125	0.1166	False
+tetrahymena_thermophila	Tetrahymena thermophila	Ciliophora	665	64	67	9.62	10.08	2.036	0.000742	True	2.142	0.000279	True	0.955	-0.0455	False
+tetranychus_urticae	Tetranychus urticae	Chelicerata	869	50	71	5.75	8.17	1.171	0.263205	False	1.707	0.0044	True	0.704	-0.3477	False
+thalassiosira_oceanica_gca_000296195	Thalassiosira oceanica str. CCMP1005	Bacillariophyta	1454	164	157	11.28	10.8	2.438	0.0	True	2.322	0.0	True	1.045	0.0435	False
+thalassiosira_pseudonana	Thalassiosira pseudonana	Bacillariophyta	925	107	57	11.57	6.16	2.497	0.0	True	1.253	0.156648	False	1.877	0.6257	False
+thecamonas_trahens_atcc_50062_gca_000142905	Thecamonas trahens ATCC 50062	Protist	1066	106	134	9.94	12.57	2.108	8e-06	True	2.745	0.0	True	0.791	-0.2334	False
+theileria_equi_strain_wa_gca_000342415	Theileria equi strain WA	Apicomplexa	93	10	13	10.75	13.98	2.651	0.084579	False	3.575	0.020659	True	0.769	-0.2513	False
+theileria_orientalis_strain_shintoku_gca_000740895	Theileria orientalis strain Shintoku	Apicomplexa	80	6	7	7.5	8.75	1.541	0.372931	False	1.822	0.26704	False	0.857	-0.1431	True
+theileria_parva_gca_000165365	Theileria parva str. Muguga	Apicomplexa	61	6	4	9.84	6.56	2.073	0.253726	False	1.333	0.509273	False	1.5	0.3677	True
+thelohanellus_kitauei	Thelohanellus kitauei	Cnidaria	113	4	11	3.54	9.73	0.785	0.754973	False	2.308	0.099924	False	0.364	-0.9383	False
+theobroma_cacao	Theobroma cacao Matina 1-6	Viridiplantae	1383	238	81	17.21	5.86	3.955	0.0	True	1.184	0.17907	False	2.938	1.0738	False
+thermanaerovibrio_acidaminovorans_dsm_6589_gca_000024905	Thermanaerovibrio acidaminovorans DSM 6589	Bacteria	14	5	1	35.71	7.14	inf	0.024799	True	inf	0.518519	False	5.0	1.2993	True
+thermococcus_kodakarensis	Thermococcus kodakarensis	Archaea	15	2	1	13.33	6.67	inf	0.258621	False	inf	0.517241	False	2.0	0.5108	True
+thermodesulfovibrio_yellowstonii_dsm_11347_gca_000020985	Thermodesulfovibrio yellowstonii DSM 11347	Bacteria	11	5	0	45.45	0.0	inf	0.022704	True		1.0	False		2.3979	True
+thermofilum_pendens_hrk_5_gca_000015225	Thermofilum pendens Hrk 5	Archaea	15	3	5	20.0	33.33	inf	0.124521	False	inf	0.025287	True	0.6	-0.452	True
+thermoplasma_acidophilum	Thermoplasma acidophilum	Archaea	8	0	2	0.0	25.0		1.0	False	inf	0.266667	False	0.0	-1.6094	True
+thermosynechococcus_elongatus_bp_1_gca_000011345	Thermosynechococcus elongatus BP-1	Bacteria	31	5	6	16.13	19.35	5.577	0.105062	False	6.96	0.056657	False	0.833	-0.1671	True
+thermotoga_maritima	Thermotoga maritima	Bacteria	12	1	2	8.33	16.67	inf	0.521739	False	inf	0.26087	False	0.5	-0.5108	True
+thermus_thermophilus	Thermus thermophilus HB8	Bacteria	20	4	3	20.0	15.0	4.75	0.170825	False	3.353	0.302495	False	1.333	0.2513	True
+thraustotheca_clavata_gca_002081575	Thraustotheca clavata str. ATCC 34112	Oomycota	324	29	43	8.95	13.27	1.886	0.032075	True	2.936	0.000165	True	0.674	-0.3884	False
+thrips_palmi_gca012932325v1rs	Thrips palmi	Insecta	942	101	87	10.72	9.24	2.284	2e-06	True	1.935	0.000223	True	1.161	0.1484	False
+tieghemostelium_lacteum_gca_001606155	Tieghemostelium lacteum str. TK	Amoebozoa	1890	187	150	9.89	7.94	2.097	0.0	True	1.646	0.000131	True	1.247	0.2198	False
+tigriopus_californicus_gca007210705	Tigriopus californicus	Crustacea	1136	126	85	11.09	7.48	2.404	0.0	True	1.558	0.00743	True	1.482	0.3917	False
+topomyia_yanbarensis_gca030247195v1rs	Topomyia yanbarensis	Insecta	1336	111	126	8.31	9.43	1.742	0.000299	True	2.002	4e-06	True	0.881	-0.1262	False
+toxoplasma_gondii_veg_gca_000150015	Toxoplasma gondii VEG	Apicomplexa	614	58	32	9.45	5.21	2.027	0.001352	True	1.068	0.450829	False	1.812	0.5878	False
+toxorhynchites_rutilus_gca029784135v1rs	Toxorhynchites rutilus septentrionalis	Insecta	1287	118	126	9.17	9.79	1.927	2.1e-05	True	2.072	2e-06	True	0.937	-0.0653	False
+treponema_pallidum	Treponema pallidum	Bacteria	9	2	0	22.22	0.0	inf	0.264706	False		1.0	False		1.6094	True
+trialeurodes_vaporariorum_gca011764245	Trialeurodes vaporariorum	Insecta	567	42	63	7.41	11.11	1.537	0.054892	False	2.402	9e-05	True	0.667	-0.4015	False
+tribolium_castaneum_gca031307605v1rs	Tribolium castaneum	Insecta	470	44	51	9.36	10.85	2.003	0.005515	True	2.36	0.000496	True	0.863	-0.1461	False
+tribolium_madens_gca015345945v1rs	Tribolium madens	Insecta	454	52	50	11.45	11.01	2.534	0.000194	True	2.425	0.000417	True	1.04	0.0388	False
+trichinella_spiralis	Trichinella spiralis	Nematoda	973	46	91	4.73	9.35	0.955	0.626302	False	1.986	0.000101	True	0.505	-0.6769	False
+trichogramma_pretiosum_gca000599845v3	Trichogramma pretiosum	Insecta	1765	231	131	13.09	7.42	2.868	0.0	True	1.527	0.001675	True	1.763	0.5656	False
+trichoplax_adhaerens	Trichoplax adhaerens	Placozoa	234	18	26	7.69	11.11	1.682	0.127285	False	2.523	0.008022	True	0.692	-0.3594	False
+trichoplax_sp_h2	Trichoplax sp. H2	Placozoa	345	36	37	10.43	10.72	2.241	0.004902	True	2.311	0.003412	True	0.973	-0.027	False
+trichuris_muris	Trichuris muris	Nematoda	443	34	36	7.67	8.13	1.587	0.065189	False	1.689	0.039063	True	0.944	-0.0564	False
+trifolium_pratense	Trifolium pratense	Viridiplantae	7423	691	546	9.31	7.36	1.951	0.0	True	1.509	0.0	True	1.266	0.2353	False
+triticum_aestivum_stanley	Triticum aestivum Stanley	Viridiplantae	8515	1991	527	23.38	6.19	5.808	0.0	True	1.256	0.000376	True	3.778	1.3285	False
+triticum_dicoccoides	Triticum dicoccoides	Viridiplantae	4284	959	236	22.39	5.51	5.484	0.0	True	1.109	0.155177	False	4.064	1.4005	False
+triticum_spelta	Triticum spelta	Viridiplantae	7190	1728	449	24.03	6.24	6.019	0.0	True	1.267	0.000633	True	3.849	1.3469	False
+triticum_timopheevii	Triticum timopheevii	Viridiplantae	8270	1686	565	20.39	6.83	4.871	0.0	True	1.395	0.0	True	2.984	1.0927	False
+triticum_turgidum	Triticum turgidum	Viridiplantae	2212	505	131	22.83	5.92	5.651	0.0	True	1.202	0.093149	False	3.855	1.3465	False
+triticum_urartu	Triticum urartu	Viridiplantae	2047	469	153	22.91	7.47	5.665	0.0	True	1.54	0.000601	True	3.065	1.118	False
+tritrichomonas_foetus_gca_001839685	Tritrichomonas foetus str. K	Metamonada	1062	52	136	4.9	12.81	0.979	0.58122	False	2.793	0.0	True	0.382	-0.9555	False
+trypanosoma_brucei	Trypanosoma brucei	Euglenozoa	420	47	34	11.19	8.1	2.394	0.000703	True	1.674	0.046692	True	1.382	0.3198	False
+trypanosoma_conorhini_gca_003719485	Trypanosoma conorhini	Euglenozoa	1379	119	174	8.63	12.62	1.819	7.2e-05	True	2.782	0.0	True	0.684	-0.3786	False
+trypanosoma_cruzi_marinkellei_gca_000300495	Trypanosoma cruzi marinkellei	Euglenozoa	1361	210	175	15.43	12.86	3.467	0.0	True	2.804	0.0	True	1.2	0.1818	False
+trypanosoma_equiperdum_gca_001457755	Trypanosoma equiperdum	Euglenozoa	304	34	30	11.18	9.87	2.418	0.003519	True	2.102	0.01498	True	1.133	0.1232	False
+trypanosoma_rangeli_sc58_gca_000492115	Trypanosoma rangeli SC58	Euglenozoa	557	54	48	9.69	8.62	2.103	0.00129	True	1.848	0.008321	True	1.125	0.1166	False
+trypanosoma_theileri_gca_002087225	Trypanosoma theileri	Euglenozoa	4114	260	210	6.32	5.1	1.286	0.004972	True	1.025	0.421162	False	1.238	0.2131	False
+tubulanus_polymorphus	Tubulanus polymorphus	Nemertea	1050	112	103	10.67	9.81	2.289	1e-06	True	2.085	1.3e-05	True	1.087	0.0834	False
+uloborus_diversus_gca026930045v1rs	Uloborus diversus	Chelicerata	553	49	60	8.86	10.85	1.89	0.006195	True	2.366	0.000158	True	0.817	-0.2007	False
+uranotaenia_lowii_gca029784155v1rs	Uranotaenia lowii	Insecta	1574	147	134	9.34	8.51	1.974	1e-06	True	1.784	4.3e-05	True	1.097	0.0923	False
+ureaplasma_parvum_serovar_3_str_atcc_700970_gca_000006625	Ureaplasma parvum serovar 3 str. ATCC 700970	Bacteria	5	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+ustilago_maydis	Mycosarcoma maydis	Fungi	505	42	50	8.32	9.9	1.738	0.021612	True	2.105	0.001912	True	0.84	-0.1725	False
+varroa_destructor_gca002443255	Varroa destructor	Chelicerata	923	69	95	7.48	10.29	1.539	0.017115	True	2.185	1.1e-05	True	0.726	-0.3178	False
+varroa_jacobsoni_gca002532875v1rs	Varroa jacobsoni	Chelicerata	913	71	91	7.78	9.97	1.625	0.0082	True	2.133	2.7e-05	True	0.78	-0.2466	False
+venturia_canescens_gca019457755v1rs	Venturia canescens	Insecta	1130	97	79	8.58	6.99	1.799	0.000389	True	1.44	0.025563	True	1.228	0.2041	False
+vespa_mandarinia_gca014083535v2rs	Vespa mandarinia	Insecta	1462	125	78	8.55	5.34	1.778	8.3e-05	True	1.072	0.370779	False	1.603	0.4692	False
+vibrio_cholerae_o1_biovar_el_tor_str_n16961_gca_000006745	Vibrio cholerae O1 biovar El Tor str. N16961	Bacteria	22	2	2	9.09	9.09	2.0	0.517867	False	2.0	0.517867	False	1.0	0.0	True
+vicia_faba	Vicia faba	Viridiplantae	1541	270	74	17.52	4.8	4.036	0.0	True	0.958	0.632222	False	3.649	1.2895	False
+vigna_angularis	Vigna angularis	Viridiplantae	1626	221	122	13.59	7.5	2.998	0.0	True	1.546	0.001849	True	1.811	0.5923	False
+vigna_radiata	Vigna radiata	Viridiplantae	679	126	57	18.56	8.39	4.453	0.0	True	1.791	0.005989	True	2.211	0.7885	False
+vigna_unguiculata_gca004118075v2rs	Vigna unguiculata IT97K-499-35	Viridiplantae	1553	252	103	16.23	6.63	3.71	0.0	True	1.361	0.027584	True	2.447	0.8918	False
+vitis_vinifera	Vitis vinifera	Viridiplantae	1417	250	131	17.64	9.24	4.119	0.0	True	1.959	5e-06	True	1.908	0.6445	False
+volvox_carteri	Volvox carteri f. nagariensis	Chlorophyta	3231	115	224	3.56	6.93	0.704	0.998135	False	1.42	0.000554	True	0.513	-0.6646	False
+wolbachia_endosymbiont_of_drosophila_melanogaster_gca_000008025	Wolbachia endosymbiont of Drosophila melanogaster	Bacteria	4	0	0	0.0	0.0		1.0	False		1.0	False		0.0	True
+wyeomyia_smithii_gca029784165v1rs	Wyeomyia smithii	Insecta	1268	88	119	6.94	9.38	1.425	0.022109	True	1.979	1e-05	True	0.739	-0.3003	False
+xanthomonas_campestris_pv_campestris_str_atcc_33913_gca_000007145	Xanthomonas campestris pv. campestris str. ATCC 33913	Bacteria	59	11	13	18.64	22.03	6.417	0.008588	True	7.913	0.002376	True	0.846	-0.1603	False
+yersinia_pestis_biovar_microtus_str_91001_gca_000007885	Yersinia pestis biovar Microtus str. 91001	Bacteria	22	7	3	31.82	13.64	9.333	0.026903	True	3.158	0.321327	False	2.333	0.7621	True
+zea_mays	Zea mays	Viridiplantae	2812	493	193	17.53	6.86	4.056	0.0	True	1.406	0.001643	True	2.554	0.9362	False
+zerene_cesonia_gca012273895v2rs	Zerene cesonia	Insecta	522	40	52	7.66	9.96	1.58	0.049626	True	2.106	0.001561	True	0.769	-0.2595	False
+zeugodacus_cucurbitae_gca028554725v2rs	Zeugodacus cucurbitae	Insecta	1422	132	98	9.28	6.89	1.946	6e-06	True	1.407	0.019677	True	1.347	0.2965	False
+zootermopsis_nevadensis	Zootermopsis nevadensis	Insecta	805	62	115	7.7	14.29	1.594	0.015869	True	3.183	0.0	True	0.539	-0.6141	False
+zymoseptoria_tritici	Zymoseptoria tritici	Fungi	332	32	44	9.64	13.25	2.1	0.012187	True	3.008	0.000108	True	0.727	-0.3142	False

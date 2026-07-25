@@ -1,0 +1,18 @@
+go_id	go_name	namespace	ns_short	n_terminal	n_all_lcr	pct_terminal	odds_ratio	pvalue	fdr	species_key	phylum
+GO:0016021	GO_0016021	go	go	92	263	35.0	1.86	7.9e-05	0.0145	pediculus_humanus	Insecta
+GO:0003824	catalytic activity	molecular_function	MF	6	7	85.7	29.694	0.000159	0.0207	tetranychus_urticae	Chelicerata
+GO:0004721	phosphoprotein phosphatase activity	molecular_function	MF	7	7	100.0	inf	7.1e-05	0.0118	caenorhabditis_brenneri	Nematoda
+GO:0031110	regulation of microtubule polymerization or depolymerization	biological_process	BP	5	5	100.0	inf	0.000617	0.0131	lottia_gigantea	Mollusca
+GO:0031175	neuron projection development	biological_process	BP	5	5	100.0	inf	0.000617	0.0131	lottia_gigantea	Mollusca
+GO:0003924	GTPase activity	molecular_function	MF	5	5	100.0	inf	0.000617	0.0131	lottia_gigantea	Mollusca
+GO:0007019	microtubule depolymerization	biological_process	BP	5	5	100.0	inf	0.000617	0.0131	lottia_gigantea	Mollusca
+GO:0043005	neuron projection	cellular_component	CC	5	6	83.3	17.396	0.003016	0.0427	lottia_gigantea	Mollusca
+GO:0015631	tubulin binding	molecular_function	MF	5	6	83.3	17.396	0.003016	0.0427	lottia_gigantea	Mollusca
+GO:0007017	microtubule-based process	biological_process	BP	13	13	100.0	inf	0.0	0.0	strongylocentrotus_purpuratus	Echinodermata
+GO:0005200	structural constituent of cytoskeleton	molecular_function	MF	11	12	91.7	46.258	0.0	0.0	strongylocentrotus_purpuratus	Echinodermata
+GO:0000278	mitotic cell cycle	biological_process	BP	12	15	80.0	16.86	1e-06	0.0001	strongylocentrotus_purpuratus	Echinodermata
+GO:0000226	microtubule cytoskeleton organization	biological_process	BP	11	14	78.6	15.387	3e-06	0.0002	strongylocentrotus_purpuratus	Echinodermata
+GO:0005525	GTP binding	molecular_function	MF	14	22	63.6	7.403	8e-06	0.0004	strongylocentrotus_purpuratus	Echinodermata
+GO:0003924	GTPase activity	molecular_function	MF	12	18	66.7	8.404	1.8e-05	0.0008	strongylocentrotus_purpuratus	Echinodermata
+GO:0005874	microtubule	cellular_component	CC	13	25	52.0	4.543	0.000304	0.0109	strongylocentrotus_purpuratus	Echinodermata
+GO:0016757	glycosyltransferase activity	molecular_function	MF	11	20	55.0	5.097	0.000485	0.0152	strongylocentrotus_purpuratus	Echinodermata

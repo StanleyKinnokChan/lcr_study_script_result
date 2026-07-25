@@ -1,0 +1,28 @@
+analysis	group	variant	n_species	n_lcr	pct_of_all_lcr	pct_terminal	z	enriched
+supergroup	Prokaryota	pooled_LCR_weighted	119.0	3419	0.34	27.29	33.7	True
+supergroup	Prokaryota	species_mean_equal_weight	119.0	3419	0.34	26.92		
+supergroup	SAR	pooled_LCR_weighted	85.0	101801	10.134	15.88	62.5	True
+supergroup	SAR	species_mean_equal_weight	85.0	101801	10.134	18.93		
+supergroup	Excavata	pooled_LCR_weighted	22.0	17330	1.725	18.3	36.4	True
+supergroup	Excavata	species_mean_equal_weight	22.0	17330	1.725	19.05		
+supergroup	Amoebozoa	pooled_LCR_weighted	10.0	17721	1.764	16.88	30.5	True
+supergroup	Amoebozoa	species_mean_equal_weight	10.0	17721	1.764	20.82		
+supergroup	Archaeplastida	pooled_LCR_weighted	141.0	382575	38.083	23.25	273.2	True
+supergroup	Archaeplastida	species_mean_equal_weight	141.0	382575	38.083	23.18		
+supergroup	Other eukaryotes	pooled_LCR_weighted	16.0	25107	2.499	16.85	36.2	True
+supergroup	Other eukaryotes	species_mean_equal_weight	16.0	25107	2.499	19.66		
+supergroup	Opisthokonta	pooled_LCR_weighted	11.0	5993	0.597	17.44	19.2	True
+supergroup	Opisthokonta	species_mean_equal_weight	11.0	5993	0.597	18.97		
+supergroup	Metazoa	pooled_LCR_weighted	367.0	449659	44.761	17.33	163.9	True
+supergroup	Metazoa	species_mean_equal_weight	366.0	449659	44.761	17.83		
+metazoa_reweight	Metazoa	full	367.0	449659	44.761	17.33	163.9	True
+metazoa_reweight	Metazoa	exclude_Insecta		168972	16.82	18.19	112.2	True
+metazoa_reweight	Metazoa	Insecta_capped_to_2559		171531	17.075	18.17	112.8	True
+metazoa_reweight	Metazoa	exclude_8_singletons		445706	44.368	17.34	163.3	True
+singleton_phylum	Perkinsozoa	n1_standalone	1.0	1042	0.104	21.98	12.9	True
+singleton_phylum	Haptophyta	n1_standalone	1.0	2821	0.281	13.12	5.5	True
+singleton_phylum	Brachiopoda	n1_standalone	1.0	1250	0.124	21.2	13.2	True
+singleton_phylum	Acanthocephala	n1_standalone	1.0	128	0.013	16.41	2.4	True
+singleton_phylum	Nematomorpha	n1_standalone	1.0	181	0.018	16.57	2.9	True
+singleton_phylum	Priapulida	n1_standalone	1.0	1273	0.127	13.98	4.7	True
+singleton_phylum	Chordata	n1_standalone	1.0	1121	0.112	15.79	6.5	True
