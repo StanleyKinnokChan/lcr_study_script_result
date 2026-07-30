@@ -5,10 +5,9 @@ yeast (Coletta et al. 2010) and Tetrapoda (Teekas et al. 2024) is a **general
 architectural property of proteins** across all three domains of life — and dissects its
 mechanism through amino-acid composition and N/C polarity.
 
-Current manuscript: **`manuscript/manuscript_v7.md`** (mechanism-first). Earlier versions
-(`v1`–`v6`), the narrative below's historical predecessor, and `findings_summary.md`
-reflect an older evolutionary/LUCA framing that was deliberately dropped — see
-`CLAUDE.md` and `archive/README.md`.
+The manuscript, working notes, and archived analyses are maintained separately and are not
+part of this repository — this repo tracks only what reproduces the results below: the
+pipeline scripts, the result tables, and the figures.
 
 ## Research question
 
@@ -22,15 +21,15 @@ reveal about mechanism.
 
 ## Dataset
 
-**756 proteomes · 43 phyla/groups · all 3 domains of life · 962,447 LCRs.**
+**772 proteomes · 43 phyla/groups · all 3 domains of life · 1,004,572 LCRs.**
 
 | Domain / grouping | Species | Groups |
 |---|---|---|
 | Bacteria | 92 | 1 |
 | Archaea | 27 | 1 |
 | Metazoa | 367 | 24 phyla |
-| Other eukaryotes (all supergroups: SAR, Archaeplastida, Excavata, Amoebozoa, Opisthokonta-Fungi, Haptophyta, Cryptophyta) | 270 | 17 |
-| **Total** | **756** | **43** |
+| Other eukaryotes (all supergroups: SAR, Archaeplastida, Excavata, Amoebozoa, Opisthokonta-Fungi, Haptophyta, Cryptophyta) | 286 | 17 |
+| **Total** | **772** | **43** |
 
 Full per-species list: `results/species_manifest.tsv` (and manuscript Supp Table S1).
 
@@ -74,8 +73,8 @@ Phase 5 — Robustness & mechanism analyses
 ```
 
 Not orchestrated: `build_timetree_from_api.py` (optional timetree.org tree, future within-tier
-PGLS). **Archived** (`archive/`): `13_timetree_phylogeny.py` — deep-time dated phylogeny, dropped
-with the mechanism-first pivot.
+PGLS). A step 13 (deep-time dated phylogeny) existed in earlier pipeline versions and was
+dropped with the mechanism-first pivot; it is not part of this repository.
 
 ### Run order (on Mac / Linux)
 
@@ -124,19 +123,22 @@ reruns fLPS → analysis on the updated set.
 - **LCR detection:** fLPS 2.0 (`-m 3`); SINGLE-type rows only; purity ≥70% (dominant residue).
 - **Terminal definition:** 20 equal-length positional bins; bins 1 & 20 = terminal; null = 10%.
 - **Primary statistic:** one-sided Fisher's exact vs the 10% null (species + pooled group level).
-- **Length-confound control:** global length quartiles per domain/group; enrichment tested per
-  quartile (rising Q1→Q3 = evidence against a length artefact).
+- **Length-confound control:** length quartile breaks computed globally across the pooled
+  dataset (not per domain/group); enrichment then tested within each quartile, per group
+  (rising Q1→Q3 = evidence against a length artefact).
 - **Robustness:** parameter sensitivity (4 sets), cluster-robust GEE + species bootstrap
-  (prokaryotes), Holm-Bonferroni across all 43 group tests.
+  (prokaryotes), Holm-Bonferroni across all 43 group tests (41/43 survive correction; the two
+  that don't — Acanthocephala, Nematomorpha — are both single-species groups).
 - **Mechanism:** per-domain terminal AA composition; N/C polarity (log-odds asymmetry); bacterial
   signal-peptide stratification; PGLS of the plant polarity gradient; LLPS proxy.
 
 ## What is novel here
 
 - **First systematic, proteome-wide positional (terminal) LCR analysis in prokaryotes** — Bacteria
-  27.6% and Archaea 25.7% terminal, the highest pooled fractions in the dataset, with a decisive
-  length-confound control. (Prior work noted C-terminal LCRs only in the ribosomal-protein subset;
-  Ntountoumi et al. 2019.)
+  27.6% and Archaea 25.7% terminal, the highest pooled fractions among the multi-species groups
+  (single-species groups such as Heterolobosea, 31.0% at n=1, are reported as data points, not
+  robust comparisons), with a decisive length-confound control. (Prior work noted C-terminal LCRs
+  only in the ribosomal-protein subset; Ntountoumi et al. 2019.)
 - **A mechanistic fingerprint:** leucine is the most terminally-biased residue in every domain and
   methionine second in eukaryotes (N-terminal signal/anchor + initiator-Met processing); N/C
   polarity is lineage-specific (only land plants robustly N-dominant; bacteria balanced), which is
