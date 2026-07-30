@@ -23,6 +23,7 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.transforms
 from scipy.stats import kruskal, mannwhitneyu
 from pathlib import Path
 
@@ -32,50 +33,70 @@ from config import (
 )
 
 
-def _place_labels_no_overlap(fig, ax, xs, ys, labels, fontsize=7, pad_px=2.0):
+def _place_labels_no_overlap(fig, ax, xs, ys, labels, fontsize=7, pad_px=2.0,
+                              marker_size_pt2=55):
     """
     Annotate each (x, y) point with its label, picking the first candidate
     offset (in points, tried in increasing distance from the point) whose
-    rendered bounding box doesn't overlap a already-placed label. Falls back
-    to the offset with the least overlap if every candidate collides — dense
-    clusters (e.g. several low-n phyla at similar CV) would otherwise stack
-    labels on top of each other with a fixed offset.
+    rendered bounding box doesn't overlap a already-placed label or any
+    scatter marker. Falls back to the least-bad candidate if every option
+    collides — dense clusters (e.g. several low-n phyla at similar CV) would
+    otherwise stack labels on top of each other or under a neighbouring dot
+    (whose higher z-order then paints over the label text) with a fixed
+    offset.
     """
     fig.canvas.draw()  # establish a renderer so get_window_extent() works
     renderer = fig.canvas.get_renderer()
+    axes_box = ax.get_window_extent(renderer)  # plot area in display pixels
 
     candidates = [
         (6, 4, "left"), (6, -11, "left"), (-6, 4, "right"), (-6, -11, "right"),
         (6, 13, "left"), (-6, 13, "right"), (6, -20, "left"), (-6, -20, "right"),
         (16, 4, "left"), (-16, 4, "right"), (16, -11, "left"), (-16, -11, "right"),
         (0, 20, "center"), (0, -22, "center"),
+        (26, 4, "left"), (-26, 4, "right"), (0, 30, "center"), (0, -32, "center"),
     ]
 
-    placed_boxes = []  # display-coordinate (x0, y0, x1, y1) of placed labels
+    # Every scatter marker is a permanent obstacle so a label never lands on
+    # top of a (higher z-order) dot and gets visually clipped by it.
+    marker_radius_px = ((marker_size_pt2 / 3.14159) ** 0.5) * fig.dpi / 72.0 + pad_px
+    placed_boxes = []  # display-coordinate (x0, y0, x1, y1) of obstacles (markers + placed labels)
+    for x, y in zip(xs, ys):
+        cx, cy = ax.transData.transform((x, y))
+        placed_boxes.append(matplotlib.transforms.Bbox(
+            [[cx - marker_radius_px, cy - marker_radius_px],
+             [cx + marker_radius_px, cy + marker_radius_px]]))
 
     def _overlaps(b1, b2):
         return not (b1.x1 + pad_px < b2.x0 or b2.x1 + pad_px < b1.x0 or
                     b1.y1 + pad_px < b2.y0 or b2.y1 + pad_px < b1.y0)
 
+    def _inside_axes(bbox):
+        return (bbox.x0 >= axes_box.x0 and bbox.x1 <= axes_box.x1 and
+                bbox.y0 >= axes_box.y0 and bbox.y1 <= axes_box.y1)
+
     for x, y, label in zip(xs, ys, labels):
-        best_dx, best_dy, best_ha, best_overlap_count = candidates[0][0], candidates[0][1], candidates[0][2], None
+        best_dx, best_dy, best_ha = candidates[0][0], candidates[0][1], candidates[0][2]
+        best_score = None  # (out_of_bounds: bool, n_overlap: int) — lower is better
         for dx, dy, ha in candidates:
             txt = ax.annotate(
                 label, xy=(x, y), xytext=(dx, dy), textcoords="offset points",
                 ha=ha, va="center", fontsize=fontsize,
             )
             bbox = txt.get_window_extent(renderer)
+            out_of_bounds = not _inside_axes(bbox)
             n_overlap = sum(_overlaps(bbox, b) for b in placed_boxes)
-            if n_overlap == 0:
+            score = (out_of_bounds, n_overlap)
+            if score == (False, 0):
                 placed_boxes.append(bbox)
-                best_overlap_count = 0
+                best_score = score
                 break
             txt.remove()
-            if best_overlap_count is None or n_overlap < best_overlap_count:
-                best_overlap_count = n_overlap
+            if best_score is None or score < best_score:
+                best_score = score
                 best_dx, best_dy, best_ha = dx, dy, ha
         else:
-            # Nothing collision-free: keep the least-overlapping candidate.
+            # Nothing both in-bounds and collision-free: keep the best-scoring candidate.
             txt = ax.annotate(
                 label, xy=(x, y), xytext=(best_dx, best_dy),
                 textcoords="offset points", ha=best_ha, va="center",
@@ -190,6 +211,14 @@ def main():
     ax4.scatter(cv_plot["n_species"], cv_plot["cv_pct"], c=colours4, s=55,
                 edgecolors="black", linewidths=0.6, zorder=5)
     ax4.set_xscale("log")
+    # Extra headroom beyond the data range so edge-point labels (e.g. the
+    # leftmost single-digit-species phyla, or Insecta at the far right) have
+    # somewhere to go instead of being pushed past the plot border.
+    x_min, x_max = cv_plot["n_species"].min(), cv_plot["n_species"].max()
+    ax4.set_xlim(x_min / 1.8, x_max * 2.5)
+    y_min, y_max = cv_plot["cv_pct"].min(), cv_plot["cv_pct"].max()
+    y_pad = (y_max - y_min) * 0.08
+    ax4.set_ylim(y_min - y_pad, y_max + y_pad)
     _place_labels_no_overlap(fig4, ax4, cv_plot["n_species"].values,
                               cv_plot["cv_pct"].values, cv_plot["phylum"].values)
     ax4.set_xlabel("Number of species (log scale)", fontsize=11)
