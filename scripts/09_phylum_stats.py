@@ -32,6 +32,58 @@ from config import (
 )
 
 
+def _place_labels_no_overlap(fig, ax, xs, ys, labels, fontsize=7, pad_px=2.0):
+    """
+    Annotate each (x, y) point with its label, picking the first candidate
+    offset (in points, tried in increasing distance from the point) whose
+    rendered bounding box doesn't overlap a already-placed label. Falls back
+    to the offset with the least overlap if every candidate collides — dense
+    clusters (e.g. several low-n phyla at similar CV) would otherwise stack
+    labels on top of each other with a fixed offset.
+    """
+    fig.canvas.draw()  # establish a renderer so get_window_extent() works
+    renderer = fig.canvas.get_renderer()
+
+    candidates = [
+        (6, 4, "left"), (6, -11, "left"), (-6, 4, "right"), (-6, -11, "right"),
+        (6, 13, "left"), (-6, 13, "right"), (6, -20, "left"), (-6, -20, "right"),
+        (16, 4, "left"), (-16, 4, "right"), (16, -11, "left"), (-16, -11, "right"),
+        (0, 20, "center"), (0, -22, "center"),
+    ]
+
+    placed_boxes = []  # display-coordinate (x0, y0, x1, y1) of placed labels
+
+    def _overlaps(b1, b2):
+        return not (b1.x1 + pad_px < b2.x0 or b2.x1 + pad_px < b1.x0 or
+                    b1.y1 + pad_px < b2.y0 or b2.y1 + pad_px < b1.y0)
+
+    for x, y, label in zip(xs, ys, labels):
+        best_dx, best_dy, best_ha, best_overlap_count = candidates[0][0], candidates[0][1], candidates[0][2], None
+        for dx, dy, ha in candidates:
+            txt = ax.annotate(
+                label, xy=(x, y), xytext=(dx, dy), textcoords="offset points",
+                ha=ha, va="center", fontsize=fontsize,
+            )
+            bbox = txt.get_window_extent(renderer)
+            n_overlap = sum(_overlaps(bbox, b) for b in placed_boxes)
+            if n_overlap == 0:
+                placed_boxes.append(bbox)
+                best_overlap_count = 0
+                break
+            txt.remove()
+            if best_overlap_count is None or n_overlap < best_overlap_count:
+                best_overlap_count = n_overlap
+                best_dx, best_dy, best_ha = dx, dy, ha
+        else:
+            # Nothing collision-free: keep the least-overlapping candidate.
+            txt = ax.annotate(
+                label, xy=(x, y), xytext=(best_dx, best_dy),
+                textcoords="offset points", ha=best_ha, va="center",
+                fontsize=fontsize,
+            )
+            placed_boxes.append(txt.get_window_extent(renderer))
+
+
 def holm_bonferroni(pvalues: list[float]) -> list[float]:
     """Holm-Bonferroni step-down correction with monotonicity enforcement."""
     n = len(pvalues)
@@ -133,14 +185,13 @@ def main():
 
     # ── Supplementary Figure 4: within-phylum CV vs. sampling depth ─────────
     cv_plot = cv_df[cv_df["n_species"] >= 2].dropna(subset=["cv_pct"])
-    fig4, ax4 = plt.subplots(figsize=(8, 6))
+    fig4, ax4 = plt.subplots(figsize=(9, 7))
     colours4 = [PHYLUM_COLOURS.get(p, "#888") for p in cv_plot["phylum"]]
-    ax4.scatter(cv_plot["n_species"], cv_plot["cv_pct"], c=colours4, s=70,
+    ax4.scatter(cv_plot["n_species"], cv_plot["cv_pct"], c=colours4, s=55,
                 edgecolors="black", linewidths=0.6, zorder=5)
-    for _, row_ in cv_plot.iterrows():
-        ax4.annotate(row_["phylum"], (row_["n_species"], row_["cv_pct"]),
-                     fontsize=7, xytext=(4, 3), textcoords="offset points")
     ax4.set_xscale("log")
+    _place_labels_no_overlap(fig4, ax4, cv_plot["n_species"].values,
+                              cv_plot["cv_pct"].values, cv_plot["phylum"].values)
     ax4.set_xlabel("Number of species (log scale)", fontsize=11)
     ax4.set_ylabel("Within-phylum CV of % terminal (species-level)", fontsize=11)
     ax4.set_title("Within-phylum coefficient of variation vs. sampling depth\n"

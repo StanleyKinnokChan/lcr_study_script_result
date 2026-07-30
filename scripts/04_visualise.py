@@ -117,20 +117,25 @@ def fig2_terminal_barchart(enr_df: pd.DataFrame, phylum_df: pd.DataFrame):
         width=0.6,
     )
 
-    # Species-level dots overlaid
+    # Species-level dots overlaid. Small markers plus a narrow horizontal jitter
+    # so that densely sampled phyla (Bacteria, Insecta, Viridiplantae) resolve
+    # into individual species rather than a solid black column.
     phylum_list = list(phylum_df["phylum"])
+    rng = np.random.default_rng(0)
+    jitter = 0.15
     for _, row in enr_df.iterrows():
         if pd.isna(row["pct_terminal"]):
             continue
         if row["phylum"] not in phylum_list:
             continue
         ax.scatter(
-            phylum_list.index(row["phylum"]),
+            phylum_list.index(row["phylum"]) + rng.uniform(-jitter, jitter),
             row["pct_terminal"],
             color="black",
-            s=22,
+            s=4,
             zorder=5,
-            alpha=0.7,
+            alpha=0.45,
+            linewidths=0,
         )
 
     # Null expectation line (2/20 = 10%)
