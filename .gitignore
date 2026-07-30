@@ -48,6 +48,22 @@ results_backup_*.tgz
 *.tar.gz
 *.tgz
 ignore
+test
+
+# ── Ensembl species lookup caches ─────────────────────────────────────────────
+# Auto-fetched by scripts/01a and 01b if missing (see read_lookup() in 01a).
+species_Ensembl*.txt
+
+# ── Non-publication project material ──────────────────────────────────────────
+# Manuscript drafts, dev notes, and archived/superseded analyses are kept
+# locally, not in git. The repo tracks only what's needed to reproduce the
+# results: scripts, main.py, dependency files, results/*.tsv, and figures/.
+CLAUDE.md
+progress.txt
+manuscript/
+manuscript_v*.pdf
+docs/
+archive/
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DELIBERATELY TRACKED — do not add these
@@ -55,8 +71,5 @@ ignore
 #                        and the Zenodo release need them (all <400 KB)
 #   results/*.nwk        the Viridiplantae backbone phylogeny
 #   figures/             publication figures (~7.7 MB total)
-#   manuscript/          the paper itself
-#   manuscript_v*.pdf    built submission PDFs (~115 KB each)
-#   species_Ensembl*.txt Ensembl r63 species lookups used by 01a/01b
-#   scripts/, main.py, pyproject.toml, requirements.txt, uv.lock, CLAUDE.md
+#   scripts/, main.py, pyproject.toml, requirements.txt, uv.lock, README.md
 # ══════════════════════════════════════════════════════════════════════════════
