@@ -9,7 +9,11 @@ distributions across phyla.
 
 Outputs:
   results/aa_composition.tsv  — per-phylum × residue × location counts
-  figures/fig5_aa_composition.pdf
+  figures/aa_composition_terminal_internal.pdf  — per-phylum breakdown
+                                                    (supports Supplementary
+                                                    Table S7, not itself a
+                                                    numbered figure)
+  figures/suppfig5_aa_enrichment_metazoa.pdf     — Supplementary Figure 5
 """
 
 import re
@@ -23,7 +27,7 @@ from pathlib import Path
 from config import (
     PROJECT_DIR, RESULTS_DIR, FIGURES_DIR, FLPS_DIR,
     N_BINS, TERMINAL_BINS, PURITY_THRESHOLD, MIN_LCR_LENGTH,
-    PHYLUM_ORDER,
+    PHYLUM_ORDER, SUPERGROUP_OF,
     AA_ORDER, AA_COLOURS,
 )
 
@@ -171,29 +175,40 @@ def main():
                  "(purity ≥ 70%, SINGLE-residue LCRs only)", fontsize=12, y=1.01)
     plt.tight_layout()
 
-    out = FIGURES_DIR / "fig5_aa_composition.pdf"
+    out = FIGURES_DIR / "aa_composition_terminal_internal.pdf"
     fig.savefig(out, dpi=300, bbox_inches="tight")
     fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"\nFigure 5 saved: {out}")
+    print(f"\nPer-phylum AA composition figure saved: {out}")
     plt.close()
 
-    # ── Figure 5b: enrichment ratio bar (global) ─────────────────────────────
-    top_aas = pivot_global.head(10)
-    fig, ax = plt.subplots(figsize=(7, 4))
-    colours = [AA_COLOURS.get(aa, "#ccc") for aa in top_aas.index]
-    ax.bar(top_aas.index, top_aas["enrichment_ratio"], color=colours,
+    # ── Supplementary Figure 5: enrichment ratio, pooled across Metazoa only ──
+    metazoan_phyla = [p for p, sg in SUPERGROUP_OF.items() if sg == "Metazoa"]
+    meta_counts = counts[counts["phylum"].isin(metazoan_phyla)]
+    meta_agg = meta_counts.groupby(["location", "residue"])["count"].sum().reset_index()
+    meta_totals = meta_agg.groupby("location")["count"].transform("sum")
+    meta_agg["fraction"] = meta_agg["count"] / meta_totals
+    meta_pivot = meta_agg.pivot(index="residue", columns="location", values="fraction").fillna(0)
+    meta_pivot["enrichment_ratio"] = meta_pivot["terminal"] / meta_pivot["internal"]
+    meta_pivot = meta_pivot.sort_values("enrichment_ratio", ascending=False)
+
+    fig, ax = plt.subplots(figsize=(11, 4.5))
+    colours = [AA_COLOURS.get(aa, "#ccc") for aa in meta_pivot.index]
+    ax.bar(meta_pivot.index, meta_pivot["enrichment_ratio"], color=colours,
            edgecolor="black", linewidth=0.7)
     ax.axhline(1.0, color="red", linestyle=":", linewidth=1.2,
                label="No enrichment (ratio = 1)")
     ax.set_ylabel("Terminal / internal frequency ratio", fontsize=11)
-    ax.set_title("Amino acids enriched at protein termini (all species pooled)", fontsize=12)
+    ax.set_title(f"Amino acid enrichment ratio at protein termini, "
+                 f"pooled across Metazoa ({len(metazoan_phyla)} phyla)", fontsize=12)
     ax.legend(fontsize=9)
     plt.tight_layout()
 
-    out2 = FIGURES_DIR / "fig5b_aa_enrichment_ratio.pdf"
+    out2 = FIGURES_DIR / "suppfig5_aa_enrichment_metazoa.pdf"
     fig.savefig(out2, dpi=300, bbox_inches="tight")
     fig.savefig(str(out2).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"Figure 5b saved: {out2}")
+    print(f"Supplementary Figure 5 saved: {out2}")
+    print(f"  Metazoa-pooled top enriched: {', '.join(meta_pivot.head(3).index)}  "
+          f"|  most depleted: {', '.join(meta_pivot.tail(3).index)}")
     plt.close()
 
 

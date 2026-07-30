@@ -1,2 +1,2 @@
-method	intercept	slope	se_slope	t_stat	p_value	r2_pgls	n
-PGLS_Brownian	0.9425	0.2527	0.1891	1.336	0.184668	0.0179	100
+method	intercept	slope	se_slope	t_stat	p_value	r2_pgls	n	pearson_r	pearson_p	spearman_rho	spearman_p
+PGLS_Brownian	0.9425	0.2527	0.1891	1.336	0.184668	0.0179	100	0.633	0.0	0.6122	0.0

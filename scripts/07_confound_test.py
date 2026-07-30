@@ -9,7 +9,8 @@ enrichment is significant within every quartile, ruling out length confounding.
 
 Outputs:
   results/length_confound.tsv  — Fisher's exact results per length quartile × phylum
-  figures/fig6_length_confound.pdf
+  figures/fig5_prokaryote_length_quartile.pdf  — Figure 5 (main text)
+  figures/suppfig2_length_heatmap.pdf          — Supplementary Figure 2
 """
 
 import pandas as pd
@@ -17,7 +18,9 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import seaborn as sns
 from scipy.stats import fisher_exact
+from statsmodels.stats.proportion import proportion_confint
 from pathlib import Path
 
 from config import (
@@ -106,63 +109,64 @@ def main():
     out_df.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nLength confound table: {out_tsv}")
 
-    # ── Figure 6: pct_terminal by quartile (pooled + per-phylum) ─────────────
-    pooled = out_df[out_df["group"] == "ALL"].dropna(subset=["pct_terminal"])
+    # ── Figure 5 (main text): prokaryote length-quartile enrichment ──────────
+    prok = out_df[out_df["group"].isin(["Bacteria", "Archaea"])].copy()
+    prok["quartile"] = pd.Categorical(prok["quartile"], ["Q1", "Q2", "Q3", "Q4"], ordered=True)
+    prok = prok.sort_values(["group", "quartile"])
+    lo, hi = proportion_confint(prok["n_terminal"], prok["n_lcr"], method="wilson")
+    prok["ci_lo"] = prok["pct_terminal"] - lo * 100
+    prok["ci_hi"] = hi * 100 - prok["pct_terminal"]
 
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
-
-    # Left panel: pooled bars
-    ax = axes[0]
-    colours = ["#d1e5f0", "#92c5de", "#4393c3", "#2166ac"]
-    ax.bar(
-        [f"Q{q}" for q in [1, 2, 3, 4]],
-        pooled["pct_terminal"],
-        color=colours, edgecolor="black", linewidth=0.7
-    )
-    ax.axhline(10.0, color="red", linestyle=":", linewidth=1.2, label="Null (10%)")
-    ax.set_ylabel("% LCRs in terminal bins", fontsize=11)
-    ax.set_xlabel("Protein length quartile", fontsize=11)
-    ax.set_title("Terminal enrichment by protein length quartile\n(all species pooled)", fontsize=11)
-    ax.set_ylim(0, max(pooled["pct_terminal"].max() * 1.2, 15))
-    ax.legend(fontsize=9)
-
-    # Annotate p values
-    for i, (_, row_) in enumerate(pooled.iterrows()):
-        ax.text(i, row_["pct_terminal"] + 0.3,
-                "***" if row_["sig"] else "ns",
-                ha="center", va="bottom", fontsize=9)
-
-    # Right panel: per-phylum line plot across quartiles
-    ax2 = axes[1]
-    phyla_with_data = out_df[out_df["group"] != "ALL"]["group"].unique()
-    phyla_ordered = [p for p in PHYLUM_ORDER if p in phyla_with_data]
-
-    cmap = plt.colormaps["tab20"].resampled(max(len(phyla_ordered), 1))
-    for i, phylum in enumerate(phyla_ordered):
-        sub = out_df[(out_df["group"] == phylum)].dropna(subset=["pct_terminal"])
-        if sub.empty:
-            continue
-        sub = sub.sort_values("quartile")
-        ax2.plot(
-            sub["quartile"], sub["pct_terminal"],
-            marker="o", markersize=5, linewidth=1.5,
-            color=cmap(i), label=phylum
+    fig, ax = plt.subplots(figsize=(7, 5))
+    x = np.arange(4)
+    width = 0.35
+    domain_colours = {"Bacteria": "#1f78b4", "Archaea": "#e31a1c"}
+    for i, domain in enumerate(["Bacteria", "Archaea"]):
+        d = prok[prok["group"] == domain]
+        offset = (i - 0.5) * width
+        ax.bar(
+            x + offset, d["pct_terminal"], width, label=domain,
+            color=domain_colours[domain], edgecolor="black", linewidth=0.7,
+            yerr=[d["ci_lo"], d["ci_hi"]], capsize=4, error_kw={"linewidth": 1.1},
         )
-
-    ax2.axhline(10.0, color="red", linestyle=":", linewidth=1.2, label="Null (10%)")
-    ax2.set_ylabel("% LCRs in terminal bins", fontsize=11)
-    ax2.set_xlabel("Protein length quartile", fontsize=11)
-    ax2.set_title("Per-phylum terminal enrichment across length quartiles", fontsize=11)
-    ax2.legend(fontsize=7, loc="upper right", ncol=2)
-
-    plt.suptitle("Protein length does not confound terminal LCR enrichment", fontsize=13, y=1.01)
+    ax.axhline(10.0, color="grey", linestyle=":", linewidth=1.2, label="10% null")
+    ax.set_xticks(x)
+    ax.set_xticklabels(QUARTILE_LABELS)
+    ax.set_ylabel("% LCRs in terminal bins (bins 1 & 20)", fontsize=11)
+    ax.set_xlabel("Protein-length quartile (boundaries global, defined once per domain)", fontsize=10)
+    ax.set_title("Protein-length stratified terminal LCR enrichment in prokaryotes", fontsize=12)
+    ax.legend(fontsize=9)
     plt.tight_layout()
 
-    out = FIGURES_DIR / "fig6_length_confound.pdf"
-    fig.savefig(out, dpi=300, bbox_inches="tight")
-    fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"Figure 6 saved: {out}")
-    plt.close()
+    out5 = FIGURES_DIR / "fig5_prokaryote_length_quartile.pdf"
+    fig.savefig(out5, dpi=300, bbox_inches="tight")
+    fig.savefig(str(out5).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
+    print(f"Figure 5 saved: {out5}")
+    plt.close(fig)
+
+    # ── Supplementary Figure 2: 4 quartiles x 43 groups heatmap ──────────────
+    sub = out_df[out_df["group"] != "ALL"].copy()
+    pivot = sub.pivot(index="group", columns="quartile", values="pct_terminal")
+    pivot = pivot[["Q1", "Q2", "Q3", "Q4"]]
+    order = [p for p in PHYLUM_ORDER if p in pivot.index]
+    pivot = pivot.reindex(order)
+
+    fig, ax = plt.subplots(figsize=(5, max(8, len(pivot) * 0.32)))
+    sns.heatmap(
+        pivot, ax=ax, cmap="YlOrRd", vmin=0, vmax=pivot.to_numpy(dtype=float).max(),
+        linewidths=0.4, linecolor="white",
+        cbar_kws={"label": "% LCRs in terminal bins"},
+    )
+    ax.set_xlabel("Protein-length quartile", fontsize=11)
+    ax.set_ylabel("")
+    ax.set_title("Length-stratified terminal LCR enrichment,\nall 43 phyla/groups", fontsize=12)
+    plt.tight_layout()
+
+    out2 = FIGURES_DIR / "suppfig2_length_heatmap.pdf"
+    fig.savefig(out2, dpi=300, bbox_inches="tight")
+    fig.savefig(str(out2).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
+    print(f"Supplementary Figure 2 saved: {out2}")
+    plt.close(fig)
 
 
 if __name__ == "__main__":

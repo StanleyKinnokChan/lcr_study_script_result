@@ -45,8 +45,11 @@ Method:
 Outputs:
   results/pgls_viridiplantae.tsv    — per-species data with tier assignment
   results/pgls_tier_summary.tsv     — mean ± SD asymmetry ratio per tier
-  results/pgls_regression_stats.tsv — regression coefficients and p-value
-  figures/suppfig_pgls.pdf
+  results/pgls_regression_stats.tsv — PGLS (or OLS-fallback) coefficients, plus
+                                       the non-phylogenetic Pearson/Spearman
+                                       correlation on the same species set
+  figures/suppfig3_viridiplantae_tier.pdf   — Supplementary Figure 3
+  figures/suppfig7_pgls_ols_contrast.pdf    — Supplementary Figure 7 (needs PGLS tree)
 """
 
 import argparse
@@ -427,6 +430,17 @@ def main(one_per_genus: bool = True):
     predictor = plants_ols["tier"].values
     trait = plants_ols["asymmetry_ratio"].values
 
+    # ── Non-phylogenetic OLS / Spearman baseline ────────────────────────────────
+    # Computed unconditionally (not just as a no-tree fallback) so the
+    # non-phylogenetic correlation is always available to contrast against
+    # PGLS, on the same n as the saved per-species table.
+    ols_r, ols_p_r = pearsonr(predictor, trait)
+    ols_rho, ols_p_rho = spearmanr(predictor, trait)
+    ols_coeffs = np.polyfit(predictor, trait, 1)
+    print(f"\nNon-phylogenetic OLS on taxonomic tier (n={len(plants_ols)}):")
+    print(f"  Pearson  r  = {ols_r:.3f}, p = {ols_p_r:.3g}")
+    print(f"  Spearman ρ  = {ols_rho:.3f}, p = {ols_p_rho:.3g}")
+
     # ── Attempt PGLS ──────────────────────────────────────────────────────────
     vcv, matched_pos = load_tree_vcv(TREE_FILE, plants_ols)
     use_pgls = vcv is not None
@@ -440,21 +454,13 @@ def main(one_per_genus: bool = True):
         print(f"  PGLS slope={stats.get('slope')}, p={stats.get('p_value')}, "
               f"R²={stats.get('r2_pgls')}")
     else:
-        # ── OLS + Spearman fallback ───────────────────────────────────────────
         if not TREE_FILE.exists():
             print(f"\nTree file not found at {TREE_FILE}.")
-        print("Falling back to OLS on taxonomic tier.")
-        r, p_r = pearsonr(predictor, trait)
-        rho, p_rho = spearmanr(predictor, trait)
-        coeffs = np.polyfit(predictor, trait, 1)
+        print("No tree available — PGLS not run; OLS above is the only regression.")
         stats = {
             "method": "OLS_taxonomic_tier_fallback",
-            "slope": round(float(coeffs[0]), 4),
-            "intercept": round(float(coeffs[1]), 4),
-            "pearson_r": round(float(r), 4),
-            "pearson_p": round(float(p_r), 6),
-            "spearman_rho": round(float(rho), 4),
-            "spearman_p": round(float(p_rho), 6),
+            "slope": round(float(ols_coeffs[0]), 4),
+            "intercept": round(float(ols_coeffs[1]), 4),
             "n": len(plants_ols),
             "one_per_genus": one_per_genus,
             "note": (
@@ -464,12 +470,19 @@ def main(one_per_genus: bool = True):
                 "results/viridiplantae_timetree.nwk"
             ),
         }
-        print(f"  Pearson  r  = {r:.3f}, p = {p_r:.5f}")
-        print(f"  Spearman ρ  = {rho:.3f}, p = {p_rho:.5f}")
-        print(f"\n  Note: gymnosperms are absent from Ensembl Plants r63.")
+        print("\n  Note: gymnosperms are absent from Ensembl Plants r63.")
         print("  To add full PGLS: upload results/pgls_species_list.txt to")
         print("  timetree.org ('Load a List of Species'), then save the downloaded")
         print("  Newick as results/viridiplantae_timetree.nwk and re-run this script.\n")
+
+    # pearson_r/pearson_p/spearman_* are always the non-phylogenetic OLS values
+    # above, saved alongside whichever regression (PGLS or fallback) ran, so
+    # pgls_regression_stats.tsv always carries both numbers for the Fig 3 vs
+    # Fig 7 contrast regardless of which branch was taken.
+    stats["pearson_r"] = round(float(ols_r), 4)
+    stats["pearson_p"] = round(float(ols_p_r), 6)
+    stats["spearman_rho"] = round(float(ols_rho), 4)
+    stats["spearman_p"] = round(float(ols_p_rho), 6)
 
     # ── Tier-level summary ────────────────────────────────────────────────────
     tier_summary_rows = []
@@ -503,86 +516,71 @@ def main(one_per_genus: bool = True):
     print(f"\nPer-species data: {RESULTS_DIR / 'pgls_viridiplantae.tsv'}")
     print(f"Regression stats: {RESULTS_DIR / 'pgls_regression_stats.tsv'}")
 
-    # ── Figure ────────────────────────────────────────────────────────────────
+    # ── Shared scatter helper ────────────────────────────────────────────────
     tiers_present = sorted(plants_ols["tier"].unique())
-    fig, axes = plt.subplots(1, 2, figsize=(14, 6))
-
-    # Panel A: individual species scatter + OLS line
-    ax = axes[0]
-    for tier in tiers_present:
-        sub = plants_ols[plants_ols["tier"] == tier]
-        jitter = np.random.default_rng(tier).uniform(-0.18, 0.18, len(sub))
-        ax.scatter(
-            np.full(len(sub), tier) + jitter,
-            sub["asymmetry_ratio"],
-            c=TIER_COLOURS.get(tier, "#aaa"),
-            s=60, alpha=0.8, edgecolors="black", linewidths=0.4, zorder=5,
-        )
-    # Regression line
     x_line = np.linspace(min(tiers_present), max(tiers_present), 200)
-    if not use_pgls:
-        ax.plot(x_line, np.polyval(coeffs, x_line),
-                color="black", linewidth=1.5, linestyle="--",
-                label=f"OLS (Pearson r={stats['pearson_r']}, p={stats['pearson_p']:.4f})")
-    else:
-        b0, b1 = stats["intercept"], stats["slope"]
-        ax.plot(x_line, b0 + b1 * x_line,
-                color="black", linewidth=1.5, linestyle="--",
-                label=f"PGLS slope={b1}, p={stats.get('p_value', 'NA')}")
-    ax.axhline(1.0, color="red", linestyle=":", linewidth=1.2, label="Symmetry (ratio=1)")
-    ax.set_xticks(tiers_present)
-    ax.set_xticklabels(
-        [TIER_LABELS.get(t, str(t)).replace("\n", " ") for t in tiers_present],
-        rotation=30, ha="right", fontsize=8,
-    )
-    ax.set_ylabel("N/C asymmetry ratio (pct_nterm / pct_cterm)", fontsize=10)
-    ax.set_title("Individual species (one per genus)", fontsize=10)
-    ax.legend(fontsize=8)
 
-    # Panel B: mean ± SD per tier (bar chart)
-    ax = axes[1]
-    x = np.arange(len(tier_df))
-    bar_colours = [TIER_COLOURS.get(t, "#aaa") for t in tier_df["tier"]]
-    ax.bar(x, tier_df["mean_ratio"], yerr=tier_df["sd_ratio"],
-           color=bar_colours, edgecolor="black", linewidth=0.6,
-           capsize=4, error_kw={"linewidth": 1.2, "ecolor": "black"})
-    for i, row in tier_df.iterrows():
-        ax.text(i, 0.02, f"n={row['n_species']}", ha="center", va="bottom",
-                fontsize=7, color="white", fontweight="bold")
-    ax.axhline(1.0, color="red", linestyle=":", linewidth=1.2, label="Symmetry (ratio=1)")
-    ax.set_xticks(x)
-    ax.set_xticklabels(
-        [TIER_LABELS.get(t, str(t)).replace("\n", " ") for t in tier_df["tier"]],
-        rotation=30, ha="right", fontsize=8,
-    )
-    ax.set_ylabel("Mean N/C asymmetry ratio", fontsize=10)
-    ax.set_title("Tier means ± SD", fontsize=10)
-    ax.legend(fontsize=8)
+    def _scatter_by_tier(ax):
+        for tier in tiers_present:
+            sub = plants_ols[plants_ols["tier"] == tier]
+            jitter = np.random.default_rng(tier).uniform(-0.18, 0.18, len(sub))
+            ax.scatter(
+                np.full(len(sub), tier) + jitter, sub["asymmetry_ratio"],
+                c=TIER_COLOURS.get(tier, "#aaa"), s=60, alpha=0.8,
+                edgecolors="black", linewidths=0.4, zorder=5,
+            )
+        ax.set_xticks(tiers_present)
+        ax.set_xticklabels(
+            [TIER_LABELS.get(t, str(t)).replace("\n", " ") for t in tiers_present],
+            rotation=30, ha="right", fontsize=9,
+        )
+        ax.set_ylabel("N/C asymmetry ratio (pct_nterm / pct_cterm)", fontsize=11)
 
-    method_note = ("PGLS" if use_pgls
-                   else "OLS on tier rank (PGLS requires viridiplantae_timetree.nwk)")
-    n_tiers = len(tier_df)
-    has_ferns = 4 in tier_df["tier"].values
-    has_gymno = 5 in tier_df["tier"].values
-    missing = []
-    if not has_ferns:
-        missing.append("ferns")
-    if not has_gymno:
-        missing.append("gymnosperms")
-    missing_note = (f"run 01c to add: {', '.join(missing)}" if missing
-                    else "all 10 tiers present")
-    plt.suptitle(
-        f"N-terminal LCR asymmetry across Viridiplantae evolutionary tiers "
-        f"({n_tiers}/10 tiers present)\n"
-        f"({method_note}; {missing_note})",
+    # ── Supplementary Figure 3: tier distribution, non-phylogenetic OLS only ──
+    fig, ax = plt.subplots(figsize=(8, 6))
+    _scatter_by_tier(ax)
+    ax.plot(x_line, np.polyval(ols_coeffs, x_line), color="black", linewidth=1.5,
+            linestyle="--", label=f"OLS (Pearson r={ols_r:.2f}, p={ols_p_r:.2e})")
+    ax.axhline(1.0, color="red", linestyle=":", linewidth=1.2, label="Symmetry (ratio=1)")
+    ax.set_title(
+        f"Viridiplantae N/C asymmetry ratio across evolutionary tiers (n={len(plants_ols)})\n"
+        "(non-phylogenetic OLS trend; see Supplementary Figure 7 for PGLS correction)",
         fontsize=11,
     )
+    ax.legend(fontsize=9)
     plt.tight_layout()
+    out_fig3 = FIGURES_DIR / "suppfig3_viridiplantae_tier.pdf"
+    fig.savefig(out_fig3, dpi=300, bbox_inches="tight")
+    fig.savefig(str(out_fig3).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
+    print(f"\nSupplementary Figure 3 saved: {out_fig3}")
+    plt.close(fig)
 
-    out_fig = FIGURES_DIR / "suppfig_pgls.pdf"
-    fig.savefig(out_fig, dpi=300, bbox_inches="tight")
-    fig.savefig(str(out_fig).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"\nPGLS figure: {out_fig}")
+    # ── Supplementary Figure 7: OLS vs PGLS contrast ────────────────────────────
+    if use_pgls:
+        fig, ax = plt.subplots(figsize=(8, 6))
+        _scatter_by_tier(ax)
+        ax.plot(x_line, np.polyval(ols_coeffs, x_line), color="black", linewidth=1.8,
+                linestyle="--",
+                label=f"Non-phylogenetic OLS (Pearson r={ols_r:.2f}, p={ols_p_r:.2e})")
+        b0, b1, p_pgls = stats["intercept"], stats["slope"], stats["p_value"]
+        ax.plot(x_line, b0 + b1 * x_line, color="#d94801", linewidth=1.8, linestyle="-",
+                label=f"PGLS, Brownian motion (slope={b1:.3f}, p={p_pgls:.3f})")
+        ax.axhline(1.0, color="grey", linestyle=":", linewidth=1.0, label="Symmetry (ratio=1)")
+        ax.set_title(
+            "PGLS regression of N/C asymmetry on evolutionary tier\n"
+            f"({stats['n']} genus representatives, Brownian-motion backbone phylogeny)",
+            fontsize=11,
+        )
+        ax.legend(fontsize=9)
+        plt.tight_layout()
+        out_fig7 = FIGURES_DIR / "suppfig7_pgls_ols_contrast.pdf"
+        fig.savefig(out_fig7, dpi=300, bbox_inches="tight")
+        fig.savefig(str(out_fig7).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
+        print(f"Supplementary Figure 7 saved: {out_fig7}")
+        plt.close(fig)
+    else:
+        print("\nSkipping Supplementary Figure 7 (OLS vs PGLS contrast): "
+              "no tree available, PGLS did not run.")
     plt.close()
 
 

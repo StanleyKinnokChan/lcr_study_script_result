@@ -10,7 +10,9 @@ Also tests whether the purity difference varies across phyla.
 
 Outputs:
   results/purity_gradient.tsv  — per-phylum Mann-Whitney U results
-  figures/fig7_purity_gradient.pdf
+  figures/suppfig6_purity_gradient.pdf  — Supplementary Figure 6 (the 9 phyla
+                                           with a significant terminal/internal
+                                           purity difference)
 """
 
 import pandas as pd
@@ -18,12 +20,13 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import seaborn as sns
 from scipy.stats import mannwhitneyu
 from pathlib import Path
 
 from config import (
     PROJECT_DIR, RESULTS_DIR, FIGURES_DIR,
-    PHYLUM_ORDER, PHYLUM_COLOURS,
+    PHYLUM_ORDER,
 )
 
 def main():
@@ -75,62 +78,42 @@ def main():
     out_df.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nPurity gradient table: {out_tsv}")
 
-    phyla_present = [p for p in PHYLUM_ORDER if p in out_df["phylum"].values]
-
-    # ── Figure 7a: Violin plot global terminal vs internal ────────────────────
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
-
-    ax = axes[0]
-    data_violin = [
-        pos_df[pos_df["is_terminal"]]["purity"].values,
-        pos_df[~pos_df["is_terminal"]]["purity"].values,
+    # ── Supplementary Figure 6: terminal vs internal purity, 9 significant phyla ─
+    NINE_SIG_PHYLA = [
+        "Apicomplexa", "Rhizaria", "Euglenozoa", "Viridiplantae", "Rotifera",
+        "Annelida", "Chelicerata", "Echinodermata", "Hemichordata",
     ]
-    parts = ax.violinplot(data_violin, positions=[1, 2], showmedians=True,
-                          showextrema=False)
-    parts["bodies"][0].set_facecolor("#d6604d")
-    parts["bodies"][0].set_alpha(0.7)
-    parts["bodies"][1].set_facecolor("#4393c3")
-    parts["bodies"][1].set_alpha(0.7)
-    parts["cmedians"].set_color("black")
-    ax.set_xticks([1, 2])
-    ax.set_xticklabels(["Terminal\n(bins 1 & 20)", "Internal\n(bins 2–19)"])
-    ax.set_ylabel("LCR purity (dominant aa / LCR length)", fontsize=11)
-    ax.set_title(f"Terminal LCRs have higher purity\n(Mann-Whitney U, p={p:.2e})", fontsize=11)
-    ax.set_ylim(0.65, 1.05)
+    sig_df = out_df.set_index("phylum")
+    order = [p for p in NINE_SIG_PHYLA if p in sig_df.index]
 
-    # ── Figure 7b: delta purity per phylum ───────────────────────────────────
-    ax2 = axes[1]
-    colours = [PHYLUM_COLOURS.get(p, "#aaa") for p in phyla_present]
-    out_present = out_df.set_index("phylum").reindex(phyla_present)
+    sub9 = pos_df[pos_df["phylum"].isin(order)].copy()
+    sub9["location"] = sub9["is_terminal"].map({True: "Terminal", False: "Internal"})
 
-    bars = ax2.bar(
-        range(len(phyla_present)),
-        out_present["delta_purity"],
-        color=colours, edgecolor="black", linewidth=0.7
+    fig, ax = plt.subplots(figsize=(12, 6.5))
+    sns.violinplot(
+        data=sub9, x="phylum", y="purity", hue="location", order=order,
+        split=True, inner="quartile", ax=ax,
+        palette={"Terminal": "#e41a1c", "Internal": "#377eb8"},
+        cut=0, linewidth=0.8,
     )
-    ax2.axhline(0, color="black", linewidth=0.8, linestyle="--")
-    ax2.set_xticks(range(len(phyla_present)))
-    ax2.set_xticklabels(phyla_present, rotation=60, ha="right", fontsize=9)
-    ax2.set_ylabel("Δ purity (terminal − internal)", fontsize=11)
-    ax2.set_title("Per-phylum terminal purity excess\n"
-                  "(positive = terminal LCRs are purer)", fontsize=11)
-
-    # Significance markers
-    for i, phylum in enumerate(phyla_present):
-        row_ = out_present.loc[phylum]
-        if row_["sig"]:
-            ypos = row_["delta_purity"] + 0.0008 if row_["delta_purity"] >= 0 else row_["delta_purity"] - 0.002
-            ax2.text(i, ypos, "***", ha="center", va="bottom", fontsize=8)
-
-    plt.suptitle("Terminal LCR purity gradient across metazoan phyla\n"
-                 "(purity = fraction of LCR composed of dominant amino acid)", fontsize=12, y=1.01)
+    for i, phylum in enumerate(order):
+        p_ph = sig_df.loc[phylum, "pvalue"]
+        label = "p<0.001" if p_ph < 0.001 else f"p={p_ph:.2g}"
+        ax.text(i, 1.03, label, ha="center", va="bottom", fontsize=8,
+                transform=ax.get_xaxis_transform())
+    ax.set_ylim(0.6, 1.14)
+    ax.set_xlabel("")
+    ax.set_ylabel("LCR purity (dominant aa / LCR length)", fontsize=11)
+    ax.set_title("Terminal vs internal LCR purity, nine phyla with significant\n"
+                 "Mann-Whitney U difference (bins 1+20 vs bins 2-19)", fontsize=12, y=1.08)
+    ax.legend(title="", fontsize=9, loc="lower right")
     plt.tight_layout()
 
-    out = FIGURES_DIR / "fig7_purity_gradient.pdf"
+    out = FIGURES_DIR / "suppfig6_purity_gradient.pdf"
     fig.savefig(out, dpi=300, bbox_inches="tight")
     fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"Figure 7 saved: {out}")
-    plt.close()
+    print(f"Supplementary Figure 6 saved: {out}")
+    plt.close(fig)
 
 
 if __name__ == "__main__":

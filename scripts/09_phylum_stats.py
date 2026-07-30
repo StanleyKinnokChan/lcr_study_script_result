@@ -13,7 +13,8 @@ Tests:
 Outputs:
   results/phylum_stats.tsv         — pairwise p-values matrix
   results/within_phylum_cv.tsv     — coefficient of variation per phylum
-  figures/fig8_phylum_comparison.pdf
+  figures/suppfig1_phylum_distribution.pdf  — Supplementary Figure 1
+  figures/suppfig4_cv_vs_nspecies.pdf       — Supplementary Figure 4
 """
 
 import itertools
@@ -130,6 +131,27 @@ def main():
     cv_df.to_csv(cv_path, sep="\t", index=False)
     print(f"\nWithin-phylum CV table: {cv_path}")
 
+    # ── Supplementary Figure 4: within-phylum CV vs. sampling depth ─────────
+    cv_plot = cv_df[cv_df["n_species"] >= 2].dropna(subset=["cv_pct"])
+    fig4, ax4 = plt.subplots(figsize=(8, 6))
+    colours4 = [PHYLUM_COLOURS.get(p, "#888") for p in cv_plot["phylum"]]
+    ax4.scatter(cv_plot["n_species"], cv_plot["cv_pct"], c=colours4, s=70,
+                edgecolors="black", linewidths=0.6, zorder=5)
+    for _, row_ in cv_plot.iterrows():
+        ax4.annotate(row_["phylum"], (row_["n_species"], row_["cv_pct"]),
+                     fontsize=7, xytext=(4, 3), textcoords="offset points")
+    ax4.set_xscale("log")
+    ax4.set_xlabel("Number of species (log scale)", fontsize=11)
+    ax4.set_ylabel("Within-phylum CV of % terminal (species-level)", fontsize=11)
+    ax4.set_title("Within-phylum coefficient of variation vs. sampling depth\n"
+                  "(phyla/groups with n ≥ 2 species)", fontsize=12)
+    plt.tight_layout()
+    out4 = FIGURES_DIR / "suppfig4_cv_vs_nspecies.pdf"
+    fig4.savefig(out4, dpi=300, bbox_inches="tight")
+    fig4.savefig(str(out4).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
+    print(f"Supplementary Figure 4 saved: {out4}")
+    plt.close(fig4)
+
     # ── 3b. Holm-Bonferroni on phylum-level pooled Fisher p-values ──────────
     phylum_path = RESULTS_DIR / "phylum_summary.tsv"
     if phylum_path.exists():
@@ -213,10 +235,10 @@ def main():
                 bbox=dict(boxstyle="round", fc="white", alpha=0.8))
 
     plt.tight_layout()
-    out = FIGURES_DIR / "fig8_phylum_comparison.pdf"
+    out = FIGURES_DIR / "suppfig1_phylum_distribution.pdf"
     fig.savefig(out, dpi=300, bbox_inches="tight")
     fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"\nFigure 8 saved: {out}")
+    print(f"\nSupplementary Figure 1 saved: {out}")
     plt.close()
 
 

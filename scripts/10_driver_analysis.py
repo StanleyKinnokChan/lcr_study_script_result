@@ -12,7 +12,8 @@ mechanism is generic across the proteome.
 
 Outputs:
   results/driver_analysis.tsv   — singleton vs multi-LCR enrichment per phylum
-  figures/fig9_driver.pdf
+  figures/driver_analysis.pdf  (supports Supplementary Table S2, not a
+                                 numbered figure)
 """
 
 import pandas as pd
@@ -182,10 +183,10 @@ def main():
                 bbox=dict(boxstyle="round", fc="white", alpha=0.8))
 
     plt.tight_layout()
-    out = FIGURES_DIR / "fig9_driver.pdf"
+    out = FIGURES_DIR / "driver_analysis.pdf"
     fig.savefig(out, dpi=300, bbox_inches="tight")
     fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"Figure 9 saved: {out}")
+    print(f"Driver-analysis figure saved: {out}")
     plt.close()
 
 

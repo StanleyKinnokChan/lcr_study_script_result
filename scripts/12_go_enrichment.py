@@ -19,7 +19,8 @@ GO data is cached locally so re-runs are fast; delete data/go_cache/ to force re
 Outputs:
   results/go_enrichment.tsv      — per-species enriched GO terms (FDR ≤ 0.05)
   results/go_consensus.tsv       — GO terms enriched in ≥3 species
-  figures/fig10_go_enrichment.pdf
+  figures/go_enrichment.pdf  (supports the Discussion text on GO enrichment,
+                               not a numbered figure)
 """
 
 import time
@@ -452,10 +453,10 @@ def main():
                  "(top 10 per species, FDR ≤ 0.05)", fontsize=12)
     plt.tight_layout()
 
-    out = FIGURES_DIR / "fig10_go_enrichment.pdf"
+    out = FIGURES_DIR / "go_enrichment.pdf"
     fig.savefig(out, dpi=300, bbox_inches="tight")
     fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
-    print(f"\nFigure 10 saved: {out}")
+    print(f"\nGO-enrichment figure saved: {out}")
     plt.close()
 
 
