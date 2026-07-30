@@ -141,7 +141,9 @@ def fig2_terminal_barchart(enr_df: pd.DataFrame, phylum_df: pd.DataFrame):
     ax.set_xlabel("Phylum", fontsize=11)
     ax.set_title("Terminal LCR enrichment in invertebrates vs. Tetrapoda\n"
                  "(black dots = individual species)", fontsize=12)
-    ax.set_ylim(0, max(phylum_df["pct_terminal"].max() * 1.2, TETRAPODA_TERMINAL_HIGH + 5))
+    # Fixed headroom above the tallest phylum bar so the species dots have room;
+    # a handful of extreme single-species outliers still fall outside the axis.
+    ax.set_ylim(0, 38)
     ax.legend(fontsize=9, loc="upper right")
     plt.xticks(rotation=60, ha="right")
     plt.tight_layout()

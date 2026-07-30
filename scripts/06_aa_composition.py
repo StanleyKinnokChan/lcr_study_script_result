@@ -156,7 +156,8 @@ def main():
             bottom += vals
 
         ax.set_xticks(range(len(pivot)))
-        ax.set_xticklabels(phyla_present, rotation=30, ha="right", fontsize=9)
+        ax.set_xticklabels(phyla_present, rotation=60, ha="right", fontsize=9,
+                           rotation_mode="anchor")
         ax.set_title(f"{'Terminal (bins 1 & 20)' if loc == 'terminal' else 'Internal (bins 2–19)'}\nLCR amino acid composition", fontsize=11)
         ax.set_ylabel("Fraction of LCRs" if loc == "terminal" else "")
         ax.set_ylim(0, 1)

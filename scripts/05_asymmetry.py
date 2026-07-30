@@ -125,17 +125,18 @@ def main():
         label="C-terminal (bin 20)", color="#d6604d", edgecolor="black", linewidth=0.7
     )
 
-    # Species-level dots
+    # Species-level dots. Small markers plus a narrow horizontal jitter so that
+    # densely sampled phyla (Bacteria, Insecta, Viridiplantae) resolve into
+    # individual species rather than a solid black column.
+    rng = np.random.default_rng(0)
+    jitter = w * 0.30
     for i, phylum in enumerate(phyla):
         sub = asym_df[asym_df["phylum"] == phylum]
-        ax.scatter(
-            np.full(len(sub), i - w / 2), sub["pct_nterm"],
-            color="black", s=18, zorder=5, alpha=0.7
-        )
-        ax.scatter(
-            np.full(len(sub), i + w / 2), sub["pct_cterm"],
-            color="black", s=18, zorder=5, alpha=0.7
-        )
+        for offset, col in ((-w / 2, "pct_nterm"), (w / 2, "pct_cterm")):
+            ax.scatter(
+                i + offset + rng.uniform(-jitter, jitter, len(sub)), sub[col],
+                color="black", s=4, zorder=5, alpha=0.45, linewidths=0
+            )
 
     ax.axhline(5.0, color="red", linestyle=":", linewidth=1.2,
                label="Null (1/20 bins = 5%)")

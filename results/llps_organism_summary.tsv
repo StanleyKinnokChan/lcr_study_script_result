@@ -1,8 +1,8 @@
-species_key	display_name	phylum	n_terminal	n_internal	median_terminal	median_internal	pct_aromatic_term	pct_aromatic_int	mw_stat	mw_p	significant	method
-arabidopsis_thaliana	Arabidopsis thaliana	Viridiplantae	401	1295	0.0	0.0	7.48	4.63	273686.0	0.032694	True	composition_proxy
-bacillus_subtilis	Bacillus subtilis	Bacteria	5	24	0.0	0.0	0.0	16.67	60.0	0.513683	False	composition_proxy
-caenorhabditis_elegans	Caenorhabditis elegans	Nematoda	194	612	0.0	0.0	2.58	3.76	60295.0	0.348267	False	composition_proxy
-drosophila_melanogaster	Drosophila melanogaster	Insecta	305	1381	0.0	0.5	1.31	1.88	186675.0	0.999609	False	composition_proxy
-escherichia_coli_k12	Escherichia coli K12	Bacteria	6	20	0.0	0.0	0.0	5.0	62.0	0.453344	False	composition_proxy
-saccharomyces_cerevisiae	Saccharomyces cerevisiae	Fungi	55	234	0.0	0.5	0.0	3.85	5195.5	0.992263	False	composition_proxy
-wolbachia_endosymbiont_of_drosophila_melanogaster_gca_000008025	Wolbachia endosymbiont of Drosophila melanogaster	Bacteria	0	4		0.4						composition_proxy
+species_key	display_name	phylum	n_terminal	n_internal	mean_terminal	mean_internal	median_terminal	median_internal	pct_aromatic_term	pct_aromatic_int	mw_stat	mw_p	significant	method
+arabidopsis_thaliana	Arabidopsis thaliana	Viridiplantae	401	1295	0.3002	0.263	0.0	0.0	7.48	4.63	273686.0	0.032694	True	composition_proxy
+bacillus_subtilis	Bacillus subtilis	Bacteria	5	24	0.2	0.25	0.0	0.0	0.0	16.67	60.0	0.513683	False	composition_proxy
+caenorhabditis_elegans	Caenorhabditis elegans	Nematoda	194	612	0.2222	0.215	0.0	0.0	2.58	3.76	60295.0	0.348267	False	composition_proxy
+drosophila_melanogaster	Drosophila melanogaster	Insecta	305	1381	0.2941	0.3719	0.0	0.5	1.31	1.88	186675.0	0.999609	False	composition_proxy
+escherichia_coli_k12	Escherichia coli K12	Bacteria	6	20	0.1667	0.18	0.0	0.0	0.0	5.0	62.0	0.453344	False	composition_proxy
+saccharomyces_cerevisiae	Saccharomyces cerevisiae	Fungi	55	234	0.2709	0.4056	0.0	0.5	0.0	3.85	5195.5	0.992263	False	composition_proxy
+wolbachia_endosymbiont_of_drosophila_melanogaster_gca_000008025	Wolbachia endosymbiont of Drosophila melanogaster	Bacteria	0	4		0.45		0.4						composition_proxy

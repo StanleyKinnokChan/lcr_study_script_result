@@ -163,7 +163,8 @@ def main():
     ax.axhline(10.0, color="red", linestyle=":", linewidth=1.2,
                label="Null expectation (10%)")
     ax.set_xticks(x)
-    ax.set_xticklabels(phyla_present, rotation=22, ha="right", fontsize=9)
+    ax.set_xticklabels(phyla_present, rotation=60, ha="right", fontsize=9,
+                       rotation_mode="anchor")
     ax.set_ylabel("% LCRs in terminal bins", fontsize=11)
     ax.set_title("Terminal LCR enrichment: singleton vs multi-LCR proteins\n"
                  "(black dots = individual species)", fontsize=12)

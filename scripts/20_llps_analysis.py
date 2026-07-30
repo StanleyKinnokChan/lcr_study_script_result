@@ -167,6 +167,8 @@ def test_terminal_vs_internal(records: list[dict],
             "n_internal": n_internal,
             "median_terminal": np.median(terminal_scores) if terminal_scores else None,
             "median_internal": np.median(internal_scores) if internal_scores else None,
+            "mean_terminal": np.mean(terminal_scores) if terminal_scores else None,
+            "mean_internal": np.mean(internal_scores) if internal_scores else None,
             "mw_stat": None, "mw_p": None, "significant": None,
             "method": "composition_proxy",
         }
@@ -177,6 +179,8 @@ def test_terminal_vs_internal(records: list[dict],
         "n_internal":       n_internal,
         "median_terminal":  round(float(np.median(terminal_scores)), 4),
         "median_internal":  round(float(np.median(internal_scores)), 4),
+        "mean_terminal":    round(float(np.mean(terminal_scores)), 4),
+        "mean_internal":    round(float(np.mean(internal_scores)), 4),
         "pct_aromatic_term": round(
             sum(1 for r in records if r["is_terminal"] and r["residue"] in AROMATIC) /
             max(n_terminal, 1) * 100, 2
@@ -279,6 +283,7 @@ def main():
     summary_df = pd.DataFrame(summary_rows)
     cols_ordered = ["species_key", "display_name", "phylum",
                     "n_terminal", "n_internal",
+                    "mean_terminal", "mean_internal",
                     "median_terminal", "median_internal",
                     "pct_aromatic_term", "pct_aromatic_int",
                     "mw_stat", "mw_p", "significant", "method"]
@@ -299,27 +304,35 @@ def main():
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
-    # Panel A: median LLPS proxy score, terminal vs internal, per organism
+    # Panel A: mean LLPS proxy score, terminal vs internal, per organism.
+    # The mean, not the median, is plotted: the proxy is a zero-inflated discrete
+    # score (0 / 0.5 / 0.8 / 1.0) whose median is 0 in most organisms, so a median
+    # bar chart is blank and cannot show the rank shift the Mann-Whitney U tests.
     ax = axes[0]
     x = np.arange(n_orgs)
     width = 0.35
-    ax.bar(x - width / 2, summary_df["median_terminal"], width,
+    ax.bar(x - width / 2, summary_df["mean_terminal"], width,
            label="Terminal", color="#d6604d", edgecolor="black", linewidth=0.6)
-    ax.bar(x + width / 2, summary_df["median_internal"], width,
+    ax.bar(x + width / 2, summary_df["mean_internal"], width,
            label="Internal", color="#4393c3", edgecolor="black", linewidth=0.6)
     ax.set_xticks(x)
     ax.set_xticklabels(
         [n.split()[0] for n in summary_df["display_name"]],
-        rotation=40, ha="right", fontsize=9
+        rotation=60, ha="right", fontsize=9, rotation_mode="anchor"
     )
-    ax.set_ylabel("Median LLPS proxy score", fontsize=11)
+    ax.set_ylabel("Mean LLPS proxy score", fontsize=11)
     ax.set_title("Composition-based LLPS propensity\nterminal vs internal LCRs", fontsize=11)
     ax.legend(fontsize=9)
-    # Mark significant differences
+    # Mark organisms where terminal LCRs are stochastically greater (Mann-Whitney U)
+    bar_top = max(
+        [v for v in list(summary_df["mean_terminal"]) + list(summary_df["mean_internal"])
+         if pd.notna(v)] or [1.0]
+    )
+    ax.set_ylim(0, bar_top * 1.25)
     for i, (_, row_) in enumerate(summary_df.iterrows()):
         if row_.get("significant"):
-            y_max = max(row_["median_terminal"] or 0, row_["median_internal"] or 0)
-            ax.text(i, y_max + 0.01, "*", ha="center", fontsize=12, color="black")
+            y_max = max(row_["mean_terminal"] or 0, row_["mean_internal"] or 0)
+            ax.text(i, y_max + bar_top * 0.03, "*", ha="center", fontsize=13, color="black")
 
     # Panel B: % aromatic residues at termini vs internal
     ax = axes[1]
@@ -331,7 +344,7 @@ def main():
         ax.set_xticks(x)
         ax.set_xticklabels(
             [n.split()[0] for n in summary_df["display_name"]],
-            rotation=40, ha="right", fontsize=9
+            rotation=60, ha="right", fontsize=9, rotation_mode="anchor"
         )
         ax.set_ylabel("% aromatic residue LCRs (F/Y/W)", fontsize=11)
         ax.set_title("Aromatic LCR fraction at termini vs internal\n"
