@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """
-Produce two publication-ready figures:
+Produce publication-ready figures:
 
 Figure 1 — Bin heatmap
-  Rows = species grouped by phylum, columns = bins 1–20.
-  Cell colour = fraction of LCRs in that bin.
-  Highlights terminal enrichment pattern visually.
+  Rows = phylum/domain (43 groups, PHYLUM_ORDER), columns = bins 1–20.
+  Cell colour = fraction of LCRs in that bin, averaged across species in the
+  group. Highlights terminal enrichment pattern visually at the same pooled
+  level as the paper's statistics.
+
+  figures/suppfig8_bin_heatmap_species.pdf — Supplementary Figure 8
+  Same heatmap at full species resolution (772 rows) — the species-level
+  detail that Figure 1's phylum aggregation collapses.
 
 Figure 2 — Terminal enrichment bar chart
   % terminal LCRs per phylum (invertebrates) with Teekas Tetrapoda range shaded.
@@ -29,33 +34,32 @@ from config import (
 )
 
 
-def fig1_bin_heatmap(pos_df: pd.DataFrame):
-    """Heatmap: species × bin, colour = fraction of LCRs in that bin."""
-    # Pivot: fraction per bin per species
-    species_order = (
-        pos_df.groupby(["phylum", "display_name"])
-        .size()
-        .reset_index()
-        .sort_values(["phylum", "display_name"])
-        ["display_name"]
-        .tolist()
-    )
-
+def _bin_fraction_pivot(pos_df: pd.DataFrame, group_col: str) -> pd.DataFrame:
+    """Fraction-of-LCRs-per-bin pivot, one row per value of group_col."""
     pivot = (
-        pos_df.groupby(["display_name", "bin"])
+        pos_df.groupby([group_col, "bin"])
         .size()
         .unstack(fill_value=0)
     )
-    # Ensure all 20 bins present
     for b in range(1, N_BINS + 1):
         if b not in pivot.columns:
             pivot[b] = 0
     pivot = pivot[sorted(pivot.columns)]
-    # Normalise to fraction per species
-    pivot = pivot.div(pivot.sum(axis=1), axis=0)
-    pivot = pivot.reindex([s for s in species_order if s in pivot.index])
+    return pivot.div(pivot.sum(axis=1), axis=0)
 
-    fig, ax = plt.subplots(figsize=(12, max(4, len(pivot) * 0.55)))
+
+def fig1_bin_heatmap(pos_df: pd.DataFrame):
+    """Heatmap: phylum/domain × bin, colour = mean fraction of LCRs in that bin.
+
+    Aggregated to the same 43 phylum/domain groups used throughout the paper's
+    pooled statistics (PHYLUM_ORDER) rather than one row per species — a
+    772-species version is unreadable at publication size (see suppfig8).
+    """
+    pivot = _bin_fraction_pivot(pos_df, "phylum")
+    ordered = [p for p in PHYLUM_ORDER if p in pivot.index]
+    pivot = pivot.reindex(ordered)
+
+    fig, ax = plt.subplots(figsize=(10, max(6, len(pivot) * 0.28)))
     sns.heatmap(
         pivot,
         ax=ax,
@@ -68,7 +72,7 @@ def fig1_bin_heatmap(pos_df: pd.DataFrame):
     )
     ax.set_xlabel("Normalized protein position (bin, 1=N-term, 20=C-term)", fontsize=11)
     ax.set_ylabel("")
-    ax.set_title("LCR positional distribution across invertebrate proteomes\n"
+    ax.set_title("LCR positional distribution across phyla/domains\n"
                  f"(purity ≥ 70%, bins 1 & {N_BINS} are terminal)", fontsize=12)
     ax.axvline(1, color="blue", linewidth=1.5, linestyle="--", alpha=0.6)
     ax.axvline(N_BINS, color="blue", linewidth=1.5, linestyle="--", alpha=0.6)
@@ -78,6 +82,46 @@ def fig1_bin_heatmap(pos_df: pd.DataFrame):
     fig.savefig(out, dpi=300, bbox_inches="tight")
     fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
     print(f"Figure 1 saved: {out}")
+    plt.close()
+
+
+def suppfig8_bin_heatmap_species(pos_df: pd.DataFrame):
+    """Species-level companion to Figure 1 (772 rows) — supplementary detail only."""
+    species_order = (
+        pos_df.groupby(["phylum", "display_name"])
+        .size()
+        .reset_index()
+        .sort_values(["phylum", "display_name"])
+        ["display_name"]
+        .tolist()
+    )
+    pivot = _bin_fraction_pivot(pos_df, "display_name")
+    pivot = pivot.reindex([s for s in species_order if s in pivot.index])
+
+    fig, ax = plt.subplots(figsize=(12, max(4, len(pivot) * 0.12)))
+    sns.heatmap(
+        pivot,
+        ax=ax,
+        cmap="YlOrRd",
+        vmin=0,
+        vmax=0.15,
+        linewidths=0,
+        cbar_kws={"label": "Fraction of LCRs in bin"},
+    )
+    ax.set_xlabel("Normalized protein position (bin, 1=N-term, 20=C-term)", fontsize=11)
+    ax.set_ylabel("")
+    ax.set_yticks([])
+    ax.set_title("LCR positional distribution across individual proteomes (n=772)\n"
+                 f"(purity ≥ 70%, bins 1 & {N_BINS} are terminal; species grouped by phylum "
+                 "as in Fig. 1)", fontsize=12)
+    ax.axvline(1, color="blue", linewidth=1.5, linestyle="--", alpha=0.6)
+    ax.axvline(N_BINS, color="blue", linewidth=1.5, linestyle="--", alpha=0.6)
+
+    plt.tight_layout()
+    out = FIGURES_DIR / "suppfig8_bin_heatmap_species.pdf"
+    fig.savefig(out, dpi=300, bbox_inches="tight")
+    fig.savefig(str(out).replace(".pdf", ".png"), dpi=150, bbox_inches="tight")
+    print(f"Supplementary Figure 8 saved: {out}")
     plt.close()
 
 
@@ -223,6 +267,7 @@ def main():
 
     print(f"Loaded {len(pos_df)} LCRs across {enr_df['species_key'].nunique()} species")
     fig1_bin_heatmap(pos_df)
+    suppfig8_bin_heatmap_species(pos_df)
     fig2_terminal_barchart(enr_df, phylum_df)
     fig3_bin_profile(pos_df)
     print("\nAll figures saved to:", FIGURES_DIR)
