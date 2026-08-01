@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Download non-metazoan outgroup proteomes from two complementary sources and register
-them in results/species_manifest.tsv, alongside the metazoan rows written by 01a.
+them in results/supp_table_S1_species_list.tsv, alongside the metazoan rows written by 01a.
 
 Why three sources
   1. UniProt reference proteomes — a hand-picked, taxonomically balanced backbone of
@@ -33,7 +33,7 @@ Selection (lean profile)
 
 Output & contract (identical to 01a)
   data/proteomes/{species_key}.longest.fa  (one seq per gene)
-  results/species_manifest.tsv  columns: species_key display_name phylum fa_path domain taxon_id
+  results/supp_table_S1_species_list.tsv  columns: species_key display_name phylum fa_path domain taxon_id
   Phylum/domain resolved from NCBI Taxonomy, cached in results/taxonomy_cache.tsv
   (shared with 01a). UniProt rows take precedence over Ensembl rows for the same species.
 """
@@ -57,7 +57,7 @@ RELEASE = 63
 PROJECT_DIR = Path(__file__).parent.parent
 OUT_DIR     = PROJECT_DIR / "data" / "proteomes"
 RESULTS_DIR = PROJECT_DIR / "results"
-MANIFEST    = RESULTS_DIR / "species_manifest.tsv"
+MANIFEST    = RESULTS_DIR / "supp_table_S1_species_list.tsv"
 TAX_CACHE   = RESULTS_DIR / "taxonomy_cache.tsv"
 STATUS_FILE = RESULTS_DIR / "download_status_outgroups.tsv"
 

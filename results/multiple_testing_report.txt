@@ -54,5 +54,4 @@ Provisional (does not survive correction): Acanthocephala, Nematomorpha
 
 Interpretation for manuscript:
   - All text referring to significance should cite corrected p-values.
-  - Chlorophyta is not significant after Holm-Bonferroni and must be
-    described as 'provisional' pending additional species.
+  - Acanthocephala, Nematomorpha are not significant after Holm-Bonferroni and must be described as 'provisional' pending additional species.

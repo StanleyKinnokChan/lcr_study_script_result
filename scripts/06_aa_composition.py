@@ -76,9 +76,9 @@ def parse_flps_with_residue(filepath: Path) -> list[dict]:
 
 
 def main():
-    manifest_path = RESULTS_DIR / "species_manifest.tsv"
+    manifest_path = RESULTS_DIR / "supp_table_S1_species_list.tsv"
     if not manifest_path.exists():
-        print("ERROR: species_manifest.tsv missing — run 01_download_proteomes.py first.")
+        print("ERROR: supp_table_S1_species_list.tsv missing — run 01_download_proteomes.py first.")
         return
 
     manifest = pd.read_csv(manifest_path, sep="\t")

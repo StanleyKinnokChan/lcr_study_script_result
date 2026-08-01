@@ -23,7 +23,7 @@ Signal peptide TSV format (MODE A):
 If no annotation file is found, the script runs in MODE B and prints a warning.
 
 Outputs:
-  results/signal_peptide_stratification.tsv  — Supp Table S8
+  results/supp_table_S8_signal_peptide_stratification.tsv  — Supp Table S8
   figures/suppfig_signal_peptide.pdf
 
 To generate the annotation TSV from UniProt:
@@ -194,7 +194,7 @@ def mode_b_heuristic(fasta_path: Path) -> dict[str, bool]:
 
 
 def main():
-    manifest_path = RESULTS_DIR / "species_manifest.tsv"
+    manifest_path = RESULTS_DIR / "supp_table_S1_species_list.tsv"
     if not manifest_path.exists():
         print(f"ERROR: {manifest_path} missing — run 01_download_proteomes.py first.")
         return
@@ -275,7 +275,7 @@ def main():
         return
 
     results_df = pd.DataFrame(result_rows)
-    out_tsv = RESULTS_DIR / "signal_peptide_stratification.tsv"
+    out_tsv = RESULTS_DIR / "supp_table_S8_signal_peptide_stratification.tsv"
     results_df.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nSignal peptide stratification table (Supp Table S8): {out_tsv}")
 

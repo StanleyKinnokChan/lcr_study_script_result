@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
 Download longest-isoform protein FASTAs for the full Ensembl Metazoa release-63
-species set, and register them in results/species_manifest.tsv for the LCR pipeline.
+species set, and register them in results/supp_table_S1_species_list.tsv for the LCR pipeline.
 
 Pipeline contract (must hold for 02_run_flps.sh and 03_analyse.py downstream):
   - Every species ends up as data/proteomes/{species_key}.longest.fa   (one seq per gene)
-  - Every species has a row in results/species_manifest.tsv with columns:
+  - Every species has a row in results/supp_table_S1_species_list.tsv with columns:
       species_key  display_name  phylum  fa_path  domain  taxon_id
 
 Species source
@@ -53,7 +53,7 @@ PROJECT_DIR = Path(__file__).parent.parent
 LOOKUP_FILE = PROJECT_DIR / "species_EnsemblMetazoa.txt"
 OUT_DIR     = PROJECT_DIR / "data" / "proteomes"
 RESULTS_DIR = PROJECT_DIR / "results"
-MANIFEST    = RESULTS_DIR / "species_manifest.tsv"
+MANIFEST    = RESULTS_DIR / "supp_table_S1_species_list.tsv"
 TAX_CACHE   = RESULTS_DIR / "taxonomy_cache.tsv"
 STATUS_FILE = RESULTS_DIR / "download_status_metazoa.tsv"
 

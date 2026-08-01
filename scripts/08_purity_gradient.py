@@ -9,7 +9,8 @@ at protein ends — a distinct functional signal beyond mere positional enrichme
 Also tests whether the purity difference varies across phyla.
 
 Outputs:
-  results/purity_gradient.tsv  — per-phylum Mann-Whitney U results
+  results/supp_table_S5_purity_gradient.tsv  — Supp Table S5: per-phylum
+                                                Mann-Whitney U results
   figures/suppfig6_purity_gradient.pdf  — Supplementary Figure 6 (the 9 phyla
                                            with a significant terminal/internal
                                            purity difference)
@@ -74,7 +75,7 @@ def main():
               f"{delta:+.4f}  {'***' if p_ph < 0.05 else 'ns'}")
 
     out_df = pd.DataFrame(rows)
-    out_tsv = RESULTS_DIR / "purity_gradient.tsv"
+    out_tsv = RESULTS_DIR / "supp_table_S5_purity_gradient.tsv"
     out_df.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nPurity gradient table: {out_tsv}")
 

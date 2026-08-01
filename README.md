@@ -31,7 +31,7 @@ reveal about mechanism.
 | Other eukaryotes (all supergroups: SAR, Archaeplastida, Excavata, Amoebozoa, Opisthokonta-Fungi, Haptophyta, Cryptophyta) | 286 | 17 |
 | **Total** | **772** | **43** |
 
-Full per-species list: `results/species_manifest.tsv` (and manuscript Supp Table S1).
+Full per-species list: `results/supp_table_S1_species_list.tsv` (manuscript Supp Table S1).
 
 ## Pipeline (orchestrated by `main.py`)
 
@@ -99,24 +99,12 @@ reruns fLPS → analysis on the updated set.
 
 ## Key outputs
 
-| File | Description |
-|---|---|
-| `results/lcr_positions.tsv` | Per-LCR table (bin, purity, location) |
-| `results/enrichment.tsv` | Per-species Fisher's exact results |
-| `results/phylum_summary_corrected.tsv` | Pooled % terminal + Holm-corrected significance per group |
-| `results/multiple_testing_report.txt` | Holm-Bonferroni report (43 tests) |
-| `results/asymmetry.tsv` | Per-species N/C ratio + log-odds asymmetry |
-| `results/length_confound.tsv` | Fisher's exact per protein-length quartile |
-| `results/purity_gradient.tsv` | Terminal vs internal purity per group |
-| `results/driver_analysis.tsv` | Singleton vs multi-LCR enrichment |
-| `results/protein_level_enrichment.tsv` | Protein-level binomial test |
-| `results/sensitivity_analysis.tsv` | 4 fLPS param sets + MULTI-type comparison |
-| `results/domain_aa_composition.tsv` | Per-domain terminal AA enrichment ratios |
-| `results/signal_peptide_stratification.tsv` | Bacterial N-term LCRs by signal-peptide class |
-| `results/mixed_model_prokaryote.tsv`, `bootstrap_ci_domain.tsv` | GEE + bootstrap for prokaryotes |
-| `results/pgls_regression_stats.tsv` | PGLS of plant N/C polarity gradient |
-| `results/llps_analysis.tsv`, `llps_organism_summary.tsv` | LLPS propensity terminal vs internal |
-| `figures/fig1–fig10*`, `figures/suppfig_*` | Main + supplementary figures |
+Every table in `results/` — what it is, which manuscript table/figure it backs (if any), and
+which script generates it — is catalogued in **[`results/TABLE_MANIFEST.md`](results/TABLE_MANIFEST.md)**.
+Keep that file, not this README, up to date when outputs change.
+
+Figures follow the naming convention documented in `CLAUDE.md` (`figN_*.pdf` / `suppfigN_*.pdf`,
+N = manuscript figure number): `figures/fig1–fig10*`, `figures/suppfig_*`.
 
 ## Method (mirrors Teekas et al. 2024)
 

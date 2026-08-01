@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-Protein-level sensitivity analysis (Supplementary Table S4).
+Protein-level sensitivity analysis.
+
+Backs the "Protein-level confirmation" main-text paragraph; not currently a
+numbered supplementary table in the manuscript.
 
 Addresses the concern that LCR-level Fisher's exact tests treat multiple LCRs
 within the same protein as independent observations.

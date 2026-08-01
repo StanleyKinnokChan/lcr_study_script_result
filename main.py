@@ -49,7 +49,7 @@ PHASES = {
             (
                 "python3 scripts/01a_download_metazoa.py",
                 "Download metazoan proteomes (Ensembl Metazoa r63)",
-                "results/species_manifest.tsv",
+                "results/supp_table_S1_species_list.tsv",
                 False,
             ),
             (
@@ -107,13 +107,13 @@ PHASES = {
             (
                 "python3 scripts/07_confound_test.py",
                 "Protein-length confound test (quartile stratification)",
-                "results/length_confound.tsv",
+                "results/supp_table_S4_length_stratified.tsv",
                 False,
             ),
             (
                 "python3 scripts/08_purity_gradient.py",
                 "LCR purity gradient: terminal vs internal",
-                "results/purity_gradient.tsv",
+                "results/supp_table_S5_purity_gradient.tsv",
                 False,
             ),
             (
@@ -125,12 +125,12 @@ PHASES = {
             (
                 "python3 scripts/10_driver_analysis.py",
                 "Singleton vs multi-LCR protein driver analysis",
-                "results/driver_analysis.tsv",
+                "results/supp_table_S2_driver_analysis.tsv",
                 False,
             ),
             (
                 "python3 scripts/11_protein_level_test.py",
-                "Protein-level binomial test (sensitivity analysis for Supp Table S4)",
+                "Protein-level binomial test (sensitivity analysis, main-text only)",
                 "results/protein_level_enrichment.tsv",
                 False,
             ),
@@ -153,19 +153,19 @@ PHASES = {
             (
                 "python3 scripts/14_multiple_testing.py",
                 "Holm-Bonferroni correction across 43 phylum-level Fisher tests",
-                "results/phylum_summary_corrected.tsv",
+                "results/table1_2_phylum_lineage_enrichment.tsv",
                 False,
             ),
             (
                 "python3 scripts/15_sensitivity_analysis.py",
                 "fLPS parameter sensitivity: 4 param sets (Supp Table S6)",
-                "results/sensitivity_analysis.tsv",
+                "results/supp_table_S6_flps_sensitivity.tsv",
                 False,
             ),
             (
                 "python3 scripts/16_domain_aa_composition.py",
                 "Per-domain AA composition of terminal vs internal LCRs (Supp Table S7)",
-                "results/domain_aa_composition.tsv",
+                "results/supp_table_S7_domain_aa_composition.tsv",
                 False,
             ),
             (
@@ -178,7 +178,7 @@ PHASES = {
             (
                 "python3 scripts/17_signal_peptide_stratification.py",
                 "Signal peptide stratification of bacterial terminal LCRs (Supp Table S8)",
-                "results/signal_peptide_stratification.tsv",
+                "results/supp_table_S8_signal_peptide_stratification.tsv",
                 False,
             ),
             (
@@ -204,7 +204,7 @@ PHASES = {
             (
                 "python3 scripts/20_llps_analysis.py",
                 "LLPS propensity of terminal vs internal LCRs (model organisms)",
-                "results/llps_organism_summary.tsv",
+                "results/supp_table_S9_llps_organism_summary.tsv",
                 False,
             ),
         ],

@@ -8,7 +8,8 @@ internal. This script stratifies proteins by length quartile and shows that term
 enrichment is significant within every quartile, ruling out length confounding.
 
 Outputs:
-  results/length_confound.tsv  — Fisher's exact results per length quartile × phylum
+  results/supp_table_S4_length_stratified.tsv  — Supp Table S4: Fisher's exact
+                                                  results per length quartile × phylum
   figures/fig5_prokaryote_length_quartile.pdf  — Figure 5 (main text)
   figures/suppfig2_length_heatmap.pdf          — Supplementary Figure 2
 """
@@ -105,7 +106,7 @@ def main():
                   f"{'***' if stats['sig'] else 'ns'}")
 
     out_df = pd.DataFrame(rows)
-    out_tsv = RESULTS_DIR / "length_confound.tsv"
+    out_tsv = RESULTS_DIR / "supp_table_S4_length_stratified.tsv"
     out_df.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nLength confound table: {out_tsv}")
 

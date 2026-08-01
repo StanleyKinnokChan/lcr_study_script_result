@@ -11,7 +11,8 @@ enrichment is class-specific; if singleton-LCR proteins show equal enrichment, t
 mechanism is generic across the proteome.
 
 Outputs:
-  results/driver_analysis.tsv   — singleton vs multi-LCR enrichment per phylum
+  results/supp_table_S2_driver_analysis.tsv   — Supp Table S2: singleton vs
+                                                 multi-LCR enrichment per phylum
   figures/driver_analysis.pdf  (supports Supplementary Table S2, not a
                                  numbered figure)
 """
@@ -131,7 +132,7 @@ def main():
         print(f"  {phylum:<22}  {s_pct:>6.1f}%    {m_pct:>6.1f}%   {driver}")
 
     out_df = pd.DataFrame(rows)
-    out_tsv = RESULTS_DIR / "driver_analysis.tsv"
+    out_tsv = RESULTS_DIR / "supp_table_S2_driver_analysis.tsv"
     out_df.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nDriver analysis table: {out_tsv}")
 

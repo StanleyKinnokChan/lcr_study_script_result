@@ -12,7 +12,8 @@ Tests:
 
 Outputs:
   results/phylum_stats.tsv         — pairwise p-values matrix
-  results/within_phylum_cv.tsv     — coefficient of variation per phylum
+  results/supp_table_S3_within_phylum_cv.tsv — Supp Table S3: coefficient of
+                                                variation per phylum
   figures/suppfig1_phylum_distribution.pdf  — Supplementary Figure 1
   figures/suppfig4_cv_vs_nspecies.pdf       — Supplementary Figure 4
 """
@@ -200,7 +201,7 @@ def main():
               f"  {phylum:<22}  n={len(sub)}  mean={mean_:.1f}%")
 
     cv_df = pd.DataFrame(cv_rows)
-    cv_path = RESULTS_DIR / "within_phylum_cv.tsv"
+    cv_path = RESULTS_DIR / "supp_table_S3_within_phylum_cv.tsv"
     cv_df.to_csv(cv_path, sep="\t", index=False)
     print(f"\nWithin-phylum CV table: {cv_path}")
 
@@ -232,30 +233,10 @@ def main():
     print(f"Supplementary Figure 4 saved: {out4}")
     plt.close(fig4)
 
-    # ── 3b. Holm-Bonferroni on phylum-level pooled Fisher p-values ──────────
-    phylum_path = RESULTS_DIR / "phylum_summary.tsv"
-    if phylum_path.exists():
-        phylum_df = pd.read_csv(phylum_path, sep="\t")
-        if "pooled_pvalue" in phylum_df.columns:
-            phylum_ps = phylum_df["pooled_pvalue"].tolist()
-            adj_phylum_ps = holm_bonferroni(phylum_ps)
-            phylum_df["pooled_pvalue_holm"] = [round(p, 6) for p in adj_phylum_ps]
-            phylum_df["pooled_sig_holm"] = phylum_df["pooled_pvalue_holm"] < 0.05
-            phylum_df.to_csv(phylum_path, sep="\t", index=False)
-            n_sig_raw  = (phylum_df["pooled_pvalue"] < 0.05).sum()
-            n_sig_holm = phylum_df["pooled_sig_holm"].sum()
-            print(f"\nPhylum-level pooled Fisher p-values (Holm-Bonferroni across "
-                  f"{len(phylum_df)} phyla):")
-            print(f"  Significant before correction: {n_sig_raw}/{len(phylum_df)}")
-            print(f"  Significant after  correction: {n_sig_holm}/{len(phylum_df)}")
-            provisional = phylum_df[
-                (phylum_df["pooled_pvalue"] < 0.05) &
-                (~phylum_df["pooled_sig_holm"])
-            ]["phylum"].tolist()
-            if provisional:
-                print(f"  Reclassified as provisional (0.05 > p_holm): "
-                      f"{', '.join(provisional)}")
-            print(f"  Updated {phylum_path} with pooled_pvalue_holm column")
+    # Phylum-level pooled Fisher p-values (Holm-Bonferroni across all phyla) are
+    # corrected in 14_multiple_testing.py, not here — that script owns the single
+    # canonical correction and writes results/table1_2_phylum_lineage_enrichment.tsv +
+    # results/multiple_testing_report.txt. Do not duplicate it in this script.
 
     # ── 4. Nematode anomaly test ──────────────────────────────────────────────
     nema = enr_df[enr_df["phylum"] == "Nematoda"]["pct_terminal"].values

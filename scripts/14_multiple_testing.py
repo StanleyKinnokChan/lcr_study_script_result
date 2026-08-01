@@ -1,16 +1,28 @@
 #!/usr/bin/env python3
 """
-Holm-Bonferroni multiple-testing correction across all 42 phylum-level Fisher's tests.
+Holm-Bonferroni multiple-testing correction across all phylum-level Fisher's tests.
 
 Reads phylum_summary.tsv (output of 03_analyse.py) and applies Holm-Bonferroni
-correction to the 42 pooled Fisher's exact p-values.  Writes a corrected summary
-and flags phyla that do not survive correction.
+correction to the pooled Fisher's exact p-values. Writes a corrected summary and
+flags phyla that do not survive correction. This is the single owner of this
+correction — do not duplicate it in another script (09_phylum_stats.py used to;
+that copy was removed since nothing downstream read it).
 
-Key result: Chlorophyta (p=0.025 uncorrected) does not survive correction and is
-reclassified as provisional.  All other 40 significant phyla remain significant.
+Backs manuscript Table 1/Table 2 and the "41/43 phyla significant, only
+Acanthocephala and Nematomorpha provisional" claim (manuscript_v10.md). The
+provisional set will differ if the species set or filters change — re-run this
+script and re-check the printed "Provisional" line against the manuscript
+whenever upstream data changes; do not hardcode which phyla it names.
 
 Outputs:
-  results/phylum_summary_corrected.tsv  — phylum summary with corrected p-values
+  results/table1_2_phylum_lineage_enrichment.tsv  — backs main-text Table 1
+                                                      (Metazoa) and Table 2
+                                                      (non-metazoan eukaryotes);
+                                                      split by phylum membership
+                                                      in config.SUPERGROUP_OF
+                                                      ("Metazoa" vs other), no
+                                                      metazoan flag column of its
+                                                      own
   results/multiple_testing_report.txt   — human-readable summary
 """
 
@@ -72,7 +84,7 @@ def main():
     df["_rank"] = df["phylum"].map(lambda p: phylum_rank.get(p, 999))
     df = df.sort_values("_rank").drop(columns="_rank")
 
-    out_path = RESULTS_DIR / "phylum_summary_corrected.tsv"
+    out_path = RESULTS_DIR / "table1_2_phylum_lineage_enrichment.tsv"
     df.to_csv(out_path, sep="\t", index=False)
     print(f"Corrected summary: {out_path}\n")
 
@@ -101,6 +113,13 @@ def main():
             f"{row['sig_stars']:>4}  {status}"
         )
 
+    provisional_note = (
+        f"  - {', '.join(provisional_list)} {'is' if len(provisional_list) == 1 else 'are'} not "
+        f"significant after Holm-Bonferroni and must be described as 'provisional' "
+        f"pending additional species."
+        if provisional_list else
+        "  - All phyla are significant after Holm-Bonferroni; none are provisional."
+    )
     report_lines += [
         "─" * 85,
         f"",
@@ -109,8 +128,7 @@ def main():
         "",
         "Interpretation for manuscript:",
         "  - All text referring to significance should cite corrected p-values.",
-        "  - Chlorophyta is not significant after Holm-Bonferroni and must be",
-        "    described as 'provisional' pending additional species.",
+        provisional_note,
     ]
 
     report_text = "\n".join(report_lines)

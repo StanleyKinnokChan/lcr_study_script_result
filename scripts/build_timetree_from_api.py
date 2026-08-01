@@ -12,7 +12,7 @@ The deep land-plant splits (green-algae / streptophyte / land-plant / angiosperm
 monocot-eudicot / grass) are already well established, so those are fixed from the
 backbone calibration. What the backbone lacks is WITHIN-tier resolution (the 55
 eudicot and 17 grass genera sit in flat polytomies). This script therefore queries
-TimeTree's pairwise API — using the NCBI taxon IDs already in species_manifest.tsv —
+TimeTree's pairwise API — using the NCBI taxon IDs already in supp_table_S1_species_list.tsv —
 only for WITHIN-tier pairs, then builds a UPGMA tree from the combined distance
 matrix (API divergence times within tiers; backbone node ages between tiers).
 UPGMA yields an ultrametric tree, which is what the PGLS VCV in
@@ -40,7 +40,7 @@ from pathlib import Path
 from config import RESULTS_DIR
 
 PGLS_TABLE  = RESULTS_DIR / "pgls_viridiplantae.tsv"
-MANIFEST    = RESULTS_DIR / "species_manifest.tsv"
+MANIFEST    = RESULTS_DIR / "supp_table_S1_species_list.tsv"
 CACHE_FILE  = RESULTS_DIR / "timetree_pairwise_cache.json"
 OUT_TREE    = RESULTS_DIR / "viridiplantae_timetree.nwk"
 

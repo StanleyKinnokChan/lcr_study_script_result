@@ -5,8 +5,8 @@ Shared configuration for all analysis scripts.
 Single source of truth for:
   - Project paths
   - Analysis constants (bins, thresholds, null expectations)
-  - Canonical phylum order and colour scheme (42 groups, derived from
-    species_manifest.tsv / phylum_summary.tsv for the 724-species dataset)
+  - Canonical phylum order and colour scheme (43 groups, derived from
+    supp_table_S1_species_list.tsv / phylum_summary.tsv for the 772-species dataset)
   - Supergroup membership
   - Amino acid ordering and colours
 """
@@ -18,7 +18,7 @@ PROJECT_DIR = Path(__file__).parent.parent
 RESULTS_DIR = PROJECT_DIR / "results"
 FIGURES_DIR = PROJECT_DIR / "figures"
 FLPS_DIR    = RESULTS_DIR / "flps"
-MANIFEST    = RESULTS_DIR / "species_manifest.tsv"
+MANIFEST    = RESULTS_DIR / "supp_table_S1_species_list.tsv"
 FIGURES_DIR.mkdir(exist_ok=True)
 
 # ── Analysis constants ────────────────────────────────────────────────────────
@@ -41,10 +41,14 @@ TETRAPODA_TERMINAL_HIGH = 25.0
 # Length-quartile labels used by confound-test and related plots
 QUARTILE_LABELS = ["Q1\n(shortest)", "Q2", "Q3", "Q4\n(longest)"]
 
-# ── Canonical phylum order (42 groups, phylogenetically arranged) ─────────────
-# Contains every phylum/group present in phylum_summary.tsv for the 724-species
+# ── Canonical phylum order (43 groups, phylogenetically arranged) ─────────────
+# Contains every phylum/group present in phylum_summary.tsv for the 772-species
 # dataset.  Scripts filter to `phyla_present` at runtime so extra entries here
-# are harmless.
+# are harmless — but a phylum present in the data and MISSING from this list is
+# silently dropped from any script that uses PHYLUM_ORDER as a filter (not just
+# an order), e.g. `[p for p in PHYLUM_ORDER if p in df["phylum"].values]`. This
+# happened to Heterolobosea (fixed 2026-08-01) and dropped it from Figures 1-3
+# and Supp Tables S2/S4/S5 despite passing Holm-Bonferroni in the main analysis.
 PHYLUM_ORDER = [
     # ── Prokaryotes ───────────────────────────────────────────────────────────
     "Bacteria",
@@ -61,6 +65,7 @@ PHYLUM_ORDER = [
     # ── Excavata ──────────────────────────────────────────────────────────────
     "Euglenozoa",
     "Metamonada",
+    "Heterolobosea",
     # ── Amoebozoa ─────────────────────────────────────────────────────────────
     "Amoebozoa",
     # ── Archaeplastida ────────────────────────────────────────────────────────
@@ -120,6 +125,7 @@ PHYLUM_COLOURS = {
     # Excavata — dark greens
     "Euglenozoa":      "#66bd63",
     "Metamonada":      "#1a9850",
+    "Heterolobosea":   "#78c679",
     # Amoebozoa — yellow-green
     "Amoebozoa":       "#d9ef8b",
     # Archaeplastida — greens and red
@@ -174,6 +180,7 @@ SUPERGROUP_OF: dict[str, str] = {
     "Rhizaria":        "SAR",
     "Euglenozoa":      "Excavata",
     "Metamonada":      "Excavata",
+    "Heterolobosea":   "Excavata",
     "Amoebozoa":       "Amoebozoa",
     "Viridiplantae":   "Archaeplastida",
     "Chlorophyta":     "Archaeplastida",

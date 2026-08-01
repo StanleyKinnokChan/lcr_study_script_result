@@ -4,7 +4,7 @@ Fetch UniProt signal-peptide + subcellular-location annotations for the
 prokaryotic species in the study, producing the annotation TSV consumed by
 17_signal_peptide_stratification.py (MODE A).
 
-For every Bacteria/Archaea species in results/species_manifest.tsv the script
+For every Bacteria/Archaea species in results/supp_table_S1_species_list.tsv the script
 queries the UniProtKB REST API by organism taxon id and records, per protein:
   - has_signal_peptide : True if a SIGNAL sequence feature is annotated
   - subcellular_location : the reported subcellular location term(s), if any
@@ -92,7 +92,7 @@ def main():
                     help="Re-fetch species already present in the output file")
     args = ap.parse_args()
 
-    manifest_path = RESULTS_DIR / "species_manifest.tsv"
+    manifest_path = RESULTS_DIR / "supp_table_S1_species_list.tsv"
     if not manifest_path.exists():
         sys.exit(f"ERROR: {manifest_path} missing — run the download phase first.")
 

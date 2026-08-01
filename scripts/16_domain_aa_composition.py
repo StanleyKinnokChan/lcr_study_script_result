@@ -19,7 +19,7 @@ at termini in all domains.  If prokaryote terminal LCRs are dominated by
 different residues (e.g. P, G, A), that supports distinct mechanisms.
 
 Outputs:
-  results/domain_aa_composition.tsv  — Supp Table S7
+  results/supp_table_S7_domain_aa_composition.tsv  — Supp Table S7
   figures/suppfig_domain_aa.pdf
 """
 
@@ -107,7 +107,7 @@ def enrichment_ratio(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def main():
-    manifest_path = RESULTS_DIR / "species_manifest.tsv"
+    manifest_path = RESULTS_DIR / "supp_table_S1_species_list.tsv"
     if not manifest_path.exists():
         print(f"ERROR: {manifest_path} missing — run 01_download_proteomes.py first.")
         return
@@ -162,7 +162,7 @@ def main():
             })
 
     ratio_df = pd.DataFrame(ratio_rows)
-    out_tsv = RESULTS_DIR / "domain_aa_composition.tsv"
+    out_tsv = RESULTS_DIR / "supp_table_S7_domain_aa_composition.tsv"
     ratio_df.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nDomain AA composition table (Supp Table S7): {out_tsv}")
 

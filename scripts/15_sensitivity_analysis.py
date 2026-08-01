@@ -21,9 +21,12 @@ Sensitivity analyses: (1) fLPS parameter choice, (2) taxon-sampling bias.
     (normal-approx binomial), so it runs even without the fLPS files.
 
 Outputs:
-  results/sensitivity_analysis.tsv    — Supp Table S6: per-phylum × param combination
-  results/multitype_positions.tsv     — MULTI-type LCR positional table
-  results/sampling_robustness.tsv     — Supp Table S7: taxon-sampling robustness
+  results/supp_table_S6_flps_sensitivity.tsv    — Supp Table S6: per-phylum ×
+                                                    param combination
+  results/supp_table_S6_multitype_positions.tsv — Supp Table S6 (MULTI-type
+                                                    LCR positional component)
+  results/sampling_robustness.tsv     — taxon-sampling robustness (not currently
+                                         a numbered supp table in the manuscript)
   figures/suppfig_sensitivity.pdf
 """
 
@@ -165,7 +168,8 @@ def taxon_sampling_robustness(manifest: pd.DataFrame) -> pd.DataFrame:
     """Is the terminal-LCR enrichment a property of the clades, or an artefact of who
     got over-sampled (Insecta) / under-sampled (singletons)? Re-weights the per-LCR
     table (results/lcr_positions.tsv) and checks the signal survives. Writes
-    results/sampling_robustness.tsv (Supp Table S7)."""
+    results/sampling_robustness.tsv (not currently a numbered supp table in
+    the manuscript)."""
     lcr = pd.read_csv(RESULTS_DIR / "lcr_positions.tsv", sep="\t",
                       usecols=["species_key", "phylum", "is_terminal"])
     lcr["is_terminal"] = lcr["is_terminal"].astype(str).isin(["True", "1", "true"])
@@ -235,7 +239,7 @@ def taxon_sampling_robustness(manifest: pd.DataFrame) -> pd.DataFrame:
 
 
 def main():
-    manifest_path = RESULTS_DIR / "species_manifest.tsv"
+    manifest_path = RESULTS_DIR / "supp_table_S1_species_list.tsv"
     if not manifest_path.exists():
         print(f"ERROR: {manifest_path} missing — run 01_download_proteomes.py first.")
         return
@@ -261,7 +265,7 @@ def main():
         df_params = run_param_set(manifest, params)
         all_results.append(df_params)
 
-        # Collect MULTI-type positions separately for Supp Table S6b
+        # Collect MULTI-type positions separately (Supp Table S6 component)
         if params.lcr_type == "MULTI":
             for _, row in manifest.iterrows():
                 flps_f = FLPS_DIR / f"{row['species_key']}.flps.txt"
@@ -280,13 +284,13 @@ def main():
     combined["_rank"] = combined["phylum"].map(lambda p: phylum_rank.get(p, 999))
     combined = combined.sort_values(["param_set", "_rank"]).drop(columns="_rank")
 
-    out_tsv = RESULTS_DIR / "sensitivity_analysis.tsv"
+    out_tsv = RESULTS_DIR / "supp_table_S6_flps_sensitivity.tsv"
     combined.to_csv(out_tsv, sep="\t", index=False)
     print(f"\nSensitivity table: {out_tsv}  ({len(combined)} rows)")
 
     if multitype_records:
         mt_df = pd.DataFrame(multitype_records)
-        mt_path = RESULTS_DIR / "multitype_positions.tsv"
+        mt_path = RESULTS_DIR / "supp_table_S6_multitype_positions.tsv"
         mt_df.to_csv(mt_path, sep="\t", index=False)
         print(f"MULTI-type positions: {mt_path}  ({len(mt_df)} records)")
 

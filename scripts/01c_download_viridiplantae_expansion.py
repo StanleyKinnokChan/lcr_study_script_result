@@ -37,7 +37,7 @@ Running this script:
 
 Outputs (appended to existing files):
   data/proteomes/<species_key>.longest.fa
-  results/species_manifest.tsv
+  results/supp_table_S1_species_list.tsv
 """
 
 import io
@@ -54,7 +54,7 @@ import requests
 from config import PROJECT_DIR, RESULTS_DIR
 
 OUT_DIR  = PROJECT_DIR / "data" / "proteomes"
-MANIFEST = RESULTS_DIR / "species_manifest.tsv"
+MANIFEST = RESULTS_DIR / "supp_table_S1_species_list.tsv"
 MANIFEST_HEADER = ["species_key", "display_name", "phylum", "fa_path", "domain", "taxon_id"]
 
 NCBI_DATASETS_DL = ("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/accession/{}"

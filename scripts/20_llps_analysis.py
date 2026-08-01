@@ -26,8 +26,12 @@ Analysis is run on ≥5 model organisms with publicly available PLAAC scores:
   (and any others found in the dataset)
 
 Outputs:
-  results/llps_analysis.tsv        — per-organism terminal vs internal LLPS scores
-  results/llps_organism_summary.tsv — Mann-Whitney U p-values per organism
+  results/llps_analysis.tsv        — raw per-LCR terminal vs internal LLPS
+                                      scores (intermediate; not itself a
+                                      numbered supp table)
+  results/supp_table_S9_llps_organism_summary.tsv — Supp Table S9: n, mean,
+                                      median, percent aromatic, and
+                                      Mann-Whitney U p-value per organism
   figures/suppfig_llps.pdf
 """
 
@@ -197,7 +201,7 @@ def test_terminal_vs_internal(records: list[dict],
 
 
 def main():
-    manifest_path = RESULTS_DIR / "species_manifest.tsv"
+    manifest_path = RESULTS_DIR / "supp_table_S1_species_list.tsv"
     if not manifest_path.exists():
         print(f"ERROR: {manifest_path} missing — run 01_download_proteomes.py first.")
         return
@@ -288,7 +292,7 @@ def main():
                     "pct_aromatic_term", "pct_aromatic_int",
                     "mw_stat", "mw_p", "significant", "method"]
     summary_df = summary_df[[c for c in cols_ordered if c in summary_df.columns]]
-    out_summary = RESULTS_DIR / "llps_organism_summary.tsv"
+    out_summary = RESULTS_DIR / "supp_table_S9_llps_organism_summary.tsv"
     summary_df.to_csv(out_summary, sep="\t", index=False)
     print(f"Organism summary: {out_summary}")
 
